@@ -36,7 +36,7 @@ microphone, or other sensitive permissions.
 UltraEdge is a tool for radio-control hobbyists and is not directed at children.
 
 ## Contact
-Questions or requests: open an issue at `https://github.com/50UR4V/ultraedge-app/issues`
+Questions or requests: open an issue at `https://github.com/50UR4V/UltraEdge-app/issues`
 _(or the support email listed on the Google Play page)_.
 
 ## Changes

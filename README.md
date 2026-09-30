@@ -52,7 +52,7 @@ UltraEdge collects **no personal data** and talks only to your radio over USB. S
 unmodified MIT-licensed Lua; the companion firmware is GPL-3.0). The app itself is proprietary.
 
 ## Support
-Found a bug or have a request? **[Open an issue](https://github.com/50UR4V/ultraedge-app/issues)** —
+Found a bug or have a request? **[Open an issue](https://github.com/50UR4V/UltraEdge-app/issues)** —
 include the diagnostics log (in-app: Radio Settings ▸ Diagnostics ▸ Share log).
 
 ---

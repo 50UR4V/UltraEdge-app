@@ -79,4 +79,4 @@ own media volume untouched.
 - **UE Protocol** (the open radio↔phone protocol): `https://github.com/50UR4V/ue-protocol`
 - **EdgeTX-UE firmware** (build/flash it for your radio): `https://github.com/50UR4V/edgetx-ue`
 - **3D-printable mounts** for phone-on-radio: `https://github.com/50UR4V/ultraedge-mounts`
-- **Support / report an issue:** `https://github.com/50UR4V/ultraedge-app/issues`
+- **Support / report an issue:** `https://github.com/50UR4V/UltraEdge-app/issues`
