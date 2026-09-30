@@ -51,6 +51,11 @@ UltraEdge collects **no personal data** and talks only to your radio over USB. S
 **[Privacy Policy](PRIVACY.md)** and **[Open-Source Notices](OPEN-SOURCE-NOTICES.md)** (it embeds
 unmodified MIT-licensed Lua; the companion firmware is GPL-3.0). The app itself is proprietary.
 
+## Become a beta tester
+UltraEdge is in closed testing on Google Play. Want early access and to help shape it?
+**[📧 Request to be a beta tester](mailto:50ur4v.x@gmail.com?subject=UltraEdge%20beta%20tester&body=Hi%2C%20I%27d%20like%20to%20join%20the%20UltraEdge%20beta.%20My%20radio%3A%20____%20%28e.g.%20QX7%2FPocket%29.%20My%20Google%20account%20email%20for%20Play%20access%3A%20____)**
+— tell me your radio and the Google account email you use on Google Play, and I'll add you to the test track.
+
 ## Support
 Found a bug or have a request? **[Open an issue](https://github.com/50UR4V/UltraEdge-app/issues)** —
 include the diagnostics log (in-app: Radio Settings ▸ Diagnostics ▸ Share log).
