@@ -3,7 +3,7 @@
 **Your Android phone as the big touchscreen for an EdgeTX radio — over a USB cable, without ever
 touching the flight-control path.**
 
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.ultraedge.companion)
+<a href="https://play.google.com/store/apps/details?id=com.ultraedge.companion"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="220"></a>
 
 UltraEdge turns your phone into a rich companion display and editor for an [EdgeTX](https://edgetx.org)
 radio that only has a small mono screen and a few buttons. Plug the phone into the radio's USB port and
@@ -37,7 +37,16 @@ Pocket**. Build/flash the firmware from the EdgeTX-UE project (below).
 3. Plug in over USB and tap **Open UltraEdge**. Full guide: **[User Manual](USER-MANUAL.md)**.
 
 ## Screenshots
-_⟪to add: Home/OSD · model config · calibration · telemetry · Flight Logs⟫_
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/UE_IMG4.jpeg" alt="Home dashboard — RSSI, battery, timer, model photo"><br><sub>Home dashboard on a RadioMaster radio — live RSSI, battery, timer.</sub></td>
+    <td width="50%"><img src="screenshots/UE_IMG3.jpeg" alt="Phone mounted on a RadioMaster Pocket running a Lua telemetry screen"><br><sub>Phone mounted on a Pocket — a Lua telemetry screen on the big display.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/UE_IMG1.jpeg" alt="Live telemetry sensors grid"><br><sub>Live telemetry — discover and view all your sensors.</sub></td>
+    <td width="50%"><img src="screenshots/UE_IMG2.jpeg" alt="Telemetry / OSD screen with artificial horizon"><br><sub>Your radio's telemetry/OSD screens, rendered on the phone.</sub></td>
+  </tr>
+</table>
 
 ## The UltraEdge ecosystem
 - **[UE Protocol](https://github.com/50UR4V/ue-protocol)** — the open radio↔phone protocol UltraEdge
