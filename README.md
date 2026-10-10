@@ -29,7 +29,10 @@ applied by the radio — so edit with the same care you would on the radio itsel
 
 - Live dashboard — trims, sticks, timers, battery, RSSI, flight mode, and telemetry/OSD screens
 - Full model editing — inputs, mixes, outputs, curves, logical switches, special functions, GVars,
-  flight modes, telemetry sensors
+  flight modes, telemetry sensors — in an EdgeTX-matched two-pane editor
+- **Manage Models** — select, copy and delete models on the radio; keep backups in a library on your phone
+  and **restore** them to the radio
+- **Trainer** setup and a channel **Monitor** with your physical sticks, pots and switches
 - Radio settings — backlight, sticks, units, time, hardware, switch names
 - Guided, graphical **stick/pot calibration**
 - Live telemetry + sensor **Discover**
@@ -38,14 +41,14 @@ applied by the radio — so edit with the same care you would on the radio itsel
 - **Lua tools** — supported tools such as ExpressLRS parameter read/write run inside the app
 
 ## Supported radios
-Compatible EdgeTX radios running UltraEdge firmware (v1.0.2 documents UE Protocol v4 and app v1.0.7 or
-later). Build or flash the firmware from the EdgeTX-UE project (below).
+Compatible EdgeTX radios running UltraEdge firmware — **v1.1.2** pairs with app **1.2.13** (UE Protocol v4).
+Build or flash the firmware from the EdgeTX-UE project (below).
 
 | Radio | Status |
 |---|---|
 | FrSky **QX7**, RadioMaster **Pocket** | ✅ Verified on hardware |
 | RadioMaster **TX16S** | ✅ Verified on hardware — telemetry-screen refresh is slower than on mono radios; ExpressLRS Lua tools verified with an ELRS module |
-| RadioMaster **Zorro** | ⚠️ Prebuilt firmware released, **not yet hardware-verified** |
+| RadioMaster **Zorro** | ✅ Verified on hardware (v1.1.2) |
 
 See the [firmware release notes](https://github.com/50UR4V/edgetx-ue/releases) for the current status.
 
@@ -54,6 +57,18 @@ See the [firmware release notes](https://github.com/50UR4V/edgetx-ue/releases) f
    (Android 7.0+, a phone with USB host/OTG).
 2. Flash the UltraEdge companion firmware to your radio — see **[EdgeTX-UE](https://github.com/50UR4V/edgetx-ue)**.
 3. Plug in over USB and tap **Open UltraEdge**. Full guide: **[User Manual](USER-MANUAL.md)**.
+
+## Useful downloads (SD card & Lua scripts)
+Quick links to the files you'll want on your radio's SD card. Copy them over with a card reader, or from the
+app under **Radio Settings ▸ SD Card**.
+
+| What | Where | Status with UltraEdge |
+|---|---|---|
+| EdgeTX sound pack (voice prompts) | [EdgeTX/edgetx-sdcard-sounds — Releases](https://github.com/EdgeTX/edgetx-sdcard-sounds/releases) | ✅ Verified |
+| iNav telemetry widget (Lua) | [iNavFlight/OpenTX-Telemetry-Widget](https://github.com/iNavFlight/OpenTX-Telemetry-Widget) | ✅ Verified |
+| ExpressLRS configuration (Lua) | [ExpressLRS Lua how-to](https://www.expresslrs.org/quick-start/transmitters/lua-howto/) | ✅ Verified |
+| Betaflight TX Lua scripts | [betaflight/betaflight-tx-lua-scripts](https://github.com/betaflight/betaflight-tx-lua-scripts) | ⚠️ Unverified |
+| Yaapu FrSky telemetry (Lua) | [yaapu/FrskyTelemetryScript](https://github.com/yaapu/FrskyTelemetryScript) | ⚠️ Unverified |
 
 ## Screenshots
 <table>
