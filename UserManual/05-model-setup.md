@@ -12,7 +12,8 @@ a different model, switch to it first (see [Models & backups](10-models-and-back
 | **Model name** | Edit in place | Up to the radio's name length |
 | **Timer 1 / 2 / 3** | Timer page | Name, Mode, **Switch**, Start, Minute beep, Countdown, Persistent, Direction |
 | **Trims** | Trims page | Trim increment, Display trims, Extended trims |
-| **Throttle** | Throttle page | Reversed, Trim (idle-only throttle trim), **Warning** (the "throttle not idle" check at power-on) |
+| **Throttle** | Throttle page | Reversed, Trim (idle-only throttle trim) |
+| **Pre-flight checks** | Pre-flight page | **Throttle warning**, custom throttle position, and the **position each switch must be in** at power-on |
 | **Other** | Other page | ADC jitter filter |
 | **Internal RF / External RF** | Module page | Type, RX channels, First channel, **Failsafe**, plus **Bind receiver / Range test / Stop** |
 | **Trainer** | Trainer page | **Mode** (master/slave and how the radios connect), plus PPM settings for Slave/Jack |
@@ -46,12 +47,32 @@ a call every minute, and **Persistent** to keep the time across power cycles (*F
 
 - **Reversed**: for radios or pilots who use a reversed throttle stick.
 - **Trim**: idle-only trim. The throttle trim adjusts idle without moving full throttle (planes and helis).
-- **Warning**: the "Throttle not idle" check at power-on. Leave it **on** for anything with a propeller.
+
+## Pre-flight checks
+
+EdgeTX's *Pre-start checks*: what the radio insists on before it starts sending to the model. When you switch the
+radio on, or select this model, and something is in the wrong position, the radio shows a warning and waits until you
+fix it. That stops a model from starting up armed or at full throttle.
+
+![Model › Pre-flight checks](media/model-preflight.jpg)
+
+| Row | Meaning |
+|---|---|
+| **Throttle warning** | Warn if the throttle isn't at idle. Leave it **on** for anything with a propeller. |
+| **Custom throttle position** / **Throttle position** | Warn unless the throttle is at *this* position instead of idle (for example 0% on a centre-sprung throttle) |
+| **SA, SB, SC…** (one row per switch) | **No check**, or the position (**Up / Middle / Down**) the switch must be in. 2-position switches have no Middle. |
+| **Use current switch positions** | Put the switches where they should be, then tap this. Every switch that has a check takes its current position. |
+
+> [!TIP]
+> **Quads:** give your **arm switch** a check in its *disarmed* position. Then the radio won't start sending while
+> you're armed, which is the classic "props spin at power-on" accident. Do the same for a throttle-cut switch on a
+> plane (*cut* position).
 
 > [!NOTE]
-> **The throttle warning only checks the throttle *stick*.** Arming is handled by your arm switch and the flight
-> controller. For a quad, an arm switch with Betaflight's *Arm* mode (see
-> [arm switch recipe](13-recipes.md#arm-switch-for-betaflight--inav-aux1--ch5)) does the real protecting.
+> **EdgeTX ↔ UltraEdge:** this is EdgeTX's switch-warning row. Each switch gets a clear Up/Middle/Down choice instead
+> of cycling letters with the scroll wheel, and "use current positions" replaces the long-press of ENTER. The throttle
+> warning only checks the throttle *stick*. Arming is handled by your arm switch and the flight controller (see the
+> [arm switch recipe](13-recipes.md#arm-switch-for-betaflight--inav-aux1--ch5)).
 
 ## RF modules: binding, range check and failsafe
 

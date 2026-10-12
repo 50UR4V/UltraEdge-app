@@ -46,7 +46,8 @@
 
 | Headache | What to do in UltraEdge |
 |---|---|
-| **"Throttle not idle" at every power-on** | Lower the throttle, or (only if you know why) turn off **Model › Throttle › Warning**. Make sure the throttle isn't reversed by mistake (**Throttle › Reversed**). |
+| **"Throttle not idle" at every power-on** | Lower the throttle, or (only if you know why) turn off **Model › Pre-flight checks › Throttle warning**. Make sure the throttle isn't reversed by mistake (**Model › Throttle › Reversed**). |
+| **"Switch warning" at power-on** | A switch isn't where the model expects. Move it, or change the expected position in **Model › Pre-flight checks** (or set *No check*). |
 | **"Failsafe not set" warning** | **Model › Internal/External RF › Failsafe**: choose a setting. See the [failsafe recipe](13-recipes.md#failsafe). |
 | **Switches don't reach Betaflight** | Every switch needs a **mix onto a channel**. See the [arm switch recipe](13-recipes.md#arm-switch-for-betaflight--inav-aux1--ch5). Check in **Monitor** that the channel moves. |
 | **A servo goes the wrong way** | **Outputs › Inverted** on that channel. |

@@ -45,7 +45,8 @@ flight controller. That is the number-one "my arm switch doesn't work" cause.
 > **ExpressLRS expects arm on CH5 (AUX1).** Leave it there; ELRS sends CH5 at full rate and uses it for its own
 > armed-state behaviour.
 
-Name the switch **ARM** under **System › Switches** so it reads clearly everywhere. Add a call-out:
+Name the switch **ARM** under **System › Switches** so it reads clearly everywhere. Then give it a power-on check in
+its disarmed position (**Model › Pre-flight checks**, see [Model setup](05-model-setup.md#pre-flight-checks)). Add a call-out:
 [voice call-outs on a switch](#voice-call-outs-on-a-switch).
 
 ## Failsafe

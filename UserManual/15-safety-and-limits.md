@@ -22,7 +22,7 @@ radio. On **companion builds** (Pocket, Zorro, QX7) they keep their current valu
 | Setting | Status | Workaround |
 |---|---|---|
 | **Bluetooth trainer pairing** (scan / connect) | Radio-side (TX16S) | The trainer *mode* is set in Model › Trainer |
-| **Pre-flight checks** for switches and pots (positions at power-on) | Planned | The throttle warning is available (Model › Throttle › Warning) |
+| Pre-flight checks for **pots and sliders** | Planned | Throttle and switch checks are in Model › Pre-flight checks |
 | GVar **values per flight mode** | Planned (shown read-only) | Change them in flight with an **Adjust** special function |
 | Trim **values** | By design: set with the trim buttons | Trim *modes* per flight mode are editable |
 | Telemetry sensor **alarm thresholds** (EdgeTX's RSSI alarms) | Planned | Logical switch + Play Track/Haptic (see [recipe](13-recipes.md#low-battery--link-quality-warning)) |
