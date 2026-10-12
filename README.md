@@ -56,7 +56,7 @@ See the [firmware release notes](https://github.com/50UR4V/edgetx-ue/releases) f
 1. Install from **[Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)**
    (Android 7.0+, a phone with USB host/OTG).
 2. Flash the UltraEdge companion firmware to your radio — see **[EdgeTX-UE](https://github.com/50UR4V/edgetx-ue)**.
-3. Plug in over USB and tap **Open UltraEdge**. Full guide: **[User Manual](USER-MANUAL.md)**.
+3. Plug in over USB and tap **Open UltraEdge**. Full guide: **[User Manual](UserManual/README.md)**.
 
 ## Useful downloads (SD card & Lua scripts)
 Quick links to the files you'll want on your radio's SD card. Copy them over with a card reader, or from the
