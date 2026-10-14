@@ -67,16 +67,25 @@ Every function has **Repeat** (play once, every N seconds, or once, skipping the
 ## GVars (global variables)
 
 ![Global variables](media/gvars.jpg)
+![GVar value per flight mode](media/gvars-fm.jpg)
 
 Each row shows a GVar's value in every flight mode (FM0…FM8; `=FM0` means "same as FM0"). Tap one to set its
 **Name**, **Unit** (– or %), **Precision**, **Min**, **Max** and whether the radio shows a **Popup** when it changes.
+
+Under **Value per flight mode**, set the value for each mode. FM0 always has its own value. For FM1–FM8, choose
+**Own value** and type it in, or **= FMn** to share another mode's value, just like EdgeTX.
 
 Use a GVar wherever a weight or offset is accepted, so that one number controls several mixes. A typical example is a
 single "rate" GVar used by both ailerons.
 
 > [!NOTE]
-> The **per-flight-mode values** are shown but can't be edited in the app yet; change them in flight with an
-> **Adjust** special function. Editing them in the app is planned.
+> **EdgeTX ↔ UltraEdge:** GVar values can change **in flight** (an *Adjust* special function), so the radio always
+> holds the latest. UltraEdge writes your change straight into the radio and then re-reads the model, so it never
+> overwrites a value you changed in flight with an old copy.
+
+> [!TIP]
+> **One knob for both ailerons' rates:** make GV1 "Rate" = 70% in FM0 and 100% in FM1 *Sport*, then use **GV1** as
+> the Weight of both aileron mixes. Changing modes changes both at once.
 
 ## Modes (flight modes)
 

@@ -7,10 +7,10 @@ screen.
 
 ![The UltraEdge Home screen](media/home.jpg)
 
-> **Which version?** This manual covers **UltraEdge v1.2** (app 1.2.27+, firmware 1.1.15+), which is in beta testing
+> **Which version?** This manual covers **UltraEdge v1.2** (app 1.2.28+, firmware 1.1.16+), which is in beta testing
 > now. If you have the current Google Play release (app 1.2.13, firmware 1.1.2), most pages still apply. These parts
 > arrive with v1.2: companion-only builds for Pocket/Zorro/QX7, **My Radios**, the built-in **flight-log viewer** and
-> automatic log copying, **Model › Trainer**, the **timer switch**, **pre-flight switch and pot checks**, curve presets/mirror, the response preview, and the
+> automatic log copying, **Model › Trainer**, the **timer switch**, **pre-flight switch and pot checks**, **GVar values per flight mode**, curve presets/mirror, the response preview, and the
 > radio's own Special Function list.
 >
 > If you already fly EdgeTX, the manual
