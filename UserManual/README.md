@@ -7,10 +7,10 @@ screen.
 
 ![The UltraEdge Home screen](media/home.jpg)
 
-> **Which version?** This manual covers **UltraEdge v1.2** (app 1.2.26+, firmware 1.1.14+), which is in beta testing
+> **Which version?** This manual covers **UltraEdge v1.2** (app 1.2.27+, firmware 1.1.15+), which is in beta testing
 > now. If you have the current Google Play release (app 1.2.13, firmware 1.1.2), most pages still apply. These parts
 > arrive with v1.2: companion-only builds for Pocket/Zorro/QX7, **My Radios**, the built-in **flight-log viewer** and
-> automatic log copying, **Model › Trainer**, the **timer switch**, **pre-flight switch checks**, curve presets/mirror, the response preview, and the
+> automatic log copying, **Model › Trainer**, the **timer switch**, **pre-flight switch and pot checks**, curve presets/mirror, the response preview, and the
 > radio's own Special Function list.
 >
 > If you already fly EdgeTX, the manual
@@ -55,7 +55,7 @@ screen.
 | Turn on **flight logging** and see the flight on a map | [Flight logs](11-flight-logs.md) |
 | Back up a model or **copy it to another radio** | [Models & backups](10-models-and-backups.md) |
 | **Calibrate** sticks and pots | [Calibration](09-radio-settings.md#calibration) |
-| Stop the model starting **armed / at full throttle** (switch & throttle warnings) | [Pre-flight checks](05-model-setup.md#pre-flight-checks) |
+| Stop the model starting **armed / at full throttle / with flaps out** (switch, throttle & pot warnings) | [Pre-flight checks](05-model-setup.md#pre-flight-checks) |
 | Use a **buddy box / trainer** | [Recipe: trainer](13-recipes.md#trainer--buddy-box) · [Model › Trainer](05-model-setup.md#trainer-buddy-box) |
 
 ## How these images were made
