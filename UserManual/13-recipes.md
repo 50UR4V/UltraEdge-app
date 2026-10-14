@@ -133,7 +133,9 @@ Ailerons on two channels (for example **CH1** left, **CH5** right) let them droo
 2. **Logic › ＋ New switch** → **a<x**, V1 **RxBt**, V2 **3.5 V** (per-cell value × cells for a pack, or the receiver
    voltage), **Delay 2 s**.
 3. **Funcs › ＋ New function** → Trigger **L1** → **Play Track** "batlow" (or **Haptic**), **Repeat 10 s**.
-4. Link quality: **Logic** → **a<x · RQly · 70 %** → **Funcs** → Play Track "siglow" or Haptic.
+4. Link quality: the quickest way is **Telem › ⚠ Alarms** (low and critical thresholds; see
+   [Telemetry](04-home-monitor-telemetry.md#telemetry)). For a custom sound, use **Logic** → **a<x · RQly · 70 %**
+   → **Funcs** → Play Track "siglow" or Haptic.
 
 > [!TIP]
 > Values are entered **in real units** (volts, %). UltraEdge converts them to EdgeTX's internal raw numbers, so you

@@ -23,7 +23,7 @@ radio. On **companion builds** (Pocket, Zorro, QX7) they keep their current valu
 |---|---|---|
 | **Bluetooth trainer pairing** (scan / connect) | Radio-side (TX16S) | The trainer *mode* is set in Model › Trainer |
 | Trim **values** | By design: set with the trim buttons | Trim *modes* per flight mode are editable |
-| Telemetry sensor **alarm thresholds** (EdgeTX's RSSI alarms) | Planned | Logical switch + Play Track/Haptic (see [recipe](13-recipes.md#low-battery--link-quality-warning)) |
+| **Vario** settings (source, range, centre) | Planned | — |
 | Creating a **blank** model | On the radio's model select | Or duplicate an existing model in Manage Models |
 | Global functions (radio-wide special functions) | Planned | Use model special functions |
 

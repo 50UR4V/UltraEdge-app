@@ -7,10 +7,10 @@ screen.
 
 ![The UltraEdge Home screen](media/home.jpg)
 
-> **Which version?** This manual covers **UltraEdge v1.2** (app 1.2.28+, firmware 1.1.16+), which is in beta testing
+> **Which version?** This manual covers **UltraEdge v1.2** (app 1.2.29+, firmware 1.1.17+), which is in beta testing
 > now. If you have the current Google Play release (app 1.2.13, firmware 1.1.2), most pages still apply. These parts
 > arrive with v1.2: companion-only builds for Pocket/Zorro/QX7, **My Radios**, the built-in **flight-log viewer** and
-> automatic log copying, **Model › Trainer**, the **timer switch**, **pre-flight switch and pot checks**, **GVar values per flight mode**, curve presets/mirror, the response preview, and the
+> automatic log copying, **Model › Trainer**, the **timer switch**, **pre-flight switch and pot checks**, **GVar values per flight mode**, **telemetry alarms**, curve presets/mirror, the response preview, and the
 > radio's own Special Function list.
 >
 > If you already fly EdgeTX, the manual
@@ -48,7 +48,7 @@ screen.
 | Set up **dual rates & expo** | [Recipe: rates & expo](13-recipes.md#dual-rates--expo-on-a-switch) |
 | Mix a **flying wing (elevons)**, **V-tail**, **flaperons** | [Recipes: wings & tails](13-recipes.md#elevon-flying-wing--delta-mixing) |
 | Reverse a servo, set endpoints / subtrim | [Outputs](06-inputs-mixes-outputs.md#outputs) |
-| Get a **battery-voltage / RSSI warning** | [Recipe: telemetry alarms](13-recipes.md#low-battery--link-quality-warning) |
+| Get a **battery-voltage / RSSI warning** | [Recipe: telemetry alarms](13-recipes.md#low-battery--link-quality-warning) · [Telem › ⚠ Alarms](04-home-monitor-telemetry.md#telemetry) |
 | Make a **timer** that runs with the throttle | [Recipe: throttle timer](13-recipes.md#a-flight-timer-that-runs-with-the-throttle) |
 | Run the **ExpressLRS Lua** (power, packet rate, model match, WiFi) | [ExpressLRS](12-lua-tools-sd-sounds.md#expresslrs-and-other-tools) |
 | Hear **voice call-outs** | [Recipe: call-outs](13-recipes.md#voice-call-outs-on-a-switch) |

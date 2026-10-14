@@ -66,6 +66,16 @@ stick mode), **pots/sliders** with your radio's real names, and every **switch**
 - **↻ Discover** starts EdgeTX's sensor discovery. Sensors appear as the receiver reports them: RSSI, LQ, RxBt,
   GPS, current and more. Switch the receiver on and wait a few seconds.
 - **⚙ Sensors** opens the sensor list, where you can set each sensor's label, unit and precision.
+- **⚠ Alarms** sets the link alarms: a **low** and a **critical** threshold for the signal (EdgeTX's RSSI alarms),
+  and **Disable telemetry alarms**. The radio names them for your link: **RQly** (link quality, %) on ExpressLRS and
+  Crossfire, **RSSI** (dB) on most others. When the signal drops below a threshold, the radio warns, and so does the
+  phone.
+
+![Telemetry alarms](media/telemetry-alarms.jpg)
+
+> [!TIP]
+> **Starting points:** ELRS *RQly* low **70 %**, critical **50 %**. FrSky *RSSI* low **45 dB**, critical **42 dB**.
+> Range-check, then raise them if the warnings come too late.
 
 > [!TIP]
 > **No sensors showing up?** The receiver must be bound and powered, and telemetry must be enabled on the link. For
