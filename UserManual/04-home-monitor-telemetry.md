@@ -36,7 +36,7 @@ In edit mode, tap a zone (**＋ Add widget**) to place one of these widgets:
 - **Outputs**
 - **Text**
 - **Model image**: import one from the phone or use the model's photo
-- **Lua script**: a telemetry/OSD script such as iNav or Yaapu. See [Lua](12-lua-tools-sd-sounds.md).
+- **Lua script**: a telemetry/OSD script such as iNav OSD (compiled `.luac` packages like Yaapu aren't supported yet). See [Lua](12-lua-tools-sd-sounds.md).
 
 ![A Lua telemetry/OSD screen running on the phone](media/photo-osd.jpg)
 
@@ -66,12 +66,16 @@ stick mode), **pots/sliders** with your radio's real names, and every **switch**
 - **↻ Discover** starts EdgeTX's sensor discovery. Sensors appear as the receiver reports them: RSSI, LQ, RxBt,
   GPS, current and more. Switch the receiver on and wait a few seconds.
 - **⚙ Sensors** opens the sensor list, where you can set each sensor's label, unit and precision.
-- **⚠ Alarms** sets the link alarms: a **low** and a **critical** threshold for the signal (EdgeTX's RSSI alarms),
+- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **⚠ Alarms** sets the link alarms: a **low** and a **critical** threshold for the signal (EdgeTX's RSSI alarms),
   and **Disable telemetry alarms**. The radio names them for your link: **RQly** (link quality, %) on ExpressLRS and
   Crossfire, **RSSI** (dB) on most others. When the signal drops below a threshold, the radio warns, and so does the
   phone.
 
-![Telemetry alarms](media/telemetry-alarms.jpg)
+![Telemetry alarms & vario](media/telemetry-alarms.jpg)
+
+On radios with a vario, the same page sets it up: **Vario source** (a climb-rate sensor such as *VSpd*), the **range**
+(the climb/sink rates where the tone tops out) and the **centre** band (where it stays quiet, or plays a steady tone).
+Turn the vario on with a **Vario** special function.
 
 > [!TIP]
 > **Starting points:** ELRS *RQly* low **70 %**, critical **50 %**. FrSky *RSSI* low **45 dB**, critical **42 dB**.

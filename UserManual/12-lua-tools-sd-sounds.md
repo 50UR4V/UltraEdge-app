@@ -26,12 +26,14 @@ With the **ExpressLRS** script you can:
 > 2. Use the **ExpressLRS.lua that matches your ELRS version**. Get it from the ELRS Configurator or the module's
 >    WebUI.
 > 3. For an external module, check the baud rate in the radio's hardware settings.
->
-> UltraEdge times out and offers **Try again** instead of waiting forever.
 
 No tools listed? Import `ExpressLRS.lua` (see below) and choose **Tools** as the destination.
 
-## Telemetry screens & widgets (iNav, Yaapu…)
+## Telemetry screens & widgets (iNav OSD…)
+
+> [!NOTE]
+> Scripts shipped as compiled, multi-file `.luac` packages (for example **Yaapu**) don't run in the app yet. They still
+> run on the radio.
 
 Add a **Lua script** widget to a Home screen (long-press Home, tap a zone, *Lua script*). Pick an installed script or
 **＋ Import script / zip…**. The script draws on a virtual radio screen; **System › Display** sets that screen's size.

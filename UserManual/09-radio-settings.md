@@ -10,7 +10,7 @@ and the app's settings.
 | Section | Items |
 |---|---|
 | **Tools & SD** | Tools (ExpressLRS and other Lua tools) · SD Card · Sounds · Flight Logs |
-| **Radio setup** | Radio Setup · Hardware · Switches · Calibration · Trainer · All settings (radio.yml) |
+| **Radio setup** | Radio Setup · Hardware · Switches · Calibration · Trainer · Global Functions · All settings (radio.yml) |
 | **Model** | Manage Models · Model (from file) · Backup |
 | **Display & diagnostics** | Display · Diagnostics |
 | **UltraEdge app** | App Settings · My Radios · About & Licenses |
@@ -19,7 +19,7 @@ Pages that need the radio are dimmed when it isn't attached ("needs radio link")
 
 ## Radio Setup
 
-EdgeTX's *RADIO › SETUP*, grouped into sections. Pick a section on the left; its fields appear on the right.
+EdgeTX's *RADIO › SETUP*. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) The beta shows it in two panes, grouped into sections; production shows the same settings as a list. Pick a section on the left; its fields appear on the right.
 
 ![Radio Setup › Sound](media/radio-setup.jpg)
 
@@ -74,6 +74,8 @@ Guided stick, pot and slider calibration, driven from the phone:
 > isn't there. Recalibrate after flashing new firmware or replacing a gimbal.
 
 ## My Radios
+
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
 
 ![My Radios](media/my-radios.jpg)
 

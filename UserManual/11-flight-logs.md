@@ -20,9 +20,9 @@ logs to the phone and shows them without a PC.
 
 ![Flight Logs](media/flight-logs.jpg)
 
-- **On the radio · newest first**: the radio's logs, 8 at a time, newest flight at the top. **Load 8 more** fetches
+- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **On the radio · newest first**: the radio's logs, 8 at a time, newest flight at the top. **Load 8 more** fetches
   older ones; **↻ Check for new logs** looks again.
-- With **Copy new logs automatically** on (App Settings), new logs copy to the phone one at a time while the page is
+- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) With **Copy new logs automatically** on (App Settings), new logs copy to the phone one at a time while the page is
   open. Each row shows *queued*, *copying…* with progress, or *✓ on phone*.
 - **Saved on this phone**: logs already copied. **View**, **Share** or **Delete** each one.
 
@@ -31,6 +31,8 @@ logs to the phone and shows them without a PC.
 > Manage Models, the copy **pauses** and tells you so. It resumes when you come back to Flight Logs.
 
 ## 3. View a log
+
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
 
 ![Flight logs: summary, GPS track, charts](media/clip-flight-logs.gif)
 

@@ -13,8 +13,8 @@ curve from an Input or Mix line (*Curve › Cstm › CVn*) or on an Output.
 | **Type** | **Standard** (points evenly spaced on X) or **Custom** (you set X for each point too) |
 | **Points** | 2 to 17 points |
 | **Smooth** | Rounds the corners between points |
-| **Preset › Apply…** | Fills the curve with a straight line at an angle, or flat |
-| **Mirror (flip up/down)** | Inverts the curve |
+| **Preset › Apply…** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) | Fills the curve with a straight line at an angle, or flat |
+| **Mirror (flip up/down)** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) | Inverts the curve |
 | Point rows | Y value per point (and X for custom curves) |
 
 The graph redraws as you edit. A note at the bottom shows how much curve memory the model has left (*"N of MAX points

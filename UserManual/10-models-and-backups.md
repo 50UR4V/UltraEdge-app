@@ -24,6 +24,10 @@ Tap a model to see its name, file and how many inputs, mixes, sensors and specia
 | **🗑 Delete from radio** | Asks to confirm first. You can't delete the active model. |
 | **⤓ Export archive (.zip)** | Saves the model plus its image, logs and scripts as one file you can share or keep |
 
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **＋ New model** (under the list) asks the radio to create a **blank model** with its default setup (inputs and mixes
+for the four sticks, the radio's default RF module, a name like *MODEL07*) and switch to it. Your current model is saved
+first. Like switching models, it's refused while the throttle isn't at idle.
+
 For a model in your **library**:
 
 | Action | What it does |
@@ -37,8 +41,7 @@ After Duplicate, Delete, Switch or Restore the list refreshes by itself.
 > [!TIP]
 > **Starting a new model?** Duplicate a model that's close (same receiver type, same kind of aircraft), switch to
 > the copy, rename it on the **Model** page, then change what's different. It's faster than starting blank, and the
-> RF and failsafe settings come along. On a companion build, a brand-new blank model can be created on the radio's
-> model-select screen.
+> RF and failsafe settings come along. For a clean start, use **＋ New model**.
 
 ## Backups
 

@@ -1,11 +1,6 @@
 # UltraEdge — Privacy Policy
 
-*This is the source for the public Privacy Policy page. Host it at a stable, publicly accessible URL
-(e.g. on bampi2k.com) as an HTML page — **not** a PDF, non-editable, no login required. Put that URL in
-Play Console ▸ App content ▸ Privacy policy, and keep the title "Privacy Policy". Set the effective date
-when you publish.*
-
-**Effective date:** _[set at publish]_
+**Effective date:** 18 October 2026 · This policy is also published at https://bampi2k.com/ultraedge/privacy
 **App:** UltraEdge (`com.ultraedge.companion`)
 **Developer:** Sourav Karmakar
 **Privacy contact:** 50ur4v.x@gmail.com · or open an issue at https://github.com/50UR4V/UltraEdge-app/issues
@@ -26,15 +21,24 @@ analytics, no advertising, and no third-party tracking SDKs. It does not request
   identifiers, messages, or financial data).
 - **Data shared with third parties: none.**
 - **Advertising ID:** not used.
+- **Radio fingerprint (app versions with "My Radios"):** to keep each radio's cached model list and log list
+  separate, the app reads the connected radio's processor ID and stores only a short one-way **fingerprint** of it
+  (a keyed hash), together with an optional name you give the radio and the first/last time it was connected.
+  This stays on your phone. The raw processor ID is never stored, and nothing is sent anywhere.
+- **Diagnostics you choose to share:** the app keeps a technical log on your phone. If you tap **Share
+  diagnostics** or **Export log**, Android's share sheet opens and **you** choose where it goes (for example an
+  email to us). Nothing is sent unless you do this.
 
 ## Data stored on your device
-Configuration backups and flight logs that you choose to pull are stored in UltraEdge's own private storage
-on your phone. They are **not transmitted anywhere** by the app. You control them: you can share or delete
+Configuration backups, model archives and flight logs that you choose to copy are stored in UltraEdge's
+app-specific storage on your phone. On some Android versions, file-manager apps or a computer connected over USB can
+also read that folder. The app does **not transmit them anywhere**, and Android's automatic app-data backup is turned
+off for UltraEdge. You control them: you can share or delete
 them from within the app at any time, and they are removed when you uninstall the app.
 
 ## Security
 Because no data leaves your device, there is no server-side collection or transmission to secure. On-device
-files reside in the app's private app-specific storage provided by Android.
+files are kept in the app-specific storage Android provides for UltraEdge.
 
 ## Data retention and deletion
 UltraEdge retains only the files you explicitly create on the device (backups, pulled logs), for as long as

@@ -7,15 +7,17 @@ screen.
 
 ![The UltraEdge Home screen](media/home.jpg)
 
-> **Which version?** This manual covers **UltraEdge v1.2** (app 1.2.29+, firmware 1.1.17+), which is in beta testing
-> now. If you have the current Google Play release (app 1.2.13, firmware 1.1.2), most pages still apply. These parts
-> arrive with v1.2: companion-only builds for Pocket/Zorro/QX7, **My Radios**, the built-in **flight-log viewer** and
-> automatic log copying, **Model › Trainer**, the **timer switch**, **pre-flight switch and pot checks**, **GVar values per flight mode**, **telemetry alarms**, curve presets/mirror, the response preview, and the
-> radio's own Special Function list.
->
-> If you already fly EdgeTX, the manual
-> uses EdgeTX names throughout (Inputs, Mixes, Logical Switches…), so everything you know carries over. Look for
+> If you already fly EdgeTX, the manual uses EdgeTX names throughout (Inputs, Mixes, Logical Switches…), so everything you know carries over. Look for
 > **EdgeTX ↔ UltraEdge** boxes where something is different.
+
+## Which version?
+
+| | App | Firmware | Status |
+|---|---|---|---|
+| **Production** | 1.3.0 (Google Play) | v1.1.2, full build | Tested on real hardware: Pocket, Zorro, TX16S, QX7 |
+| ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta** | 1.4 (Google Play open testing) | 1.1.18 (GitHub pre-release) | Early access. Tested on the emulator; still collecting hardware mileage. Bench-test before flying. |
+
+Sections marked ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) describe beta features. Everything else works in the production app.
 
 ## Contents
 
@@ -54,6 +56,8 @@ screen.
 | Hear **voice call-outs** | [Recipe: call-outs](13-recipes.md#voice-call-outs-on-a-switch) |
 | Turn on **flight logging** and see the flight on a map | [Flight logs](11-flight-logs.md) |
 | Back up a model or **copy it to another radio** | [Models & backups](10-models-and-backups.md) |
+| Start a **new model** from scratch | [Manage Models › ＋ New model](10-models-and-backups.md#manage-models) |
+| Same function on **every model** (volume knob, voltage call-out) | [Global functions](08-logic-functions-gvars-modes.md#global-functions) |
 | **Calibrate** sticks and pots | [Calibration](09-radio-settings.md#calibration) |
 | Stop the model starting **armed / at full throttle / with flaps out** (switch, throttle & pot warnings) | [Pre-flight checks](05-model-setup.md#pre-flight-checks) |
 | Use a **buddy box / trainer** | [Recipe: trainer](13-recipes.md#trainer--buddy-box) · [Model › Trainer](05-model-setup.md#trainer-buddy-box) |
@@ -69,7 +73,12 @@ Grey dots in the clips show where a finger touched.
 - **UltraEdge app** (this manual, issues, changelog): <https://github.com/50UR4V/UltraEdge-app>
 - **EdgeTX-UE firmware** (download/flash for your radio): <https://github.com/50UR4V/edgetx-ue>
 - **UE Protocol** (the open radio↔phone protocol): <https://github.com/50UR4V/ue-protocol>
-- **3D-printable phone mounts**: <https://github.com/50UR4V/ultraedge-mounts>
+- **3D-printable phone mounts**: planned
+
+[![App: proprietary](https://img.shields.io/badge/app-proprietary-lightgrey.svg)](https://github.com/50UR4V/UltraEdge-app/blob/main/OPEN-SOURCE-NOTICES.md)
+[![Firmware: GPL v2](https://img.shields.io/badge/firmware-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue)
+[![Protocol: MIT](https://img.shields.io/badge/protocol-MIT-yellow.svg)](https://github.com/50UR4V/ue-protocol)
+[![Manual: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
 
 ---
 UltraEdge is a community project. It is not affiliated with or endorsed by EdgeTX, FrSky, RadioMaster or ExpressLRS.

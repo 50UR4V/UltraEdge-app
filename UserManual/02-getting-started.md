@@ -12,12 +12,14 @@
 
 ## Supported radios
 
-| Radio | Firmware build | What's on the radio's own screen |
+| Radio | Production firmware (v1.1.2) | ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Beta firmware (1.1.18) |
 |---|---|---|
-| RadioMaster **Pocket** | Companion | Main view, model select, the companion screen |
-| RadioMaster **Zorro** | Companion | Same as Pocket |
-| FrSky **QX7 / QX7 Access** | Companion | Same as Pocket |
-| RadioMaster **TX16S** | Full | All normal EdgeTX menus, *plus* UltraEdge |
+| RadioMaster **Pocket** | Full build: all EdgeTX menus *plus* UltraEdge | Companion build |
+| RadioMaster **Zorro** | Full build | Companion build |
+| FrSky **QX7 / QX7 Access** | Full build | Companion build |
+| RadioMaster **TX16S** | Full build | Full build |
+
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
 
 **Companion builds** remove the radio's own model and radio-settings menus. That frees space for UltraEdge, and on a
 128×64 screen you'd use the phone for those settings anyway.
@@ -55,7 +57,7 @@ one of these ways:
   Flash firmware*. On a full build this is under SYS; companion builds keep the bootloader flasher.
 - **STM32 DFU tools.** Flash at `0x08000000`.
 
-After flashing, the radio boots into EdgeTX as normal. The radio's **Version** page shows `ultraedge-<radio>` and
+After flashing, the radio boots into EdgeTX as normal. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) On beta firmware, the radio's **Version** page shows `ultraedge-<radio>` and
 `UE <version> [companion]`, so you can confirm what's installed.
 
 ## 3. Install the app
@@ -83,6 +85,8 @@ Install **UltraEdge** from Google Play.
 > not confirmed"*, unplug and replug, then accept the prompt.
 
 ## 5. Calibrate (companion builds, first time)
+
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
 
 Open **System › Calibration** and follow the two steps (centre, then move to the extremes). See
 [Calibration](09-radio-settings.md#calibration).

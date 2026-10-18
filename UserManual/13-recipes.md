@@ -46,7 +46,7 @@ flight controller. That is the number-one "my arm switch doesn't work" cause.
 > armed-state behaviour.
 
 Name the switch **ARM** under **System › Switches** so it reads clearly everywhere. Then give it a power-on check in
-its disarmed position (**Model › Pre-flight checks**, see [Model setup](05-model-setup.md#pre-flight-checks)). Add a call-out:
+its disarmed position ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) (**Model › Pre-flight checks**, see [Model setup](05-model-setup.md#pre-flight-checks)). Add a call-out:
 [voice call-outs on a switch](#voice-call-outs-on-a-switch).
 
 ## Failsafe
@@ -133,7 +133,7 @@ Ailerons on two channels (for example **CH1** left, **CH5** right) let them droo
 2. **Logic › ＋ New switch** → **a<x**, V1 **RxBt**, V2 **3.5 V** (per-cell value × cells for a pack, or the receiver
    voltage), **Delay 2 s**.
 3. **Funcs › ＋ New function** → Trigger **L1** → **Play Track** "batlow" (or **Haptic**), **Repeat 10 s**.
-4. Link quality: the quickest way is **Telem › ⚠ Alarms** (low and critical thresholds; see
+4. Link quality: the quickest way is ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Telem › ⚠ Alarms** (low and critical thresholds; see
    [Telemetry](04-home-monitor-telemetry.md#telemetry)). For a custom sound, use **Logic** → **a<x · RQly · 70 %**
    → **Funcs** → Play Track "siglow" or Haptic.
 
@@ -145,7 +145,7 @@ Ailerons on two channels (for example **CH1** left, **CH5** right) let them droo
 
 1. **Model › Timer 1**: **Mode THs** (runs whenever the throttle is above idle), **Start 5:00**, **Countdown:
    Voice**, **Minute beep ON**.
-2. *Quads:* use **Mode ON** with **Switch = your arm switch** instead. The timer then runs exactly while armed,
+2. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Quads:* use **Mode ON** with **Switch = your arm switch** instead. The timer then runs exactly while armed,
    even with airmode keeping the throttle above idle on the ground.
 3. Reset it with a switch: **Funcs › ＋ New function** → trigger a momentary switch → **Reset › Timer 1**.
 
@@ -161,7 +161,7 @@ example altitude every 10 s).
 
 ## Trainer / buddy box
 
-1. On the **instructor's** radio: **Model › Trainer › Mode** = **Master/Jack** for a cable, or the wireless option
+1. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) On the **instructor's** radio: **Model › Trainer › Mode** = **Master/Jack** for a cable, or the wireless option
    your radios share (Master/Multi, Master/CRSF, Master/Bluetooth…). On the **student's** radio (if it's also
    UltraEdge): **Slave/Jack** or **Slave/Bluetooth**. Connect the radios.
 2. **System › Trainer**: for each stick choose **Replace** (the student flies it) or **+=** (both add up), the source

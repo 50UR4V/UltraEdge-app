@@ -40,6 +40,8 @@ The list shows each input (I1 Ail, I2 Ele…) with its **lines**. Tap a line to 
 
 ### Live response preview
 
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
+
 ![An input line's curve and response graph](media/inputs-curve.jpg)
 
 Each line shows a graph of **stick position → output**, calculated with EdgeTX's own maths for weight, offset, expo,

@@ -10,12 +10,12 @@
 | **Edit without the radio attached?** | You can browse cached models, your library, logs and settings. Edits need the radio attached, because the radio holds the model. |
 | **Copy a model between radios?** | Yes: Export/library → **Restore to radio** on the other one. See [Models & backups](10-models-and-backups.md#copy-a-model-to-another-radio). |
 | **Back up all my models?** | Export each one as an archive (model + image + logs + scripts) and keep them in the phone's library. **System › Backup** also saves the radio settings. |
-| **Show telemetry on the phone?** | Yes: live tiles (**Telem**), widgets and full-size Lua telemetry screens (iNav, Yaapu) on **Home**. No Bluetooth module or special build needed; it all goes over the USB cable. |
+| **Show telemetry on the phone?** | Yes: live tiles (**Telem**), widgets and full-size Lua telemetry screens (for example iNav OSD) on **Home**. No Bluetooth module or special build needed; it all goes over the USB cable. |
 | **Voice call-outs through the phone?** | Yes. Radio sounds and Lua call-outs play on the phone's speaker, with text-to-speech when a voice file is missing. |
 | **Show my flight on a map / find a lost model?** | The log viewer draws the **GPS track** from your SD logs, so the end of the track is where to look. Logging must be on and GPS telemetry present. |
 | **View logs without a PC?** | Yes: **System › Flight Logs** copies them automatically and charts them. |
 | **Run the ExpressLRS Lua?** | Yes, full size: **System › Tools**. |
-| **Use Yaapu / iNav / Betaflight Lua?** | Telemetry/OSD and tool scripts run on the phone's Lua engine. Import them under **System › SD Card**. |
+| **Use iNav / Betaflight / Yaapu Lua?** | Single-file telemetry/OSD and tool scripts (iNav OSD, ExpressLRS) run on the phone's Lua engine; import them under **System › SD Card**. Scripts shipped as compiled multi-file `.luac` packages, such as **Yaapu**, don't run in the app yet. They still run on the radio itself. |
 | **Use the radio as a simulator joystick?** | Yes, that's the radio's own feature. Set **USB mode: Ask** (System › Radio Setup › Sticks & ports) and pick *Joystick* when plugged into the PC. |
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
 | **Work with iPhone?** | Not at the moment. Android only. |

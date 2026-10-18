@@ -12,7 +12,10 @@
   the model disarmed and, for anything powered, the **propeller off**.
 - **After every change:** check control directions, the arm switch, the throttle cut and the failsafe on the bench,
   then do a **range check** (Model › RF › Range test) before the first flight.
-- The firmware is EdgeTX with an additional companion module. Unplug the phone and it behaves like EdgeTX.
+- The firmware is EdgeTX with an additional companion module, so the radio flies exactly as EdgeTX does.
+  - **Production (full builds):** unplug the phone and the radio is ordinary EdgeTX, menus included.
+  - ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta companion builds (Pocket, Zorro, QX7):** the radio's model and radio-settings menus are removed. Without
+    a working phone you can't change settings, bind or range-check at the field, so carry a spare phone or cable.
 
 ## Not yet in the app
 
@@ -23,9 +26,6 @@ radio. On **companion builds** (Pocket, Zorro, QX7) they keep their current valu
 |---|---|---|
 | **Bluetooth trainer pairing** (scan / connect) | Radio-side (TX16S) | The trainer *mode* is set in Model › Trainer |
 | Trim **values** | By design: set with the trim buttons | Trim *modes* per flight mode are editable |
-| **Vario** settings (source, range, centre) | Planned | — |
-| Creating a **blank** model | On the radio's model select | Or duplicate an existing model in Manage Models |
-| Global functions (radio-wide special functions) | Planned | Use model special functions |
 
 If you rely on one of these, tell us at <https://github.com/50UR4V/UltraEdge-app/issues>. Requests decide what comes
 next.

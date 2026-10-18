@@ -10,13 +10,13 @@ a different model, switch to it first (see [Models & backups](10-models-and-back
 | Row | Opens | Fields |
 |---|---|---|
 | **Model name** | Edit in place | Up to the radio's name length |
-| **Timer 1 / 2 / 3** | Timer page | Name, Mode, **Switch**, Start, Minute beep, Countdown, Persistent, Direction |
+| **Timer 1 / 2 / 3** | Timer page | Name, Mode, **Switch** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg), Start, Minute beep, Countdown, Persistent, Direction |
 | **Trims** | Trims page | Trim increment, Display trims, Extended trims |
 | **Throttle** | Throttle page | Reversed, Trim (idle-only throttle trim) |
-| **Pre-flight checks** | Pre-flight page | **Throttle warning**, custom throttle position, the **position each switch must be in**, and **pot/slider** positions at power-on |
-| **Other** | Other page | ADC jitter filter |
+| **Pre-flight checks** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) | Pre-flight page | **Throttle warning**, custom throttle position, the **position each switch must be in**, and **pot/slider** positions at power-on |
+| **Other** | Other page | ADC jitter filter, **Use global functions** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) (whether this model runs the radio's [global functions](08-logic-functions-gvars-modes.md#global-functions)) |
 | **Internal RF / External RF** | Module page | Type, RX channels, First channel, **Failsafe**, plus **Bind receiver / Range test / Stop** |
-| **Trainer** | Trainer page | **Mode** (master/slave and how the radios connect), plus PPM settings for Slave/Jack |
+| **Trainer** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) | Trainer page | **Mode** (master/slave and how the radios connect), plus PPM settings for Slave/Jack |
 
 The list shows a summary of each row (for example *"THs 5:00"* for a timer), so you can check a model without
 opening anything.
@@ -33,7 +33,7 @@ opening anything.
 | **TH%** | At a speed proportional to the throttle (a fuel-style countdown) |
 | **THt** | From the first throttle movement, then keeps running |
 
-**Switch** gates the timer: it only counts while the switch is on (in **Strt** mode, flipping it starts the
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Switch** gates the timer: it only counts while the switch is on (in **Strt** mode, flipping it starts the
 timer). Pick it by flipping the switch. Leave it at **---** (none) for a timer that ignores switches.
 
 Set **Start** for a countdown (for example 5:00), **Countdown** to hear beeps or voice as it ends, **Minute beep** for
@@ -49,6 +49,8 @@ a call every minute, and **Persistent** to keep the time across power cycles (*F
 - **Trim**: idle-only trim. The throttle trim adjusts idle without moving full throttle (planes and helis).
 
 ## Pre-flight checks
+
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
 
 EdgeTX's *Pre-start checks*: what the radio insists on before it starts sending to the model. When you switch the
 radio on, or select this model, and something is in the wrong position, the radio shows a warning and waits until you
@@ -134,6 +136,8 @@ the bay).
 See the step-by-step [binding recipe](13-recipes.md#bind-or-re-bind-a-receiver).
 
 ## Trainer (buddy box)
+
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
 
 **Model › Trainer** sets how *this model* uses a trainer link (EdgeTX's MODEL SETUP › Trainer).
 
