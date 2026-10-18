@@ -1,10 +1,12 @@
-# UltraEdge — Open-Source Notices (draft)
+# UltraEdge — Open-Source Notices
 
-*Draft for review. Publish in the app (App Settings ▸ About already summarizes this) and/or the
-`ultraedge-app` repo. Satisfies the attribution obligations of the components UltraEdge embeds.*
+[![App: proprietary](https://img.shields.io/badge/app-proprietary-lightgrey.svg)](#ultraedge-app)
+[![Firmware: GPL v2](https://img.shields.io/badge/firmware-GPL%20v2-blue.svg)](#edgetx-and-the-edgetx-ue-firmware--gpl-20-only)
+[![Protocol: MIT](https://img.shields.io/badge/protocol-MIT-yellow.svg)](#ue-protocol--mit-code-cc-by-40-specification)
+[![Fonts: OFL 1.1](https://img.shields.io/badge/fonts-OFL%201.1-orange.svg)](#fonts--sil-open-font-license-11)
 
-UltraEdge is proprietary software. It embeds and interoperates with the following open-source
-components, whose licenses and notices are reproduced or referenced below.
+The UltraEdge Android app is proprietary software. It embeds, and works with, the open-source components below.
+Their licences and notices are reproduced or referenced here. In the app: **System › About & Licenses**.
 
 ---
 
@@ -33,15 +35,40 @@ More: https://www.lua.org/license.html
 
 ---
 
-## EdgeTX — GPL-3.0-or-later
-UltraEdge is a companion for EdgeTX radios and talks to the EdgeTX-UE companion firmware. The firmware
-overlay is offered under **GPL-3.0-or-later** (as a fork of EdgeTX). The UltraEdge Android app does **not**
-link EdgeTX GPL code — it is an independent implementation of the UE Protocol wire format in Kotlin.
-- EdgeTX: https://github.com/EdgeTX/edgetx  ·  EdgeTX-UE fork: https://github.com/50UR4V/edgetx-ue
+## Fonts — SIL Open Font License 1.1
+The app bundles these typefaces, unmodified, under the [SIL Open Font License, Version 1.1](https://openfontlicense.org)
+(the licence text ships with the app in `assets/fonts/OFL.txt`):
+- **Barlow** (Regular, Medium, SemiBold) — Copyright 2017 The Barlow Project Authors (https://github.com/jpt/barlow)
+- **Rajdhani** (Medium, SemiBold, Bold) — Copyright (c) 2014 Indian Type Foundry (info@indiantypefoundry.com).
+  "Rajdhani" is a trademark of Indian Type Foundry.
 
-## UE Protocol — permissive
-The open radio↔phone protocol UltraEdge speaks. The reference codec is offered under a permissive
-license so any radio or app can implement it. https://github.com/50UR4V/ue-protocol
+## AndroidX and the Kotlin standard library — Apache License 2.0
+AndroidX Core, AppCompat and DrawerLayout © The Android Open Source Project, and the Kotlin standard library
+© JetBrains s.r.o. and Kotlin contributors, are used under the
+[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+## EdgeTX and the EdgeTX-UE firmware — GPL-2.0-only
+[![GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
+UltraEdge is a companion for EdgeTX radios. It talks to the **EdgeTX-UE** firmware, which is EdgeTX plus the UltraEdge
+companion overlay. EdgeTX is licensed under the **GNU General Public License version 2 only (GPL-2.0-only)**. The
+EdgeTX-UE firmware is a derivative work and is distributed under the same **GPL-2.0-only** terms. The complete
+corresponding source for every firmware release is published at https://github.com/50UR4V/edgetx-ue.
+
+The UltraEdge Android app does **not** contain or link EdgeTX code. It is a separate program that talks to the radio
+over USB using the UE Protocol (below).
+- EdgeTX: https://github.com/EdgeTX/edgetx · EdgeTX-UE: https://github.com/50UR4V/edgetx-ue
+
+## UE Protocol — MIT (code), CC BY 4.0 (specification)
+[![MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](https://opensource.org/license/mit) [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
+
+The open radio↔phone protocol UltraEdge speaks. The reference codec is © 2026 Sourav Karmakar (UltraEdge), released
+under the **MIT License**. The app's Kotlin implementation of the wire format is by the same author. The specification
+text is under **CC BY 4.0**, so any radio, app or accessory can implement it. https://github.com/50UR4V/ue-protocol
+(Releases before 2026-10-18 were published under Apache-2.0.)
+
+## UltraEdge app
+© 2026 Sourav Karmakar. All rights reserved. The app is proprietary and is distributed through Google Play.
 
 ---
 

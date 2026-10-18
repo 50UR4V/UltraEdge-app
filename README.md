@@ -1,5 +1,10 @@
 # UltraEdge
 
+[![App: proprietary](https://img.shields.io/badge/app-proprietary-lightgrey.svg)](OPEN-SOURCE-NOTICES.md#ultraedge-app)
+[![Firmware: GPL v2](https://img.shields.io/badge/firmware-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue)
+[![Protocol: MIT](https://img.shields.io/badge/protocol-MIT-yellow.svg)](https://github.com/50UR4V/ue-protocol)
+[![User Manual](https://img.shields.io/badge/docs-User%20Manual-2dd4bf.svg)](UserManual/README.md)
+
 **Your Android phone as the big touchscreen for an EdgeTX radio — over a USB cable, without ever
 touching the flight-control path.**
 
@@ -86,7 +91,7 @@ app under **Radio Settings ▸ SD Card**.
 - **[UE Protocol](https://github.com/50UR4V/ue-protocol)** — the radio↔phone interface UltraEdge speaks
   (spec + reference codec + tests).
 - **[EdgeTX-UE](https://github.com/50UR4V/edgetx-ue)** — the EdgeTX companion firmware, offered upstream.
-- **[UltraEdge Mounts](https://github.com/50UR4V/ultraedge-mounts)** — community 3D-printable mounts to
+- **UltraEdge Mounts *(planned)*** — community 3D-printable mounts to
   hold the phone on your radio.
 
 ## Where we're heading
@@ -105,9 +110,13 @@ UltraEdge builds on what the EdgeTX community has made possible.
 
 ## Privacy & licenses
 UltraEdge collects **no personal data** and talks only to your radio over USB. See the
-**[Privacy Policy](PRIVACY.md)** and **[Open-Source Notices](OPEN-SOURCE-NOTICES.md)** (it embeds
-unmodified MIT-licensed Lua; the companion firmware is GPL-3.0). The app itself is proprietary; UE Protocol is open and
-will remain open source, and the firmware is GPL-3.0.
+**[Privacy Policy](https://bampi2k.com/ultraedge/privacy)** and **[Open-Source Notices](OPEN-SOURCE-NOTICES.md)**.
+
+| Part | Licence |
+|---|---|
+| UltraEdge app | Proprietary · embeds Lua (MIT), Barlow & Rajdhani fonts (SIL OFL 1.1), AndroidX & Kotlin (Apache-2.0) |
+| [EdgeTX-UE firmware](https://github.com/50UR4V/edgetx-ue) | [![GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/LICENSE) GPL-2.0-only, like EdgeTX |
+| [UE Protocol](https://github.com/50UR4V/ue-protocol) | [![MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](https://github.com/50UR4V/ue-protocol/blob/main/LICENSE) code · [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) spec |
 
 ## Become a beta tester
 UltraEdge is in closed testing on Google Play. Want early access and to help shape it?
