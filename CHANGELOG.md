@@ -3,8 +3,8 @@
 *Production = hardware-verified, flightline-ready (Google Play production). Beta = early access (Google Play open
 testing); features are emulator-tested and still collecting hardware mileage.*
 
-## v1.4.0 — Beta (open testing) · upcoming
-Needs UltraEdge firmware **1.1.18** (GitHub pre-release). Adds companion-only firmware for Pocket / QX7 / Zorro (the
+## v1.4.0 — Beta (open testing) · October 2026
+Needs UltraEdge firmware **1.1.18** ([GitHub pre-release](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.18)). Adds companion-only firmware for Pocket / QX7 / Zorro (the
 phone holds the menus), a built-in flight-log viewer (charts and GPS track) with automatic newest-first log copy,
 My Radios (each radio recognised, separate caches), Radio Setup in two panes, flight-mode trim modes, curve presets
 and mirror, live response preview, model Trainer mode, timer switch, pre-flight checks (throttle, switches,
@@ -12,7 +12,7 @@ pots/sliders), GVar values per flight mode, telemetry alarms and vario, global f
 saves confirmed chunk by chunk ("push out of sequence" fixed), the Special Function list taken from the radio, and the
 UltraEdge version on the radio's Version page.
 
-## v1.3.0 — Production (first public release) · upcoming
+## v1.3.0 — Production (first public release) · October 2026
 The hardware-verified v1.2.13 feature set, for Google Play production, with: corrected open-source licence notices
 (EdgeTX GPL-2.0-only, UE Protocol MIT, fonts under the SIL OFL), User Manual / issue / firmware links and a tappable
 contact in About, and Android app-data backup turned off (matches the privacy policy). Pairs with firmware **v1.1.2**.
