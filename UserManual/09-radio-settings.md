@@ -36,6 +36,8 @@ EdgeTX's *RADIO › SETUP*. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.sv
 > [!TIP]
 > **Using the radio as a simulator joystick?** Set **USB mode** to **Ask**. When you plug into a PC you can pick
 > *Joystick*; when you plug into the phone, pick *Serial*. If USB mode is set to *Joystick*, UltraEdge can't connect.
+> ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Companion builds:** use ENTER on the UltraEdge screen instead
+> (see [USB mode on companion builds](02-getting-started.md#usb-mode-on-companion-builds)).
 
 **Hardware** covers LCD contrast (mono radios), Bluetooth mode, and the warning switches (alarm, memory, RSSI-off).
 
@@ -75,7 +77,7 @@ Guided stick, pot and slider calibration, driven from the phone:
 
 ## My Radios
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 ![My Radios](media/my-radios.jpg)
 

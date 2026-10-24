@@ -16,7 +16,7 @@
 | **View logs without a PC?** | Yes: **System › Flight Logs** copies them automatically and charts them. |
 | **Run the ExpressLRS Lua?** | Yes, full size: **System › Tools**. |
 | **Use iNav / Betaflight / Yaapu Lua?** | Single-file telemetry/OSD and tool scripts (iNav OSD, ExpressLRS) run on the phone's Lua engine; import them under **System › SD Card**. Scripts shipped as compiled multi-file `.luac` packages, such as **Yaapu**, don't run in the app yet. They still run on the radio itself. |
-| **Use the radio as a simulator joystick?** | Yes, that's the radio's own feature. Set **USB mode: Ask** (System › Radio Setup › Sticks & ports) and pick *Joystick* when plugged into the PC. |
+| **Use the radio as a simulator joystick?** | Yes, that's the radio's own feature. Set **USB mode: Ask** (System › Radio Setup › Sticks & ports) and pick *Joystick* when plugged into the PC. Companion builds: press ENTER on the UltraEdge screen ([how](02-getting-started.md#usb-mode-on-companion-builds)). |
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
 | **Work with iPhone?** | Not at the moment. Android only. |
 | **Need internet or an account?** | No. Everything runs over USB and stays on the phone. |
@@ -27,6 +27,7 @@
 | Symptom | Fix |
 |---|---|
 | Nothing happens when I plug in | Use a **data** cable (many cables only charge). Set the radio's **USB mode** to *Ask* or *Serial*, not *Joystick* or *Storage*. Try the other end of an OTG adapter. |
+| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page, so the USB mode is set on the radio's **UltraEdge** screen (press the menu key). **1.1.22 and newer:** the radio keeps UltraEdge mode until you switch it off and never asks on connect; **USB now** must say *UltraEdge*. ENTER switches straight away (UltraEdge → Simulator → SD card), and a long ENTER saves the default. **1.1.20–1.1.21:** the screen shows **USB mode**; press ENTER until it says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
 | "USB permission not confirmed" | Unplug, replug, and accept Android's prompt. Tick *use by default*. |
 | Stuck on **LINKING** | Unplug and replug once. Check the radio has UltraEdge firmware (Version page: `ultraedge-…`). Stock EdgeTX doesn't talk to the app. |
 | Disconnects now and then | Check the cable and connector. The app reconnects by itself when you replug, and unsaved edits show a **Retry** dialog. |

@@ -3,6 +3,22 @@
 *Production = hardware-verified, flightline-ready (Google Play production). Beta = early access (Google Play open
 testing); features are emulator-tested and still collecting hardware mileage.*
 
+## v1.4.3 — Beta (open testing) · October 2026
+Needs UltraEdge firmware **1.1.22** ([GitHub pre-release](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22), 56
+radios). Fixes a Special Function set to play once (1x) replaying every second (the Repeat type-in box turned "1x" into
+1 s). Background music stops, pauses and resumes with its switch. New App Settings option to show or hide the mute
+button. Companion firmware: the USB mode is set on the radio's UltraEdge screen and kept until power-off ([ENTER]
+switches it now, a long [ENTER] saves the default), so a loose cable reconnects without asking. About › Radio firmware
+and My Radios show the radio's UltraEdge firmware version, commit and build date. Dev builds install separately as
+"UltraEdge Dev". Updates keep the virtual SD card, model screens and settings. (1.4.1 and 1.4.2 were never released.)
+
+## v1.3.2 — Production · October 2026
+Pairs with firmware **v1.1.2.3** ([GitHub](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.3)). Fixes a Special
+Function set to play once (1x) replaying every second: tapping the Repeat value and saving turned "1x" into 1 s. Background
+music now stops and pauses with its switch (needs firmware v1.1.2.3). New App Settings option to show or hide the mute
+button. Diagnostics now record the sounds the radio asks the phone to play and each Special Function's repeat setting. Updates keep
+the virtual SD card, model screens and settings. (1.3.1 was never released; its changes are included here.)
+
 ## v1.4.0 — Beta (open testing) · October 2026
 Needs UltraEdge firmware **1.1.18** ([GitHub pre-release](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.18)). Adds companion-only firmware for Pocket / QX7 / Zorro (the
 phone holds the menus), a built-in flight-log viewer (charts and GPS track) with automatic newest-first log copy,

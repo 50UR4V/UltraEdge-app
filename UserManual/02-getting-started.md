@@ -16,14 +16,14 @@ UltraEdge is **made for any EdgeTX radio**. Ready-made firmware is verified on t
 added as they're verified by us, our testers or the community. For another EdgeTX radio, build the firmware yourself
 (see the EdgeTX-UE `BUILD-HOWTO.md`) or ask for it on [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
 
-| Radio | Production firmware (v1.1.2.1) | ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Beta firmware (1.1.19) |
+| Radio | Production firmware (v1.1.2.3) | ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Beta firmware (1.1.22) |
 |---|---|---|
 | RadioMaster **Pocket** | Full build: all EdgeTX menus *plus* UltraEdge | Companion build |
 | RadioMaster **Zorro** | Full build | Companion build |
 | FrSky **QX7 / QX7S (not the ACCESS model)** | Full build | Companion build |
 | RadioMaster **TX16S** | Full build | Full build |
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 **Companion builds** remove the radio's own model and radio-settings menus. That frees space for UltraEdge, and on a
 128×64 screen you'd use the phone for those settings anyway.
@@ -70,8 +70,10 @@ Install **UltraEdge** from Google Play.
 
 ## 4. First connection
 
-1. On the radio, set **USB mode** to **Ask** or **Serial**. Later you can change this from the app under System ›
-   Radio Setup › Sticks & ports.
+1. **Full builds (production):** on the radio, set **USB mode** to **Serial** (no question on connect) or **Ask**.
+   Later you can change it from the app under System › Radio Setup › Sticks & ports.
+   ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Companion builds:** nothing to set. The radio connects
+   to UltraEdge without asking. See [USB mode on companion builds](#usb-mode-on-companion-builds).
 2. Plug the phone into the radio's USB port.
 3. Android asks *"Open UltraEdge for this USB device?"*. Tap **OK**. Tick *use by default* to skip the question next
    time. If the radio asks for a USB mode, choose **Serial**.
@@ -88,9 +90,20 @@ Install **UltraEdge** from Google Play.
 > **First plug-in after installing doesn't connect?** Unplug and plug back in once. If Android says *"USB permission
 > not confirmed"*, unplug and replug, then accept the prompt.
 
+### USB mode on companion builds
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Firmware 1.1.22 or newer.*
+
+- **Flying days:** plug in and go. The radio connects to UltraEdge without asking. If the cable drops out, it
+  reconnects in the same mode by itself, also without asking. Every UltraEdge build keeps the USB mode until you
+  switch the radio off.
+- **Simulator practice:** press the radio's menu key to open the **UltraEdge** screen, then press **ENTER**. "USB now"
+  steps through **UltraEdge → Simulator (joystick) → SD card** and switches straight away, with no need to replug.
+  It lasts until you switch the radio off, so your next flying day starts in UltraEdge again.
+- **Make it permanent:** hold **ENTER** to save the current mode as the **Default**.
+
 ## 5. Calibrate (companion builds, first time)
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 Open **System › Calibration** and follow the two steps (centre, then move to the extremes). See
 [Calibration](09-radio-settings.md#calibration).
