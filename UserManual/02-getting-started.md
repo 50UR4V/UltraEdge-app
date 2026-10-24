@@ -12,14 +12,18 @@
 
 ## Supported radios
 
-| Radio | Production firmware (v1.1.2) | ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Beta firmware (1.1.18) |
+UltraEdge is **made for any EdgeTX radio**. Ready-made firmware is verified on the radios below; more radios are
+added as they're verified by us, our testers or the community. For another EdgeTX radio, build the firmware yourself
+(see the EdgeTX-UE `BUILD-HOWTO.md`) or ask for it on [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
+
+| Radio | Production firmware (v1.1.2.1) | ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Beta firmware (1.1.19) |
 |---|---|---|
 | RadioMaster **Pocket** | Full build: all EdgeTX menus *plus* UltraEdge | Companion build |
 | RadioMaster **Zorro** | Full build | Companion build |
-| FrSky **QX7 / QX7 Access** | Full build | Companion build |
+| FrSky **QX7 / QX7S (not the ACCESS model)** | Full build | Companion build |
 | RadioMaster **TX16S** | Full build | Full build |
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
 
 **Companion builds** remove the radio's own model and radio-settings menus. That frees space for UltraEdge, and on a
 128×64 screen you'd use the phone for those settings anyway.
@@ -86,7 +90,7 @@ Install **UltraEdge** from Google Play.
 
 ## 5. Calibrate (companion builds, first time)
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
 
 Open **System › Calibration** and follow the two steps (centre, then move to the extremes). See
 [Calibration](09-radio-settings.md#calibration).

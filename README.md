@@ -46,12 +46,14 @@ applied by the radio — so edit with the same care you would on the radio itsel
 - **Lua tools** — supported tools such as ExpressLRS parameter read/write run inside the app
 
 ## Supported radios
-Compatible EdgeTX radios running UltraEdge firmware — **v1.1.2** pairs with app **1.2.13** (UE Protocol v4).
-Build or flash the firmware from the EdgeTX-UE project (below).
+**Made for any EdgeTX radio.** Your radio runs the UltraEdge firmware (EdgeTX plus a small companion module, UE
+Protocol v4). Production firmware **v1.1.2** pairs with app **1.3.0**. Ready-made firmware is verified on the radios
+below; more are added as they're verified by us, our testers or the community. For any other EdgeTX radio, build it
+from the EdgeTX-UE project (below), or open an issue to ask for it, and tell us how it went.
 
 | Radio | Status |
 |---|---|
-| FrSky **QX7**, RadioMaster **Pocket** | ✅ Verified on hardware |
+| FrSky **QX7 / QX7S (not the ACCESS model)**, RadioMaster **Pocket** | ✅ Verified on hardware |
 | RadioMaster **TX16S** | ✅ Verified on hardware — telemetry-screen refresh is slower than on mono radios; ExpressLRS Lua tools verified with an ELRS module |
 | RadioMaster **Zorro** | ✅ Verified on hardware (v1.1.2) |
 

@@ -50,7 +50,7 @@ a call every minute, and **Persistent** to keep the time across power cycles (*F
 
 ## Pre-flight checks
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
 
 EdgeTX's *Pre-start checks*: what the radio insists on before it starts sending to the model. When you switch the
 radio on, or select this model, and something is in the wrong position, the radio shows a warning and waits until you
@@ -137,7 +137,7 @@ See the step-by-step [binding recipe](13-recipes.md#bind-or-re-bind-a-receiver).
 
 ## Trainer (buddy box)
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
 
 **Model › Trainer** sets how *this model* uses a trainer link (EdgeTX's MODEL SETUP › Trainer).
 

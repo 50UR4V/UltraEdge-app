@@ -66,7 +66,7 @@ Every function has **Repeat** (play once, every N seconds, or once, skipping the
 
 ## Global functions
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
 
 **System › Global Functions** holds special functions that belong to the **radio**, not to one model. They run for
 every model that has **Model › Other › Use global functions** on. Typical uses: a volume knob, a "say the battery

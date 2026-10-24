@@ -20,7 +20,7 @@
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
 | **Work with iPhone?** | Not at the moment. Android only. |
 | **Need internet or an account?** | No. Everything runs over USB and stays on the phone. |
-| **Which radios?** | RadioMaster Pocket, Zorro, TX16S; FrSky QX7. See [Supported radios](02-getting-started.md#supported-radios). |
+| **Which radios?** | Made for any EdgeTX radio. Ready-made, verified firmware: RadioMaster Pocket, Zorro, TX16S; FrSky QX7 / QX7S (not the ACCESS model). Others: build it yourself or ask for it. See [Supported radios](02-getting-started.md#supported-radios). |
 
 ## Connection problems
 

@@ -32,7 +32,7 @@ logs to the phone and shows them without a PC.
 
 ## 3. View a log
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.18. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.19. See [Which version?](README.md#which-version)*
 
 ![Flight logs: summary, GPS track, charts](media/clip-flight-logs.gif)
 

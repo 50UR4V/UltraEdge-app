@@ -14,8 +14,8 @@ screen.
 
 | | App | Firmware | Status |
 |---|---|---|---|
-| **Production** | 1.3.0 (Google Play) | v1.1.2, full build | Tested on real hardware: Pocket, Zorro, TX16S, QX7 |
-| ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta** | 1.4 (Google Play open testing) | 1.1.18 (GitHub pre-release) | Early access. Tested on the emulator; still collecting hardware mileage. Bench-test before flying. |
+| **Production** | 1.3.0 (Google Play) | v1.1.2.1, full build | Tested on real hardware: Pocket, Zorro, TX16S, QX7 |
+| ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta** | 1.4 (Google Play open testing) | 1.1.19 (GitHub pre-release) | Early access. Tested on the emulator; still collecting hardware mileage. Bench-test before flying. |
 
 Sections marked ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) describe beta features. Everything else works in the production app.
 

@@ -4,6 +4,8 @@
 
 ## What UltraEdge is
 
+UltraEdge is **made for any EdgeTX radio**: it turns your Android phone into a big touchscreen for it.
+
 UltraEdge has two parts that work together:
 
 - **UltraEdge firmware.** This is EdgeTX with a small companion module added. It flies exactly like stock EdgeTX.
