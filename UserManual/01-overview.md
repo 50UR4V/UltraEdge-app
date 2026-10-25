@@ -48,21 +48,13 @@ flies that saved configuration. The app is a **configuration and display** tool.
 
 ## Why people use it
 
-- **No menu diving.** Every setting is one or two taps away on a large touch screen. You don't page through a
-  1.3-inch screen with a scroll wheel.
-- **Pick by moving.** For any *Source* or *Switch* field you can just move the stick or flip the switch, and
-  UltraEdge selects it.
-- **See what you're doing.** Inputs and mixes show a live response graph as you change weight, expo, curve or offset,
-  the same shape the radio computes.
-- **Only valid choices.** Option lists come from your radio's firmware build. For example, Special Functions your
-  firmware doesn't support are not offered.
-- **Errors you can act on.** Long operations show what's happening and how long it has taken. Anything that fails
-  offers **Try again** and **Share diagnostics**. Nothing fails silently.
-- **Backups built in.** Export any model as an archive with its image, logs and scripts, keep a library on the
-  phone, and restore it to the same radio or a different one.
-- **Logs without a PC.** Flight logs copy across automatically and open in a built-in viewer with a GPS track.
-- **Knows your radios.** Each radio is recognised by its processor's unique ID, so caches never get mixed up when you
-  switch radios. You can give each one a name.
+- **No menu diving.** Settings are one or two taps away on a large touch screen.
+- **Pick by moving.** For any *Source* or *Switch* field, move the stick or flip the switch and UltraEdge selects it.
+- **See what you're doing.** Inputs and mixes show a live response graph as you change weight, expo, curve or offset.
+- **Only valid choices.** Option lists come from your radio's firmware build.
+- **Backups.** Keep a library of models on the phone and restore them to the same radio or another one.
+- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Logs without a PC.** Flight logs copy across automatically
+  and open in a built-in viewer with a GPS track.
 
 ## What it is not
 

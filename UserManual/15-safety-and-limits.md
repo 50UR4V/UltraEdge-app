@@ -11,16 +11,16 @@
 - **Edits take effect on the radio straight away.** Don't edit a model you are flying. Make changes on the ground with
   the model disarmed and, for anything powered, the **propeller off**.
 - **After every change:** check control directions, the arm switch, the throttle cut and the failsafe on the bench,
-  then do a **range check** (Model › RF › Range test) before the first flight.
+  then do a **range check** (Model › Internal/External RF › Range test) before the first flight.
 - The firmware is EdgeTX with an additional companion module, so the radio flies exactly as EdgeTX does.
   - **Production (full builds):** unplug the phone and the radio is ordinary EdgeTX, menus included.
-  - ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta companion builds (Pocket, Zorro, QX7):** the radio's model and radio-settings menus are removed. Without
+  - ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta companion builds (black-and-white radios such as Pocket, Zorro, QX7):** the radio's model and radio-settings menus are removed. Without
     a working phone you can't change settings, bind or range-check at the field, so carry a spare phone or cable.
 
 ## Not yet in the app
 
 Some EdgeTX settings aren't editable from UltraEdge yet. On a **TX16S** (full build) you can still set them on the
-radio. On **companion builds** (Pocket, Zorro, QX7) they keep their current values until the app supports them.
+radio. On **companion builds** (black-and-white radios such as Pocket, Zorro, QX7) they keep their current values until the app supports them.
 
 | Setting | Status | Workaround |
 |---|---|---|
@@ -34,4 +34,4 @@ next.
 
 UltraEdge needs no account and no internet. Models, logs and settings stay on the phone and the radio. The radio's
 processor ID is reduced to a short fingerprint used only to keep each radio's caches separate, and it is never sent
-anywhere. See the [privacy policy](https://github.com/50UR4V/UltraEdge-app/blob/main/PRIVACY.md).
+anywhere. See the [privacy policy](https://bampi2k.com/ultraedge/privacy).

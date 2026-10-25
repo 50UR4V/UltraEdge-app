@@ -13,8 +13,11 @@
 ## Supported radios
 
 UltraEdge is **made for any EdgeTX radio**. Ready-made firmware is verified on the radios below; more radios are
-added as they're verified by us, our testers or the community. For another EdgeTX radio, build the firmware yourself
-(see the EdgeTX-UE `BUILD-HOWTO.md`) or ask for it on [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
+added as they're verified by us, our testers or the community. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg)
+Beta firmware 1.1.22 has ready-made builds for 56 EdgeTX radios; `SUPPORTED-RADIOS.md` on the
+[release](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) shows each one's status. For any other radio, build
+the firmware yourself (see the EdgeTX-UE `BUILD-HOWTO.md`) or ask on
+[GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
 
 | Radio | Production firmware (v1.1.2.3) | ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Beta firmware (1.1.22) |
 |---|---|---|
@@ -23,7 +26,7 @@ added as they're verified by us, our testers or the community. For another EdgeT
 | FrSky **QX7 / QX7S (not the ACCESS model)** | Full build | Companion build |
 | RadioMaster **TX16S** | Full build | Full build |
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 **Companion builds** remove the radio's own model and radio-settings menus. That frees space for UltraEdge, and on a
 128×64 screen you'd use the phone for those settings anyway.
@@ -45,8 +48,7 @@ menu on the radio, it shows:
 ## 1. Back up first
 
 Before flashing, copy the radio's SD card (especially `/MODELS` and `/RADIO`) to a computer. Flashing replaces only
-the firmware, so your models and settings stay on the SD card. Still, a backup takes two minutes, and not having one
-is the mistake people regret most.
+the firmware, so your models and settings stay on the SD card.
 
 ## 2. Flash the UltraEdge firmware
 
@@ -54,15 +56,15 @@ Download the `.bin` for your radio from the
 [EdgeTX-UE releases](https://github.com/50UR4V/edgetx-ue/releases). Check it against `SHA256SUMS.txt`, then flash it
 one of these ways:
 
-- **EdgeTX Buddy** (easiest). Open <https://buddy.edgetx.org> in Chrome or Edge and choose **Flash local
-  firmware**. Put the radio in bootloader/DFU mode (hold both horizontal trims inward while powering on) and plug in
-  USB.
-- **From the radio's SD card.** Copy the `.bin` into `/FIRMWARE`, then on the radio: *SD card › FIRMWARE › your file ›
-  Flash firmware*. On a full build this is under SYS; companion builds keep the bootloader flasher.
-- **STM32 DFU tools.** Flash at `0x08000000`.
+- **EdgeTX Buddy** (easiest). Open <https://buddy.edgetx.org> in Chrome or Edge, choose **Flash local firmware**, and
+  put the radio in DFU mode the way EdgeTX describes for your radio (on most RadioMaster radios: switched off, then
+  plugged in with a USB data cable).
+- **The radio's bootloader.** Copy the `.bin` into `/FIRMWARE` on the SD card. Hold both horizontal trims toward the
+  centre while switching the radio on, choose *Write Firmware* and pick the file. This works on companion builds too.
+- **STM32 DFU tools.** Radio in DFU mode, flash at `0x08000000`.
 
-After flashing, the radio boots into EdgeTX as normal. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) On beta firmware, the radio's **Version** page shows `ultraedge-<radio>` and
-`UE <version> [companion]`, so you can confirm what's installed.
+After flashing, the radio boots into EdgeTX as normal. Its **Version** page shows `ultraedge-<radio>` and
+`UE <version>` (plus `companion` on companion builds), so you can confirm what's installed.
 
 ## 3. Install the app
 
@@ -103,12 +105,12 @@ Install **UltraEdge** from Google Play.
 
 ## 5. Calibrate (companion builds, first time)
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 Open **System › Calibration** and follow the two steps (centre, then move to the extremes). See
 [Calibration](09-radio-settings.md#calibration).
 
 ## 6. Learn your way around
 
-Read [Finding your way around](03-finding-your-way.md) (a two-minute read). Or jump to the
+Read [Finding your way around](03-finding-your-way.md) . Or jump to the
 [Recipes](13-recipes.md) if you have a specific job to do.

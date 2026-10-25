@@ -45,6 +45,6 @@ Run EdgeTX Lua tools in the app: ExpressLRS (elrsV3.lua) loads, navigates and ed
 look. Smoother Lua imports (choose Tools / Telemetry / Functions), a clearer full-screen tool view, readable errors,
 and the "new input nests in the previous line" bug fixed. Pairs with firmware v1.0.1.
 
-## v1.0.0 — initial public release
+## v1.0.0 — first release (testers)
 First public release: connect an Android phone to an EdgeTX radio over USB to edit models, view
 telemetry, calibrate, and pull flight logs. See the User Manual to get started.

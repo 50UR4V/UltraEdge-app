@@ -6,7 +6,7 @@
 
 | Question | Answer |
 |---|---|
-| **Edit my models on the phone?** | Yes, that's the point. Inputs, mixes, outputs, curves, logical switches, special functions, flight modes, timers, RF, failsafe. Changes are saved to the radio as you make them. |
+| **Edit my models on the phone?** | Yes. Inputs, mixes, outputs, curves, logical switches, special functions, flight modes, timers, RF, failsafe. Changes are saved to the radio as you make them. |
 | **Edit without the radio attached?** | You can browse cached models, your library, logs and settings. Edits need the radio attached, because the radio holds the model. |
 | **Copy a model between radios?** | Yes: Export/library → **Restore to radio** on the other one. See [Models & backups](10-models-and-backups.md#copy-a-model-to-another-radio). |
 | **Back up all my models?** | Export each one as an archive (model + image + logs + scripts) and keep them in the phone's library. **System › Backup** also saves the radio settings. |
@@ -20,14 +20,14 @@
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
 | **Work with iPhone?** | Not at the moment. Android only. |
 | **Need internet or an account?** | No. Everything runs over USB and stays on the phone. |
-| **Which radios?** | Made for any EdgeTX radio. Ready-made, verified firmware: RadioMaster Pocket, Zorro, TX16S; FrSky QX7 / QX7S (not the ACCESS model). Others: build it yourself or ask for it. See [Supported radios](02-getting-started.md#supported-radios). |
+| **Which radios?** | Made for any EdgeTX radio. Ready-made, verified firmware: RadioMaster Pocket, Zorro, TX16S; FrSky QX7 / QX7S (not the ACCESS model). Beta 1.1.22: ready-made builds for 56 radios. Others: build it yourself or ask. See [Supported radios](02-getting-started.md#supported-radios). |
 
 ## Connection problems
 
 | Symptom | Fix |
 |---|---|
 | Nothing happens when I plug in | Use a **data** cable (many cables only charge). Set the radio's **USB mode** to *Ask* or *Serial*, not *Joystick* or *Storage*. Try the other end of an OTG adapter. |
-| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page, so the USB mode is set on the radio's **UltraEdge** screen (press the menu key). **1.1.22 and newer:** the radio keeps UltraEdge mode until you switch it off and never asks on connect; **USB now** must say *UltraEdge*. ENTER switches straight away (UltraEdge → Simulator → SD card), and a long ENTER saves the default. **1.1.20–1.1.21:** the screen shows **USB mode**; press ENTER until it says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
+| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page, so the USB mode is set on the radio's **UltraEdge** screen (press the menu key). **1.1.22 and newer:** the radio keeps UltraEdge mode until you switch it off and never asks on connect; **USB now** must say *UltraEdge*. ENTER switches straight away (UltraEdge → Simulator → SD card), and a long ENTER saves the default. **1.1.20:** the screen shows **USB mode**; press ENTER until it says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
 | "USB permission not confirmed" | Unplug, replug, and accept Android's prompt. Tick *use by default*. |
 | Stuck on **LINKING** | Unplug and replug once. Check the radio has UltraEdge firmware (Version page: `ultraedge-…`). Stock EdgeTX doesn't talk to the app. |
 | Disconnects now and then | Check the cable and connector. The app reconnects by itself when you replug, and unsaved edits show a **Retry** dialog. |
@@ -58,10 +58,9 @@
 | **Models lost after an upgrade** | Export archives before you flash; **Restore to radio** afterwards. |
 | **Sound list empty / wrong voice** | The voice pack folder must match your language (`SOUNDS/en`…). **Import pack (.zip)**. |
 | **Cryptic logical switch values** | UltraEdge shows and accepts real units (V, m, %, mm:ss). |
-| **Menu diving on a tiny screen** | That's what UltraEdge is for. |
 
 ## Getting help
 
-1. **System › Diagnostics › Export UltraEdge log** (or **Share diagnostics** on any error card).
+1. **System › Diagnostics › Share log** (or **Share diagnostics** on any error card).
 2. Open an issue at <https://github.com/50UR4V/UltraEdge-app/issues>. Include your radio, its Version page
-   (`UE … [companion]`), the app version (**System › About**) and the log.
+   lines (FW, VERS, GIT#, DATE), the app version (**System › About & Licenses**) and the log.

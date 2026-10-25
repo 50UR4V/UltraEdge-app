@@ -26,7 +26,7 @@ analytics, no advertising, and no third-party tracking SDKs. It does not request
   (a keyed hash), together with an optional name you give the radio and the first/last time it was connected.
   This stays on your phone. The raw processor ID is never stored, and nothing is sent anywhere.
 - **Diagnostics you choose to share:** the app keeps a technical log on your phone. If you tap **Share
-  diagnostics** or **Export log**, Android's share sheet opens and **you** choose where it goes (for example an
+  diagnostics** or **Share log**, Android's share sheet opens and **you** choose where it goes (for example an
   email to us). Nothing is sent unless you do this.
 
 ## Data stored on your device

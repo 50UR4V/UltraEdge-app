@@ -7,15 +7,15 @@ screen.
 
 ![The UltraEdge Home screen](media/home.jpg)
 
-> If you already fly EdgeTX, the manual uses EdgeTX names throughout (Inputs, Mixes, Logical Switches…), so everything you know carries over. Look for
-> **EdgeTX ↔ UltraEdge** boxes where something is different.
+> The manual uses EdgeTX names (Inputs, Mixes, Logical Switches…). Where UltraEdge differs, look for an
+> **EdgeTX ↔ UltraEdge** box.
 
 ## Which version?
 
 | | App | Firmware | Status |
 |---|---|---|---|
 | **Production** | 1.3.2 (Google Play) | v1.1.2.3, full build | Tested on real hardware: Pocket, Zorro, TX16S, QX7 |
-| ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta** | 1.4 (Google Play open testing) | 1.1.22 (GitHub pre-release) | Early access. Tested on the emulator; still collecting hardware mileage. Bench-test before flying. |
+| ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta** | 1.4.3 (Google Play open testing) | 1.1.22 (GitHub pre-release), 56 radios | Early access. Checked on hardware: TX16S and QX7; other radios built, not yet verified. Bench-test before flying. |
 
 Sections marked ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) describe beta features. Everything else works in the production app.
 

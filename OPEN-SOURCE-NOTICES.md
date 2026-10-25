@@ -72,5 +72,5 @@ text is under **CC BY 4.0**, so any radio, app or accessory can implement it. ht
 
 ---
 
-*Trademarks: EdgeTX and FrSky are trademarks of their respective owners. UltraEdge is an independent
+*Trademarks: EdgeTX, FrSky and RadioMaster are trademarks of their respective owners. UltraEdge is an independent
 community project and is not affiliated with or endorsed by them.*

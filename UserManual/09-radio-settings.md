@@ -72,12 +72,12 @@ Guided stick, pot and slider calibration, driven from the phone:
 **Cancel**, or leaving the page part-way, restores the previous calibration.
 
 > [!IMPORTANT]
-> On **companion builds** (Pocket, Zorro, QX7) this is **the** place to calibrate; the radio's own calibration menu
+> On **companion builds** (black-and-white radios such as Pocket, Zorro, QX7) this is **the** place to calibrate; the radio's own calibration menu
 > isn't there. Recalibrate after flashing new firmware or replacing a gimbal.
 
 ## My Radios
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
+![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 ![My Radios](media/my-radios.jpg)
 
@@ -109,5 +109,5 @@ Settings for the **phone side** of UltraEdge:
 
 - **Display:** choose the virtual-screen size Lua scripts draw on (small colour radio, Horus-class, large), and see
   your phone's real panel metrics.
-- **Diagnostics:** link status, protocol, SD content, and the app's log. **Export UltraEdge log** shares it with
+- **Diagnostics:** link status, protocol, SD content, and the app's log. **Share log** shares it with
   support. Attach it to any bug report.
