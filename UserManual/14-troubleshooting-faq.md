@@ -9,25 +9,25 @@
 | **Edit my models on the phone?** | Yes. Inputs, mixes, outputs, curves, logical switches, special functions, flight modes, timers, RF, failsafe. Changes are saved to the radio as you make them. |
 | **Edit without the radio attached?** | You can browse cached models, your library, logs and settings. Edits need the radio attached, because the radio holds the model. |
 | **Copy a model between radios?** | Yes: Export/library → **Restore to radio** on the other one. See [Models & backups](10-models-and-backups.md#copy-a-model-to-another-radio). |
-| **Back up all my models?** | Export each one as an archive (model + image + logs + scripts) and keep them in the phone's library. **System › Backup** also saves the radio settings. |
+| **Back up all my models?** | Export each one as an archive (model + image + logs + scripts) and keep them in the phone's library. **System › About radio › Back up radio settings** also saves the radio settings. |
 | **Show telemetry on the phone?** | Yes: live tiles (**Telem**), widgets and full-size Lua telemetry screens (for example iNav OSD) on **Home**. No Bluetooth module or special build needed; it all goes over the USB cable. |
 | **Voice call-outs through the phone?** | Yes. Radio sounds and Lua call-outs play on the phone's speaker, with text-to-speech when a voice file is missing. |
 | **Show my flight on a map / find a lost model?** | The log viewer draws the **GPS track** from your SD logs, so the end of the track is where to look. Logging must be on and GPS telemetry present. |
 | **View logs without a PC?** | Yes: **System › Flight Logs** copies them automatically and charts them. |
 | **Run the ExpressLRS Lua?** | Yes, full size: **System › Tools**. |
-| **Use iNav / Betaflight / Yaapu Lua?** | Single-file telemetry/OSD and tool scripts (iNav OSD, ExpressLRS) run on the phone's Lua engine; import them under **System › SD Card**. Scripts shipped as compiled multi-file `.luac` packages, such as **Yaapu**, don't run in the app yet. They still run on the radio itself. |
+| **Use iNav / Betaflight / Yaapu Lua?** | Single-file telemetry/OSD and tool scripts (iNav OSD, ExpressLRS) run on the phone's Lua engine; import them under **System › Phone storage › Import**. Scripts shipped as compiled multi-file `.luac` packages, such as **Yaapu**, don't run in the app yet. They still run on the radio itself. |
 | **Use the radio as a simulator joystick?** | Yes, that's the radio's own feature. Set **USB mode: Ask** (System › Radio Setup › Sticks & ports) and pick *Joystick* when plugged into the PC. Companion builds: press ENTER on the UltraEdge screen ([how](02-getting-started.md#usb-mode-on-companion-builds)). |
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
-| **Work with iPhone?** | Not at the moment. Android only. |
+| **Which phones?** | Android only: Android 7.0 or newer with USB host (OTG) support. |
 | **Need internet or an account?** | No. Everything runs over USB and stays on the phone. |
-| **Which radios?** | Made for any EdgeTX radio. Ready-made, verified firmware: RadioMaster Pocket, Zorro, TX16S; FrSky QX7 / QX7S (not the ACCESS model). Beta 1.1.22: ready-made builds for 56 radios. Others: build it yourself or ask. See [Supported radios](02-getting-started.md#supported-radios). |
+| **Which radios?** | Made for any EdgeTX radio. Firmware v1.2.0, hardware-verified: RadioMaster Pocket, Zorro, QX7 / QX7S (not the ACCESS model) as companion builds, TX16S as a full build. Want the radio's own menus on Pocket, Zorro or QX7? Use the [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. Other radios: beta 1.1.22 builds, not yet verified. A radio without a build: build it yourself or ask. See [Supported radios](02-getting-started.md#supported-radios). |
 
 ## Connection problems
 
 | Symptom | Fix |
 |---|---|
 | Nothing happens when I plug in | Use a **data** cable (many cables only charge). Set the radio's **USB mode** to *Ask* or *Serial*, not *Joystick* or *Storage*. Try the other end of an OTG adapter. |
-| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page, so the USB mode is set on the radio's **UltraEdge** screen (press the menu key). **1.1.22 and newer:** the radio keeps UltraEdge mode until you switch it off and never asks on connect; **USB now** must say *UltraEdge*. ENTER switches straight away (UltraEdge → Simulator → SD card), and a long ENTER saves the default. **1.1.20:** the screen shows **USB mode**; press ENTER until it says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
+| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page; the USB mode is set on the radio's **UltraEdge** screen (press the menu key). On v1.2.0 and 1.1.22, **USB now** must say *UltraEdge*: see [USB mode on companion builds](02-getting-started.md#usb-mode-on-companion-builds). On 1.1.20, press ENTER until the screen says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
 | "USB permission not confirmed" | Unplug, replug, and accept Android's prompt. Tick *use by default*. |
 | Stuck on **LINKING** | Unplug and replug once. Check the radio has UltraEdge firmware (Version page: `ultraedge-…`). Stock EdgeTX doesn't talk to the app. |
 | Disconnects now and then | Check the cable and connector. The app reconnects by itself when you replug, and unsaved edits show a **Retry** dialog. |
@@ -54,13 +54,16 @@
 | **A servo goes the wrong way** | **Outputs › Inverted** on that channel. |
 | **"Inputs vs Mixes" confusion** | Feel goes in Inputs, routing in Mixes, mechanics in Outputs. See [the three layers](06-inputs-mixes-outputs.md#the-three-layers-in-one-paragraph). |
 | **ELRS Lua stuck on "Loading…"** | Module Type = CRSF, matching ELRS Lua version, correct baud rate. See [ExpressLRS](12-lua-tools-sd-sounds.md#expresslrs-and-other-tools). |
-| **Sticks drift / don't reach the ends** | **System › Calibration**, especially after a firmware flash. |
+| **Sticks drift / don't reach the ends** | **System › Hardware › Calibration**, especially after a firmware flash. |
 | **Models lost after an upgrade** | Export archives before you flash; **Restore to radio** afterwards. |
 | **Sound list empty / wrong voice** | The voice pack folder must match your language (`SOUNDS/en`…). **Import pack (.zip)**. |
 | **Cryptic logical switch values** | UltraEdge shows and accepts real units (V, m, %, mm:ss). |
+| **App and radio show different models** | The app follows the radio: **Reading model…** or **Model unknown** means it is checking. With firmware older than the combined release it notices a switch made on the radio within about 2 s (by the model's name). Update the firmware so it's told at once. |
+| **Trim beeps sound flat on the phone** | Fixed in the combined release: the phone plays the radio's own tones, rising and falling with the trim. **Trim centre** is the voice pack's `midtrim` file, as on the radio. |
 
 ## Getting help
 
-1. **System › Diagnostics › Share log** (or **Share diagnostics** on any error card).
-2. Open an issue at <https://github.com/50UR4V/UltraEdge-app/issues>. Include your radio, its Version page
-   lines (FW, VERS, GIT#, DATE), the app version (**System › About & Licenses**) and the log.
+1. **System › Feedback › Share bug report**: a text file with the app, phone and radio firmware versions and the
+   diagnostic log. You choose where it goes.
+2. **Open bug form ›** opens a GitHub issue with your versions filled in; describe what happened and attach the file.
+   **Request a feature ›** works the same way. The app sends nothing by itself.

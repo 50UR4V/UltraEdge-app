@@ -1,6 +1,6 @@
 # 11. Flight logs
 
-[← Models & backups](10-models-and-backups.md) · [Contents](README.md) · [Next: Lua, Tools, SD card & Sounds →](12-lua-tools-sd-sounds.md)
+[← Models & backups](10-models-and-backups.md) · [Contents](README.md) · [Next: Lua, Tools and Phone storage →](12-lua-tools-sd-sounds.md)
 
 EdgeTX writes a `.csv` log to the SD card while an **SD Logs** special function is active. UltraEdge copies those
 logs to the phone and shows them without a PC.
@@ -20,9 +20,9 @@ logs to the phone and shows them without a PC.
 
 ![Flight Logs](media/flight-logs.jpg)
 
-- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **On the radio · newest first**: the radio's logs, 8 at a time, newest flight at the top. **Load 8 more** fetches
+- **On the radio · newest first**: the radio's logs, 8 at a time, newest flight at the top. **Load 8 more** fetches
   older ones; **↻ Check for new logs** looks again.
-- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) With **Copy new logs automatically** on (App Settings), new logs copy to the phone one at a time while the page is
+- With **Copy new logs automatically** on (at the bottom of the Flight Logs page), new logs copy to the phone one at a time while the page is
   open. Each row shows *queued*, *copying…* with progress, or *✓ on phone*.
 - **Saved on this phone**: logs already copied. **View**, **Share** or **Delete** each one.
 
@@ -31,8 +31,6 @@ logs to the phone and shows them without a PC.
 > Manage Models, the copy **pauses** and tells you so. It resumes when you come back to Flight Logs.
 
 ## 3. View a log
-
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 ![Flight logs: summary, GPS track, charts](media/clip-flight-logs.gif)
 

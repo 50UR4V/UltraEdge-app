@@ -1,4 +1,4 @@
-# 12. Lua, Tools, SD card & Sounds
+# 12. Lua, Tools and Phone storage
 
 [← Flight logs](11-flight-logs.md) · [Contents](README.md) · [Next: Recipes →](13-recipes.md)
 
@@ -36,23 +36,21 @@ No tools listed? Import `ExpressLRS.lua` (see below) and choose **Tools** as the
 > run on the radio.
 
 Add a **Lua script** widget to a Home screen (long-press Home, tap a zone, *Lua script*). Pick an installed script or
-**＋ Import script / zip…**. The script draws on a virtual radio screen; **System › Display** sets that screen's size.
+**＋ Import script / zip…**. The script draws on a virtual radio screen; **System › Lua screens** sets that screen's size.
 
-## SD Card
+## Phone storage
 
-**System › SD Card** manages the content the phone-side engine uses:
+**System › Phone storage** is the phone's own UltraEdge folder: the scripts, sounds and images the app uses. These
+files are on the phone, not on the radio's SD card.
 
-![SD Card](media/sd-card.jpg)
+![Phone storage](media/sd-card.jpg)
 
-- **＋ Add files**: import a `.lua`. You're asked where it goes: **Tools**, **Telemetry** (iNav/Yaapu OSD) or
-  **Functions**.
-- **⤓ Import pack (.zip)**: a whole script pack or a voice pack at once.
-- Cards show your Lua scripts by folder, your voice packs (`SOUNDS/<language>`) and storage use.
-
-## Sounds
-
-**System › Sounds** lists the tracks in `SOUNDS/`. Tap **♪ a track** to hear it on the phone, or **＋ Import audio…**
-to add your own.
+- Folders on the left: Telemetry scripts, Tools, Function scripts, Mix scripts, Sounds (your voice language) and
+  Images. Files on the right; tap one to **Play** (sounds), **Run** (tools), **Share** or **Delete**.
+- **Import** takes any file and puts it in the right place: a `.lua` asks which script folder, a sound goes to
+  Sounds (converted if needed), an image to Images, and a `.zip` voice or script pack unpacks into its folders.
+- Copied flight logs and model backups have their own pages: [Flight Logs](11-flight-logs.md) and
+  [Manage Models](10-models-and-backups.md).
 
 > [!NOTE]
 > The radio itself plays only `.wav` files from its own SD card. The phone plays the call-outs it gets from the radio.
@@ -61,4 +59,8 @@ to add your own.
 
 > [!TIP]
 > **"Track list is empty" / call-outs say the wrong thing:** the voice pack must be in a folder that matches your
-> language (`SOUNDS/en`, `SOUNDS/de`…). Import the pack again with **Import pack (.zip)**.
+> language (`SOUNDS/en`, `SOUNDS/de`…). Import the pack again with **Phone storage › Import**.
+
+> **Beeps** (trims, keys, timers) play on the phone the way the radio makes them: a trim beep rises and falls with the
+> trim, using the radio's **Speaker pitch** and **Beep length** (Radio Setup › Sound). *Trim centre* and the other
+> spoken system sounds come from the voice pack.

@@ -42,10 +42,11 @@ The app bundles these typefaces, unmodified, under the [SIL Open Font License, V
 - **Rajdhani** (Medium, SemiBold, Bold) — Copyright (c) 2014 Indian Type Foundry (info@indiantypefoundry.com).
   "Rajdhani" is a trademark of Indian Type Foundry.
 
-## AndroidX and the Kotlin standard library — Apache License 2.0
-AndroidX Core, AppCompat and DrawerLayout © The Android Open Source Project, and the Kotlin standard library
-© JetBrains s.r.o. and Kotlin contributors, are used under the
-[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+## AndroidX, Kotlin and Compose Multiplatform — Apache License 2.0
+AndroidX Core, AppCompat and DrawerLayout © The Android Open Source Project; the Kotlin standard library,
+Compose Multiplatform (runtime, foundation, UI, resources), kotlinx.coroutines and kotlinx.serialization
+© JetBrains s.r.o. and Kotlin contributors; and Ktor (network) © JetBrains s.r.o. and Ktor contributors, are used
+under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## EdgeTX and the EdgeTX-UE firmware — GPL-2.0-only
 [![GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)

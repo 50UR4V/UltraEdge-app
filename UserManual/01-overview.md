@@ -46,14 +46,14 @@ flies that saved configuration. The app is a **configuration and display** tool.
 | CHANNEL MONITOR | **Monitor**: outputs, sticks, pots and switches together |
 | Companion's log viewer on a PC | **System › Flight Logs**: logs copied automatically and viewed on the phone (charts + GPS track) |
 
-## Why people use it
+## What it does well
 
 - **No menu diving.** Settings are one or two taps away on a large touch screen.
 - **Pick by moving.** For any *Source* or *Switch* field, move the stick or flip the switch and UltraEdge selects it.
 - **See what you're doing.** Inputs and mixes show a live response graph as you change weight, expo, curve or offset.
 - **Only valid choices.** Option lists come from your radio's firmware build.
 - **Backups.** Keep a library of models on the phone and restore them to the same radio or another one.
-- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Logs without a PC.** Flight logs copy across automatically
+- **Logs without a PC.** Flight logs copy across automatically
   and open in a built-in viewer with a GPS track.
 
 ## What it is not

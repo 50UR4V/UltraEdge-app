@@ -23,7 +23,7 @@ Tap **＋ New switch**, then choose a **Function**:
 | `Timer` | on/off pulses | repeating reminders |
 
 Then fill in **V1/V2** (the picker shows the right kind: source, switch, value or time), an optional **AND switch**,
-**Duration** and **Delay**. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Values are shown **in the source's own units**: volts for RxBt, metres for altitude,
+**Duration** and **Delay**. Values are shown **in the source's own units**: volts for RxBt, metres for altitude,
 mm:ss for timers. You don't need to know EdgeTX's internal raw numbers.
 
 > [!TIP]
@@ -59,14 +59,12 @@ Every function has **Repeat** (play once, every N seconds, or once, skipping the
 <sub>▶ [Full-quality clip](media/clip-special-functions.mp4)</sub>
 
 > [!NOTE]
-> ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **EdgeTX ↔ UltraEdge: the function list comes from your radio.** EdgeTX builds differ: some leave out Lua, haptic,
+> **EdgeTX ↔ UltraEdge: the function list comes from your radio.** EdgeTX builds differ: some leave out Lua, haptic,
 > bind/range functions or RGB LEDs. UltraEdge asks the radio which functions its firmware has and offers **exactly
 > those**. If a model made on another radio uses a function this radio doesn't have, it is shown as
 > "(not on this radio)" rather than hidden.
 
 ## Global functions
-
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 **System › Global Functions** holds special functions that belong to the **radio**, not to one model. They run for
 every model that has **Model › Other › Use global functions** on. Typical uses: a volume knob, a "say the battery
@@ -91,7 +89,7 @@ functions.
 Each row shows a GVar's value in every flight mode (FM0…FM8; `=FM0` means "same as FM0"). Tap one to set its
 **Name**, **Unit** (– or %), **Precision**, **Min**, **Max** and whether the radio shows a **Popup** when it changes.
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Under **Value per flight mode**, set the value for each mode. FM0 always has its own value. For FM1–FM8, choose
+Under **Value per flight mode**, set the value for each mode. FM0 always has its own value. For FM1–FM8, choose
 **Own value** and type it in, or **= FMn** to share another mode's value, just like EdgeTX.
 
 Use a GVar wherever a weight or offset is accepted, so that one number controls several mixes. A typical example is a

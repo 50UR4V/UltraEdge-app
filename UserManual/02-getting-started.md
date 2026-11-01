@@ -12,21 +12,19 @@
 
 ## Supported radios
 
-UltraEdge is **made for any EdgeTX radio**. Ready-made firmware is verified on the radios below; more radios are
-added as they're verified by us, our testers or the community. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg)
-Beta firmware 1.1.22 has ready-made builds for 56 EdgeTX radios; `SUPPORTED-RADIOS.md` on the
-[release](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) shows each one's status. For any other radio, build
-the firmware yourself (see the EdgeTX-UE `BUILD-HOWTO.md`) or ask on
+UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.0 is hardware-verified on the four radios below. Beta
+firmware [1.1.22](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) has ready-made builds for the other
+EdgeTX radios, built but not yet verified; more are marked verified as we, our testers or the community check them.
+[Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge-beta/SUPPORTED-RADIOS.md) shows each radio's
+build and status. For any other radio, build the firmware yourself (see the EdgeTX-UE `BUILD-HOWTO.md`) or ask on
 [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
 
-| Radio | Production firmware (v1.1.2.3) | ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) Beta firmware (1.1.22) |
+| Radio | Firmware v1.2.0 (production and beta) | Full-build fallback ([v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4)) |
 |---|---|---|
-| RadioMaster **Pocket** | Full build: all EdgeTX menus *plus* UltraEdge | Companion build |
-| RadioMaster **Zorro** | Full build | Companion build |
-| FrSky **QX7 / QX7S (not the ACCESS model)** | Full build | Companion build |
-| RadioMaster **TX16S** | Full build | Full build |
-
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
+| RadioMaster **Pocket** | Companion build | Full build: all EdgeTX menus *plus* UltraEdge |
+| RadioMaster **Zorro** | Companion build | Full build |
+| FrSky **QX7 / QX7S (not the ACCESS model)** | Companion build | Full build |
+| RadioMaster **TX16S** | Full build | Not needed: v1.2.0 is already a full build |
 
 **Companion builds** remove the radio's own model and radio-settings menus. That frees space for UltraEdge, and on a
 128×64 screen you'd use the phone for those settings anyway.
@@ -42,7 +40,8 @@ menu on the radio, it shows:
 
 > [!NOTE]
 > **EdgeTX ↔ UltraEdge:** on a companion build, **stick calibration is done from the phone**
-> (System › Calibration). If the radio needs calibration at boot, it tells you so: *"Connect the phone and calibrate in
+> (System › Hardware › Calibration). If the radio needs
+> calibration at boot, it tells you so: *"Connect the phone and calibrate in
 > UltraEdge: System > Calibration"*.
 
 ## 1. Back up first
@@ -52,19 +51,17 @@ the firmware, so your models and settings stay on the SD card.
 
 ## 2. Flash the UltraEdge firmware
 
-Download the `.bin` for your radio from the
-[EdgeTX-UE releases](https://github.com/50UR4V/edgetx-ue/releases). Check it against `SHA256SUMS.txt`, then flash it
-one of these ways:
+Download the `.bin` (or `.uf2` for H750 radios) for your radio from the
+[EdgeTX-UE releases](https://github.com/50UR4V/edgetx-ue/releases) and check it against `SHA256SUMS.txt`. Flash it
+with **EdgeTX Buddy** (<https://buddy.edgetx.org>, *Flash local firmware*, radio in DFU mode) or from the radio's own
+bootloader (copy the file to `/FIRMWARE` on the SD card, then *Write Firmware*; this works on companion builds too).
+The steps for each method, including STM32 DFU tools, are in
+[FLASHING.md](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/FLASHING.md) on the firmware repo; `.uf2` radios
+follow the 1.1.22 beta release's FLASHING.md.
 
-- **EdgeTX Buddy** (easiest). Open <https://buddy.edgetx.org> in Chrome or Edge, choose **Flash local firmware**, and
-  put the radio in DFU mode the way EdgeTX describes for your radio (on most RadioMaster radios: switched off, then
-  plugged in with a USB data cable).
-- **The radio's bootloader.** Copy the `.bin` into `/FIRMWARE` on the SD card. Hold both horizontal trims toward the
-  centre while switching the radio on, choose *Write Firmware* and pick the file. This works on companion builds too.
-- **STM32 DFU tools.** Radio in DFU mode, flash at `0x08000000`.
-
-After flashing, the radio boots into EdgeTX as normal. Its **Version** page shows `ultraedge-<radio>` and
-`UE <version>` (plus `companion` on companion builds), so you can confirm what's installed.
+After flashing, the radio boots into EdgeTX as normal. To confirm what's installed: full builds show
+`ultraedge-<radio>` and `UE <version>` on **SYS › Version**; companion builds show the same lines on the **UltraEdge**
+screen (open any settings menu on the radio).
 
 ## 3. Install the app
 
@@ -72,9 +69,9 @@ Install **UltraEdge** from Google Play.
 
 ## 4. First connection
 
-1. **Full builds (production):** on the radio, set **USB mode** to **Serial** (no question on connect) or **Ask**.
+1. **Full builds:** on the radio, set **USB mode** to **Serial** (no question on connect) or **Ask**.
    Later you can change it from the app under System › Radio Setup › Sticks & ports.
-   ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Companion builds:** nothing to set. The radio connects
+   **Companion builds:** nothing to set. The radio connects
    to UltraEdge without asking. See [USB mode on companion builds](#usb-mode-on-companion-builds).
 2. Plug the phone into the radio's USB port.
 3. Android asks *"Open UltraEdge for this USB device?"*. Tap **OK**. Tick *use by default* to skip the question next
@@ -93,7 +90,7 @@ Install **UltraEdge** from Google Play.
 > not confirmed"*, unplug and replug, then accept the prompt.
 
 ### USB mode on companion builds
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Firmware 1.1.22 or newer.*
+*Firmware v1.2.0 (or beta 1.1.22 on other radios).*
 
 - **Flying days:** plug in and go. The radio connects to UltraEdge without asking. If the cable drops out, it
   reconnects in the same mode by itself, also without asking. Every UltraEdge build keeps the USB mode until you
@@ -105,9 +102,8 @@ Install **UltraEdge** from Google Play.
 
 ## 5. Calibrate (companion builds, first time)
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
-
-Open **System › Calibration** and follow the two steps (centre, then move to the extremes). See
+Open **System › Hardware › Calibration** and follow the two
+steps (centre, then move to the extremes). See
 [Calibration](09-radio-settings.md#calibration).
 
 ## 6. Learn your way around

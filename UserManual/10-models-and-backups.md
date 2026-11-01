@@ -2,6 +2,18 @@
 
 [← Radio settings](09-radio-settings.md) · [Contents](README.md) · [Next: Flight logs →](11-flight-logs.md)
 
+## Switching models (top bar)
+
+The top bar shows the model the radio is flying, on every page. Tap it to open **Switch model**: the active model
+first, then your favourites (☆), the models you flew recently, then the rest.
+
+- **Press and hold** a model for about a second. A bar fills, then the radio switches. A tap never switches.
+- The radio refuses while the throttle isn't at idle (or a switch warning is open); the picker says so.
+- While the radio switches, the bar shows **Switching…**, then **Reading model…** until the radio names its new model.
+  It never shows a model the radio isn't flying: if you switch on the radio itself, the app follows. If it can't
+  tell, it says **Model unknown** and reads again.
+- Copy, delete and labels stay in **Manage models ›**.
+
 ## Manage Models
 
 **System › Manage Models** is EdgeTX's *Model Select* with backups added.
@@ -24,7 +36,7 @@ Tap a model to see its name, file and how many inputs, mixes, sensors and specia
 | **🗑 Delete from radio** | Asks to confirm first. You can't delete the active model. |
 | **⤓ Export archive (.zip)** | Saves the model plus its image, logs and scripts as one file you can share or keep |
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **＋ New model** (under the list) asks the radio to create a **blank model** with its default setup (inputs and mixes
+**＋ New model** (under the list) asks the radio to create a **blank model** with its default setup (inputs and mixes
 for the four sticks, the radio's default RF module, a name like *MODEL07*) and switch to it. Your current model is saved
 first. Like switching models, it's refused while the throttle isn't at idle.
 
@@ -45,14 +57,14 @@ After Duplicate, Delete, Switch or Restore the list refreshes by itself.
 
 ## Backups
 
-- **System › Backup** saves the active model **and** the radio's settings off the radio.
 - **Export archive** (in Manage Models) packs one model with everything it uses: `MODELS/…yml`, its image from
   `IMAGES/`, its logs and any scripts it references, plus a manifest. Share it through any app (Drive, email,
   messaging) or keep it.
+- **System › About radio › Back up radio settings** shares the radio's settings file (`radio.yml`).
 
 > [!IMPORTANT]
 > **Back up before you flash firmware or change SD content.** Lost models after an upgrade are one of the most
-> common EdgeTX complaints. A UltraEdge archive takes seconds and restores with one tap.
+> common EdgeTX complaints. An UltraEdge archive takes seconds and restores with one tap.
 
 ## Copy a model to another radio
 
@@ -62,9 +74,3 @@ After Duplicate, Delete, Switch or Restore the list refreshes by itself.
 4. On radio B: re-bind if it uses a different RF module, then **check Outputs and switch names**. Radios differ in
    switches and pots (a Pocket has fewer than a TX16S), so anything that referenced a missing switch needs a new
    one.
-
-## Model (from file)
-
-**System › Model (from file)** shows the active model as stored in its file: inputs, mixes, flight modes, special
-functions and sensors. You can rename inputs, mixes and flight modes there. It's mainly a cross-check; the model pages
-are the normal place to edit.

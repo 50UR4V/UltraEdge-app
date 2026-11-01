@@ -4,19 +4,21 @@
 
 The **Model** page is EdgeTX's *MODEL › SETUP*. It always shows the model that is **active on the radio**. To work on
 a different model, switch to it first (see [Models & backups](10-models-and-backups.md)).
+It uses the same two panes as the other model pages:
+the sections on the left, each with a one-line summary, and the selected section's fields on the right.
 
 ![Model setup](media/model-setup.jpg)
 
-| Row | Opens | Fields |
+| Section | | Fields |
 |---|---|---|
 | **Model name** | Edit in place | Up to the radio's name length |
-| **Timer 1 / 2 / 3** | Timer page | Name, Mode, **Switch** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg), Start, Minute beep, Countdown, Persistent, Direction |
+| **Timer 1 / 2 / 3** | Timer page | Name, Mode, **Switch**, Start, Minute beep, Countdown, Persistent, Direction |
 | **Trims** | Trims page | Trim increment, Display trims, Extended trims |
 | **Throttle** | Throttle page | Reversed, Trim (idle-only throttle trim) |
-| **Pre-flight checks** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) | Pre-flight page | **Throttle warning**, custom throttle position, the **position each switch must be in**, and **pot/slider** positions at power-on |
-| **Other** | Other page | ADC jitter filter, **Use global functions** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) (whether this model runs the radio's [global functions](08-logic-functions-gvars-modes.md#global-functions)) |
-| **Internal RF / External RF** | Module page | Type, RX channels, First channel, **Failsafe**, plus **Bind receiver / Range test / Stop** |
-| **Trainer** ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) | Trainer page | **Mode** (master/slave and how the radios connect), plus PPM settings for Slave/Jack |
+| **Pre-flight checks** | Pre-flight page | **Throttle warning**, custom throttle position, the **position each switch must be in**, and **pot/slider** positions at power-on |
+| **Other** | Other page | ADC jitter filter, **Use global functions** (whether this model runs the radio's [global functions](08-logic-functions-gvars-modes.md#global-functions)) |
+| **Internal RF / External RF** | Module page | Type, RX channels, First channel, **Failsafe**, plus the **receiver card** with Bind and Range test |
+| **Trainer** | Trainer page | **Mode** (master/slave and how the radios connect), plus PPM settings for Slave/Jack |
 
 The list shows a summary of each row (for example *"THs 5:00"* for a timer), so you can check a model without
 opening anything.
@@ -33,7 +35,7 @@ opening anything.
 | **TH%** | At a speed proportional to the throttle (a fuel-style countdown) |
 | **THt** | From the first throttle movement, then keeps running |
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Switch** gates the timer: it only counts while the switch is on (in **Strt** mode, flipping it starts the
+**Switch** gates the timer: it only counts while the switch is on (in **Strt** mode, flipping it starts the
 timer). Pick it by flipping the switch. Leave it at **---** (none) for a timer that ignores switches.
 
 Set **Start** for a countdown (for example 5:00), **Countdown** to hear beeps or voice as it ends, **Minute beep** for
@@ -49,8 +51,6 @@ a call every minute, and **Persistent** to keep the time across power cycles (*F
 - **Trim**: idle-only trim. The throttle trim adjusts idle without moving full throttle (planes and helis).
 
 ## Pre-flight checks
-
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 EdgeTX's *Pre-start checks*: what the radio insists on before it starts sending to the model. When you switch the
 radio on, or select this model, and something is in the wrong position, the radio shows a warning and waits until you
@@ -102,6 +102,16 @@ the bay).
 | **Range test** | Reduced-power range check (walk 30 m away with the model; controls must still respond) |
 | **Stop** | Ends bind or range test |
 
+**The receiver card** (with firmware v1.2.0) shows what the module is doing:
+
+- **Binding… N s**, then **Receiver connected ✓** as soon as telemetry comes in (or a MULTI module reports the bind
+  finished).
+- **Range check… N s** with the live **signal** reading. After a minute the app asks whether to stop.
+- Only the buttons your module supports: EdgeTX has no range check for CRSF (ExpressLRS/Crossfire), and ExpressLRS
+  binds from the radio only from version 3.4.
+- Leaving the page, putting the app in the background or unplugging the cable stops a bind or range check, so the
+  module is never left at reduced power. On older firmware the card shows a timer and all three buttons.
+
 ![Binding from the Model page](media/clip-bind.gif)
 
 <sub>▶ [Full-quality clip](media/clip-bind.mp4)</sub>
@@ -136,8 +146,6 @@ the bay).
 See the step-by-step [binding recipe](13-recipes.md#bind-or-re-bind-a-receiver).
 
 ## Trainer (buddy box)
-
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
 
 **Model › Trainer** sets how *this model* uses a trainer link (EdgeTX's MODEL SETUP › Trainer).
 

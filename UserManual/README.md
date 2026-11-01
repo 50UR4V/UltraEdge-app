@@ -1,9 +1,7 @@
 # UltraEdge User Manual
 
-UltraEdge turns your Android phone into the touchscreen for your **EdgeTX** radio. Plug the phone into the
-radio's USB port and you can set up models, read telemetry, watch the flight screen, bind receivers, run ExpressLRS
-Lua and review flight logs. You do all of it on a large touch display, without scrolling through menus on a 128×64
-screen.
+UltraEdge makes your Android phone the touchscreen for an **EdgeTX** radio over USB: models, telemetry, binding,
+ExpressLRS Lua, flight logs.
 
 ![The UltraEdge Home screen](media/home.jpg)
 
@@ -14,10 +12,9 @@ screen.
 
 | | App | Firmware | Status |
 |---|---|---|---|
-| **Production** | 1.3.2 (Google Play) | v1.1.2.3, full build | Tested on real hardware: Pocket, Zorro, TX16S, QX7 |
-| ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Beta** | 1.4.3 (Google Play open testing) | 1.1.22 (GitHub pre-release), 56 radios | Early access. Checked on hardware: TX16S and QX7; other radios built, not yet verified. Bench-test before flying. |
-
-Sections marked ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) describe beta features. Everything else works in the production app.
+| **Production** | 1.6.0 (Google Play) | v1.2.0 (GitHub release, Latest): companion build on Pocket, Zorro, QX7; full build on TX16S | Hardware-verified on v1.2.0 by the owner, 2026-11-01: Pocket, Zorro, TX16S, QX7 |
+| **Beta** | 1.6.1 (Google Play open testing), the same app as 1.6.0 | v1.2.0 on the four radios above; [1.1.22](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) (GitHub pre-release) on the other radios | Other radios on 1.1.22: built, not yet verified. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge-beta/SUPPORTED-RADIOS.md). |
+| **Full-build fallback** | 1.6.0 or 1.6.1 | [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4), full build on Pocket, Zorro, QX7 | For pilots who want to keep the radio's own menus |
 
 ## Contents
 
@@ -34,7 +31,7 @@ Sections marked ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) describe 
 | 9 | [Radio settings](09-radio-settings.md) | Radio Setup, Hardware, Switches, Trainer, **Calibration**, My Radios |
 | 10 | [Models & backups](10-models-and-backups.md) | Manage Models, duplicate/delete/select, library, archives, copy between radios |
 | 11 | [Flight logs](11-flight-logs.md) | Logging, automatic copy, the built-in log viewer (charts + GPS track) |
-| 12 | [Lua, Tools, SD card & Sounds](12-lua-tools-sd-sounds.md) | ExpressLRS Lua, Lua widgets, importing scripts & voice packs |
+| 12 | [Lua, Tools and Phone storage](12-lua-tools-sd-sounds.md) | ExpressLRS Lua, Lua widgets, importing scripts and voice packs |
 | 13 | [Recipes: how do I…?](13-recipes.md) | Step-by-step for the common jobs (see the finder below) |
 | 14 | [Troubleshooting & FAQ](14-troubleshooting-faq.md) | "Can it do X?", fixes for the usual EdgeTX headaches |
 | 15 | [Safety & current limits](15-safety-and-limits.md) | What the app never does, what still needs the radio |

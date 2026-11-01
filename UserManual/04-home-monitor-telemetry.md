@@ -66,7 +66,7 @@ stick mode), **pots/sliders** with your radio's real names, and every **switch**
 - **↻ Discover** starts EdgeTX's sensor discovery. Sensors appear as the receiver reports them: RSSI, LQ, RxBt,
   GPS, current and more. Switch the receiver on and wait a few seconds.
 - **⚙ Sensors** opens the sensor list, where you can set each sensor's label, unit and precision.
-- ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **⚠ Alarms** sets the link alarms: a **low** and a **critical** threshold for the signal (EdgeTX's RSSI alarms),
+- **⚠ Alarms** sets the link alarms: a **low** and a **critical** threshold for the signal (EdgeTX's RSSI alarms),
   and **Disable telemetry alarms**. The radio names them for your link: **RQly** (link quality, %) on ExpressLRS and
   Crossfire, **RSSI** (dB) on most others. When the signal drops below a threshold, the radio warns, and so does the
   phone.
@@ -91,6 +91,6 @@ UltraEdge plays the radio's sounds **through the phone**: the start-up welcome, 
 tracks and warnings. Phone-side Lua scripts can also speak (`playFile`, `playNumber`, `playTone`).
 
 If a script asks for a voice file the phone doesn't have, UltraEdge **reads it out with text-to-speech** instead, and
-reminds you to import the voice pack (**System › Sounds** or **SD Card › Import pack**).
+reminds you to import the voice pack (**System › Phone storage › Import**).
 
-Mute everything with the 🔊 button on Home or **System › App Settings › Mute call-outs**.
+Mute everything with the 🔊 button on Home or **System › Call-outs and phone › Show mute button**.

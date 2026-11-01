@@ -1,25 +1,26 @@
-# 9. Radio settings
+# 9. System
 
 [← Logic, Functions, GVars & Flight modes](08-logic-functions-gvars-modes.md) · [Contents](README.md) · [Next: Models & backups →](10-models-and-backups.md)
 
-**System** holds everything that isn't part of one model: the radio's own settings, models, logs, tools, SD content
-and the app's settings.
+**System** holds everything that isn't part of one model.
+It fits on one screen, in three groups. Each card shows a live
+one-line status, so the screen is also a quick check of the radio, the phone and the app.
 
-![The System menu](media/system.jpg)
+![The System screen](media/system.jpg)
 
-| Section | Items |
-|---|---|
-| **Tools & SD** | Tools (ExpressLRS and other Lua tools) · SD Card · Sounds · Flight Logs |
-| **Radio setup** | Radio Setup · Hardware · Switches · Calibration · Trainer · Global Functions · All settings (radio.yml) |
-| **Model** | Manage Models · Model (from file) · Backup |
-| **Display & diagnostics** | Display · Diagnostics |
-| **UltraEdge app** | App Settings · My Radios · About & Licenses |
+| **Radio** (as in EdgeTX) | **Models and files** | **App** (this phone only) |
+|---|---|---|
+| Radio Setup | [Manage Models](10-models-and-backups.md) | Call-outs and phone |
+| Global Functions | [Flight Logs](11-flight-logs.md) | My Radios |
+| Trainer | [Tools](12-lua-tools-sd-sounds.md) | Lua screens |
+| Hardware (with Switches and Calibration) | [Phone storage](12-lua-tools-sd-sounds.md#phone-storage) | Diagnostics |
+| About radio | | About and licences |
 
-Pages that need the radio are dimmed when it isn't attached ("needs radio link").
+Radio cards are dimmed until the radio is attached.
 
 ## Radio Setup
 
-EdgeTX's *RADIO › SETUP*. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) The beta shows it in two panes, grouped into sections; production shows the same settings as a list. Pick a section on the left; its fields appear on the right.
+EdgeTX's *RADIO › SETUP*, in two panes: pick a section on the left; its fields appear on the right.
 
 ![Radio Setup › Sound](media/radio-setup.jpg)
 
@@ -36,18 +37,12 @@ EdgeTX's *RADIO › SETUP*. ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.sv
 > [!TIP]
 > **Using the radio as a simulator joystick?** Set **USB mode** to **Ask**. When you plug into a PC you can pick
 > *Joystick*; when you plug into the phone, pick *Serial*. If USB mode is set to *Joystick*, UltraEdge can't connect.
-> ![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) **Companion builds:** use ENTER on the UltraEdge screen instead
+> **Companion builds:** use ENTER on the UltraEdge screen instead
 > (see [USB mode on companion builds](02-getting-started.md#usb-mode-on-companion-builds)).
 
-**Hardware** covers LCD contrast (mono radios), Bluetooth mode, and the warning switches (alarm, memory, RSSI-off).
+## Global Functions
 
-**All settings (radio.yml)** is a read-only overview of every global setting, including the board and EdgeTX
-version. It's useful when someone on a forum asks "what's your setup?".
-
-## Switches
-
-Give each physical switch a name (up to 3 characters), for example **ARM** for SA or **FM** for SC. The name then
-appears everywhere in the app and on the radio instead of "SA".
+Special functions that run for every model. See [Global functions](08-logic-functions-gvars-modes.md#global-functions).
 
 ## Trainer
 
@@ -61,53 +56,67 @@ The *trainer mode* (master/slave, jack/Bluetooth/Multi) is a per-model setting:
 [Model › Trainer](05-model-setup.md#trainer-buddy-box). You hand control over with a **Trainer** special function on
 a momentary switch. See the [trainer recipe](13-recipes.md#trainer--buddy-box).
 
-## Calibration
+## Hardware
+
+LCD contrast (black-and-white radios), Bluetooth mode, the warning switches (alarm, memory, RSSI-off) and FAI mode.
+It also holds Switches and Calibration, as in EdgeTX.
+
+### Switches
+
+Give each physical switch a name (up to 3 characters), for example **ARM** for SA. The name then appears in pickers
+and on the radio instead of "SA".
+
+### Calibration
 
 Guided stick, pot and slider calibration, driven from the phone:
 
-1. **Step 1 · Center**: leave the sticks centred and the pots in the middle, then tap **Set centre**.
-2. **Step 2 · Move to extremes**: move every stick, pot and slider through its full range. The live graphic shows
-   each one reaching its ends. Tap **Save calibration**.
+1. **Step 1 · Center:** leave the sticks centred and the pots in the middle, then tap **Set centre**.
+2. **Step 2 · Move to extremes:** move every stick, pot and slider through its full range, then tap
+   **Save calibration**.
 
-**Cancel**, or leaving the page part-way, restores the previous calibration.
+**Cancel**, or leaving part-way, restores the previous calibration.
 
 > [!IMPORTANT]
-> On **companion builds** (black-and-white radios such as Pocket, Zorro, QX7) this is **the** place to calibrate; the radio's own calibration menu
-> isn't there. Recalibrate after flashing new firmware or replacing a gimbal.
+> On **companion builds** (black-and-white radios such as Pocket, Zorro, QX7) this is **the** place to calibrate; the
+> radio's own calibration menu isn't there. Recalibrate after flashing new firmware or replacing a gimbal.
+
+## About radio
+
+The radio's own Version page: **FW**, **Version** (`UE …`), **Git**, **Built** and the EdgeTX base. Include these
+when you report a problem. Also here:
+
+- **radio.yml:** a read-only overview of every global setting, as the radio stores it.
+- **Back up radio settings:** shares the radio's `radio.yml` file. Keep it with your model backups.
+
+## Call-outs and phone
+
+Settings for this phone only; the radio's own sound, backlight and haptic settings are in Radio Setup.
+
+- **Show mute button:** shows the 🔊/🔇 button on the flight screens. Turning it off also un-mutes.
+- **Call-out volume:** voice and beep call-outs on the phone.
+- **Voice language** and **voice pack:** the pack lives in [Phone storage › Sounds](12-lua-tools-sd-sounds.md#phone-storage).
+- **Vibration strength** and **screen brightness** while UltraEdge is open (0 = follow the phone).
+- **Connectivity:** UltraEdge uses no internet. Everything runs over USB.
 
 ## My Radios
 
-![Beta](https://img.shields.io/badge/-Beta-8b5cf6.svg) *Beta: needs app 1.4.3 (Play open testing) and firmware 1.1.22. See [Which version?](README.md#which-version)*
+*Firmware v1.2.0 (or beta 1.1.22 on other radios).*
 
 ![My Radios](media/my-radios.jpg)
 
-Every radio this phone has connected to, identified by a fingerprint of its processor's **unique ID**. That ID never
-changes, even after a firmware update or an SD-card swap. The list shows which one is **● attached**, plus first and
-last seen. **Tap a radio to name it**, for example "Pocket (field box)".
+Every radio this phone has connected to, identified by a fingerprint of its processor's **unique ID**, which never
+changes, even after a firmware update or an SD-card swap. The list shows which one is **● attached**. Select a radio
+to **name** it, see its last firmware, when it was first and last seen and what's kept for it on the phone, or
+**Forget** it.
 
-![Naming a radio](media/clip-my-radios.gif)
+Each radio's model list and flight-log list are kept separately, so plugging in a different radio never shows the
+previous radio's models or logs. A radio whose firmware can't identify itself (such as the v1.1.2.x full builds) shows
+as **Attached radio · unidentified** and uses the shared lists. Only a short fingerprint is stored on the phone; the
+processor ID itself is never stored or sent anywhere.
 
-<sub>▶ [Full-quality clip](media/clip-my-radios.mp4)</sub>
+## Lua screens and Diagnostics
 
-Each radio's cached model list and flight-log list are kept separately. Plugging in a different radio never shows the
-previous radio's models or logs. Only a short fingerprint is stored on the phone; the processor ID itself is never
-stored or sent anywhere.
-
-## App Settings
-
-Settings for the **phone side** of UltraEdge:
-
-![App Settings](media/app-settings.jpg)
-
-- **Mute call-outs.**
-- **Copy new logs automatically** (see [Flight logs](11-flight-logs.md)).
-- **Connectivity:** UltraEdge uses no internet. Everything runs over USB.
-- **Dual settings:** backlight, volume and haptic strength, each targeted at the **Radio**, the **Phone** or **Both**.
-  For example, turn call-out volume up on the phone without changing the radio's beeper.
-
-## Display & Diagnostics
-
-- **Display:** choose the virtual-screen size Lua scripts draw on (small colour radio, Horus-class, large), and see
-  your phone's real panel metrics.
-- **Diagnostics:** link status, protocol, SD content, and the app's log. **Share log** shares it with
-  support. Attach it to any bug report.
+- **Lua screens:** the virtual-screen size Lua telemetry scripts draw on (small colour radio, Horus-class, large),
+  and your phone's real panel metrics.
+- **Diagnostics:** link status, protocol, SD content, and the app's log. **Share log** sends it to support; attach it
+  to any bug report.

@@ -23,17 +23,19 @@ distributed only through Google Play; there are no APK downloads here, and the a
 - **Manage Models:** select, copy and delete models on the radio; back them up on the phone and restore them
 - Trainer setup, and a channel Monitor with your physical sticks, pots and switches
 - Radio settings, guided stick and pot calibration, sensor discovery
-- Flight logs copied off the radio (beta: charts and a GPS track in the app)
+- Flight logs copied off the radio, with charts and a GPS track in the app
 - Lua tools such as ExpressLRS configuration, run inside the app
 
 ## Which version?
-| | App | Firmware | Radios |
-|---|---|---|---|
-| **Production** | 1.3.2 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) | [v1.1.2.3](https://github.com/50UR4V/edgetx-ue/releases/latest), full builds | RadioMaster Pocket, Zorro, TX16S; FrSky QX7 / QX7S (not the QX7 ACCESS), all verified on hardware |
-| **Beta** | 1.4.3 ([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)) | [1.1.22](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22), pre-release | 56 EdgeTX radios; status per radio in `SUPPORTED-RADIOS.md` on the release |
-
-UltraEdge is made for any EdgeTX radio. Radios are marked verified as we, our testers or the community check them on
-hardware. Details: [User Manual › Which version?](UserManual/README.md#which-version)
+**Production:** app 1.6.0 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
+firmware [v1.2.0](https://github.com/50UR4V/edgetx-ue/releases/latest): companion builds for RadioMaster Pocket, Zorro
+and FrSky QX7, a full build for TX16S, all four hardware-verified 2026-11-01. **Beta:** app 1.6.1
+([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app, with v1.2.0 on those
+four radios and [1.1.22](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) (pre-release, built, not yet
+verified) on the other radios. Want the radio's own menus on Pocket, Zorro or QX7? Use the
+[v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. UltraEdge is made for any
+EdgeTX radio; radios are marked verified as we, our testers or the community check them on hardware. Details and the
+verified radios: [User Manual › Which version?](UserManual/README.md#which-version)
 
 ## Get it
 1. Install from [Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion) (Android 7.0 or
@@ -67,9 +69,6 @@ Copy these to the radio's SD card with a card reader, or from the app under **Sy
 ## Related projects
 - [EdgeTX-UE](https://github.com/50UR4V/edgetx-ue): the firmware (EdgeTX plus the companion overlay), GPL-2.0-only.
 - [UE Protocol](https://github.com/50UR4V/ue-protocol): the radio↔phone link (specification, reference codec, tests).
-
-**Where it's going:** the app is the first step toward a modular radio, where the gimbals, switches and case you like
-stay while the screen, processing and RF can be upgraded. Nothing beyond the app and firmware is available yet.
 
 ## Privacy and licences
 UltraEdge collects no personal data and talks only to your radio over USB. See the
