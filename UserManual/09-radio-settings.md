@@ -100,7 +100,7 @@ Settings for this phone only; the radio's own sound, backlight and haptic settin
 
 ## My Radios
 
-*Firmware v1.2.0 (or beta 1.1.22 on other radios).*
+*Firmware v1.2.0.*
 
 ![My Radios](media/my-radios.jpg)
 

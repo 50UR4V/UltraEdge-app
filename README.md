@@ -28,11 +28,11 @@ distributed only through Google Play; there are no APK downloads here, and the a
 
 ## Which version?
 **Production:** app 1.6.0 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
-firmware [v1.2.0](https://github.com/50UR4V/edgetx-ue/releases/latest): companion builds for RadioMaster Pocket, Zorro
-and FrSky QX7, a full build for TX16S, all four hardware-verified 2026-11-01. **Beta:** app 1.6.1
-([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app, with v1.2.0 on those
-four radios and [1.1.22](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) (pre-release, built, not yet
-verified) on the other radios. Want the radio's own menus on Pocket, Zorro or QX7? Use the
+firmware [v1.2.0](https://github.com/50UR4V/edgetx-ue/releases/latest) for 56 EdgeTX radios: companion builds on
+black-and-white radios, full builds on colour radios. Hardware-verified 2026-11-01: RadioMaster Pocket, Zorro and
+TX16S, FrSky QX7; the other 52 are built, not hardware-tested yet. **Beta:** app 1.6.1
+([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app and firmware. Want
+the radio's own menus on Pocket, Zorro or QX7? Use the
 [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. UltraEdge is made for any
 EdgeTX radio; radios are marked verified as we, our testers or the community check them on hardware. Details and the
 verified radios: [User Manual › Which version?](UserManual/README.md#which-version)

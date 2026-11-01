@@ -12,9 +12,9 @@
 
 ## Supported radios
 
-UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.0 is hardware-verified on the four radios below. Beta
-firmware [1.1.22](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) has ready-made builds for the other
-EdgeTX radios, built but not yet verified; more are marked verified as we, our testers or the community check them.
+UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.0 is hardware-verified on the four radios below and has
+ready-made builds for the other EdgeTX radios, built but not hardware-tested yet; more are marked verified as we, our
+testers or the community check them.
 [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge-beta/SUPPORTED-RADIOS.md) shows each radio's
 build and status. For any other radio, build the firmware yourself (see the EdgeTX-UE `BUILD-HOWTO.md`) or ask on
 [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
@@ -57,7 +57,7 @@ with **EdgeTX Buddy** (<https://buddy.edgetx.org>, *Flash local firmware*, radio
 bootloader (copy the file to `/FIRMWARE` on the SD card, then *Write Firmware*; this works on companion builds too).
 The steps for each method, including STM32 DFU tools, are in
 [FLASHING.md](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/FLASHING.md) on the firmware repo; `.uf2` radios
-follow the 1.1.22 beta release's FLASHING.md.
+are in the same FLASHING.md.
 
 After flashing, the radio boots into EdgeTX as normal. To confirm what's installed: full builds show
 `ultraedge-<radio>` and `UE <version>` on **SYS › Version**; companion builds show the same lines on the **UltraEdge**
@@ -90,7 +90,7 @@ Install **UltraEdge** from Google Play.
 > not confirmed"*, unplug and replug, then accept the prompt.
 
 ### USB mode on companion builds
-*Firmware v1.2.0 (or beta 1.1.22 on other radios).*
+*Firmware v1.2.0.*
 
 - **Flying days:** plug in and go. The radio connects to UltraEdge without asking. If the cable drops out, it
   reconnects in the same mode by itself, also without asking. Every UltraEdge build keeps the USB mode until you

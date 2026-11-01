@@ -12,8 +12,8 @@ ExpressLRS Lua, flight logs.
 
 | | App | Firmware | Status |
 |---|---|---|---|
-| **Production** | 1.6.0 (Google Play) | v1.2.0 (GitHub release, Latest): companion build on Pocket, Zorro, QX7; full build on TX16S | Hardware-verified on v1.2.0 by the owner, 2026-11-01: Pocket, Zorro, TX16S, QX7 |
-| **Beta** | 1.6.1 (Google Play open testing), the same app as 1.6.0 | v1.2.0 on the four radios above; [1.1.22](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22) (GitHub pre-release) on the other radios | Other radios on 1.1.22: built, not yet verified. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge-beta/SUPPORTED-RADIOS.md). |
+| **Production** | 1.6.0 (Google Play) | v1.2.0 (GitHub release, Latest): companion builds on black-and-white radios, full builds on colour radios | Hardware-verified on v1.2.0 by the owner, 2026-11-01: Pocket, Zorro, TX16S, QX7. The other 52 radios: built, not hardware-tested yet. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge-beta/SUPPORTED-RADIOS.md) |
+| **Beta** | 1.6.1 (Google Play open testing), the same app as 1.6.0 | v1.2.0, the same files | Same as production |
 | **Full-build fallback** | 1.6.0 or 1.6.1 | [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4), full build on Pocket, Zorro, QX7 | For pilots who want to keep the radio's own menus |
 
 ## Contents
