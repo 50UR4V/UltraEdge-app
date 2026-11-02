@@ -14,7 +14,8 @@ one-line status, so the screen is also a quick check of the radio, the phone and
 | Global Functions | [Flight Logs](11-flight-logs.md) | My Radios |
 | Trainer | [Tools](12-lua-tools-sd-sounds.md) | Lua screens |
 | Hardware (with Switches and Calibration) | [Phone storage](12-lua-tools-sd-sounds.md#phone-storage) | Diagnostics |
-| About radio | | About and licences |
+| About radio | [Downloads](12-lua-tools-sd-sounds.md#downloads) | [Feedback](14-troubleshooting-faq.md#getting-help) |
+| | | About and licences |
 
 Radio cards are dimmed until the radio is attached.
 
@@ -96,7 +97,7 @@ Settings for this phone only; the radio's own sound, backlight and haptic settin
 - **Call-out volume:** voice and beep call-outs on the phone.
 - **Voice language** and **voice pack:** the pack lives in [Phone storage › Sounds](12-lua-tools-sd-sounds.md#phone-storage).
 - **Vibration strength** and **screen brightness** while UltraEdge is open (0 = follow the phone).
-- **Connectivity:** UltraEdge uses no internet. Everything runs over USB.
+- **Connectivity:** UltraEdge uses the internet only when you ask **System › Downloads** for a voice pack or the iNav Lua telemetry. Everything else runs over USB.
 
 ## My Radios
 
@@ -110,8 +111,9 @@ to **name** it, see its last firmware, when it was first and last seen and what'
 **Forget** it.
 
 Each radio's model list and flight-log list are kept separately, so plugging in a different radio never shows the
-previous radio's models or logs. A radio whose firmware can't identify itself (such as the v1.1.2.x full builds) shows
-as **Attached radio · unidentified** and uses the shared lists. Only a short fingerprint is stored on the phone; the
+previous radio's models or logs. A radio whose firmware can't identify itself shows as **Attached radio · unidentified** and
+uses the shared lists: the v1.1.2.x full builds, and on v1.2.0 the QX7 and other STM32F2 radios (X9D, X9 Lite, T12,
+TX12, T8 and similar; fixed in firmware v1.2.1). Only a short fingerprint is stored on the phone; the
 processor ID itself is never stored or sent anywhere.
 
 ## Lua screens and Diagnostics

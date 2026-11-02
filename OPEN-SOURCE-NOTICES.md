@@ -6,7 +6,7 @@
 [![Fonts: OFL 1.1](https://img.shields.io/badge/fonts-OFL%201.1-orange.svg)](#fonts--sil-open-font-license-11)
 
 The UltraEdge Android app is proprietary software. It embeds, and works with, the open-source components below.
-Their licences and notices are reproduced or referenced here. In the app: **System › About & Licenses**.
+Their licences and notices are reproduced or referenced here. In the app: **System › About and licences**.
 
 ---
 

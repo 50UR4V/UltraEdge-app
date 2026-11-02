@@ -1,18 +1,21 @@
 # Changelog
 
-*Production = hardware-verified (Google Play production). Beta = early access (Google Play open
-testing); features are emulator-tested and still collecting hardware mileage.*
+*Production = Google Play production, hardware-verified. Beta = Google Play open testing, early access to the next
+version. In release 1.6 both tracks run the same app.*
 
-## v1.6.2 — Production · v1.6.3 — Beta · "One UI" · November 2026
-The beta feature set comes to production. Pairs with UltraEdge firmware **v1.2.0** on both tracks
-([GitHub](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.0)); older firmware works, with a simpler receiver card.
-Black-and-white radios (Pocket, Zorro, QX7) move to the companion build, where the phone holds the menus; the
-[v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds stay available if you want the radio's
-own menus. New in production from the 1.4 beta: the flight-log viewer (charts and GPS track) with automatic newest-first
-log copy, My Radios, Radio Setup in two panes, flight-mode trim modes, curve presets and mirror, live response preview,
-model Trainer mode, timer switch, pre-flight checks (throttle, switches, pots/sliders), GVar values per flight mode,
-telemetry alarms and vario, global functions, New model, the radio's firmware version in About and My Radios, and the
-USB mode kept until power-off. Beta 1.6.3 is the same app as 1.6.2. One look everywhere:
+## v1.6.2 — Production · v1.6.3 — Beta · November 2026
+- Pairs with UltraEdge firmware **v1.2.0** on both tracks ([GitHub](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.0)).
+  Older firmware works, with a simpler receiver card.
+- Pocket, Zorro and QX7 move to the companion build, where the phone holds the menus. Want the radio's own menus? Use
+  the [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds.
+- New in production from the 1.4 beta: flight-log viewer (charts and GPS track) with automatic newest-first log copy,
+  My Radios, Radio Setup in two panes, flight-mode trim modes, curve presets and mirror, live response preview, model
+  Trainer mode, timer switch, pre-flight checks (throttle, switches, pots/sliders), GVar values per flight mode,
+  telemetry alarms and vario, global functions, New model, the radio's firmware version in About radio and My Radios,
+  and the USB mode kept until power-off.
+- Beta 1.6.3 is the same app as 1.6.2.
+
+One look everywhere:
 - **Model** uses the same two panes as the other model pages, with a one-line summary per section.
 - **Bind and range check** show what's happening: a timer, *Receiver connected ✓* when telemetry comes in, the live
   signal during a range check, and only the actions your module supports.
@@ -39,8 +42,9 @@ USB mode kept until power-off. Beta 1.6.3 is the same app as 1.6.2. One look eve
   delete or restore, radio settings, calibration) it shows what it is doing and can't be tapped until the radio
   confirms, so two changes never cross. If a save fails, the card offers Retry, Discard and Diagnostics; unplugging
   mid-save keeps your change on the phone for a Retry.
-- **The radio is identified first.** On every connect the app asks the radio who it is before reading anything, so one
-  radio's models, Home screens and settings never show up on another. The model list in the top bar loads by itself.
+- **The radio is identified first.** On every connect the app asks the radio who it is before reading anything, so on
+  firmware that identifies the radio (all except STM32F2 radios until v1.2.1, see Known issue) one radio's models, Home
+  screens and settings never show up on another. The model list in the top bar loads by itself.
 - **Report a bug / Request a feature** (System › Feedback): share a bug report with the diagnostic log wherever you
   choose, or open a GitHub issue with your versions filled in. The app sends nothing by itself.
 

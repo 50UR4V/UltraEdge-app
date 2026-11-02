@@ -30,21 +30,22 @@ distributed only through Google Play; there are no APK downloads here, and the a
 **Production:** app 1.6.2 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
 firmware [v1.2.0](https://github.com/50UR4V/edgetx-ue/releases/latest) for 56 EdgeTX radios: companion builds on
 black-and-white radios, full builds on colour radios. Hardware-verified 2026-11-01: RadioMaster Pocket, Zorro and
-TX16S, FrSky QX7; the other 52 are built, not hardware-tested yet. **Beta:** app 1.6.3
+TX16S, FrSky QX7; the other 52 are built, not hardware-tested yet
+([Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)). **Beta:** app 1.6.3
 ([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app and firmware. Want
 the radio's own menus on Pocket, Zorro or QX7? Use the
-[v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. UltraEdge is made for any
-EdgeTX radio; radios are marked verified as we, our testers or the community check them on hardware. Details and the
-verified radios: [User Manual › Which version?](UserManual/README.md#which-version)
+[v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. Details:
+[User Manual › Which version?](UserManual/README.md#which-version)
 
 ## Get it
 1. Install from [Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion) (Android 7.0 or
    newer, a phone with USB host/OTG).
 2. Flash UltraEdge firmware to your radio: see [EdgeTX-UE releases](https://github.com/50UR4V/edgetx-ue/releases).
-3. Plug in over USB and tap **Open UltraEdge**. Full guide: [User Manual](UserManual/README.md).
+3. Plug in over USB. When Android asks whether to open UltraEdge for the USB device, tap **OK**. Full guide: [User Manual](UserManual/README.md).
 
 ## Useful downloads (SD card and Lua scripts)
-Copy these to the radio's SD card with a card reader, or from the app under **System › SD Card**.
+For the app, download the first two in **System › Downloads** and import the others in **System › Phone storage**.
+For the radio itself, copy them to its SD card with a card reader.
 
 | What | Where | Status with UltraEdge |
 |---|---|---|
@@ -71,7 +72,8 @@ Copy these to the radio's SD card with a card reader, or from the app under **Sy
 - [UE Protocol](https://github.com/50UR4V/ue-protocol): the radio↔phone link (specification, reference codec, tests).
 
 ## Privacy and licences
-UltraEdge collects no personal data and talks only to your radio over USB. See the
+UltraEdge collects no personal data and needs no account. It talks to your radio over USB and uses the internet only
+when you ask System › Downloads for a voice pack or the iNav Lua telemetry. See the
 [Privacy Policy](https://bampi2k.com/ultraedge/privacy) and [Open-Source Notices](OPEN-SOURCE-NOTICES.md).
 
 | Part | Licence |

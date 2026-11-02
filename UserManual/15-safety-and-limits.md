@@ -33,6 +33,6 @@ next.
 
 ## Privacy
 
-UltraEdge needs no account and no internet. Models, logs and settings stay on the phone and the radio. The radio's
+UltraEdge needs no account. It uses the internet only when you ask **System › Downloads** for a voice pack or the iNav Lua telemetry. Models, logs and settings stay on the phone and the radio. The radio's
 processor ID is reduced to a short fingerprint used only to keep each radio's caches separate, and it is never sent
 anywhere. See the [privacy policy](https://bampi2k.com/ultraedge/privacy).

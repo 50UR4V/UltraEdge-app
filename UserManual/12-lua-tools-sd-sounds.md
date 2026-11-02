@@ -64,3 +64,17 @@ files are on the phone, not on the radio's SD card.
 > **Beeps** (trims, keys, timers) play on the phone the way the radio makes them: a trim beep rises and falls with the
 > trim, using the radio's **Speaker pitch** and **Beep length** (Radio Setup › Sound). *Trim centre* and the other
 > spoken system sounds come from the voice pack.
+
+## Downloads
+
+**System › Downloads** (also **Phone storage › Get packs**) fetches two packs into Phone storage:
+
+- the **EdgeTX voice pack** for the phone's call-outs (**Choose a voice** if there's more than one), and
+- the **iNav Lua telemetry** screen and its tool.
+
+Each comes from the project's own GitHub release, at a fixed version. The app shows the source, version, size and
+licence before you tap **Download**, and checks every file against its published checksum. This is the only time
+UltraEdge uses the internet; nothing about you or your radio is sent.
+
+On a full build the radio plays sounds and runs Lua from its own SD card, so it needs the pack there too. The page
+links to the same zip; unzip it to the top folder of the radio's SD card.
