@@ -3,7 +3,7 @@
 *Production = hardware-verified (Google Play production). Beta = early access (Google Play open
 testing); features are emulator-tested and still collecting hardware mileage.*
 
-## v1.6.0 — Production · v1.6.1 — Beta · "One UI" · November 2026
+## v1.6.2 — Production · v1.6.3 — Beta · "One UI" · November 2026
 The beta feature set comes to production. Pairs with UltraEdge firmware **v1.2.0** on both tracks
 ([GitHub](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.0)); older firmware works, with a simpler receiver card.
 Black-and-white radios (Pocket, Zorro, QX7) move to the companion build, where the phone holds the menus; the
@@ -12,7 +12,7 @@ own menus. New in production from the 1.4 beta: the flight-log viewer (charts an
 log copy, My Radios, Radio Setup in two panes, flight-mode trim modes, curve presets and mirror, live response preview,
 model Trainer mode, timer switch, pre-flight checks (throttle, switches, pots/sliders), GVar values per flight mode,
 telemetry alarms and vario, global functions, New model, the radio's firmware version in About and My Radios, and the
-USB mode kept until power-off. Beta 1.6.1 is the same app as 1.6.0. One look everywhere:
+USB mode kept until power-off. Beta 1.6.3 is the same app as 1.6.2. One look everywhere:
 - **Model** uses the same two panes as the other model pages, with a one-line summary per section.
 - **Bind and range check** show what's happening: a timer, *Receiver connected ✓* when telemetry comes in, the live
   signal during a range check, and only the actions your module supports.
@@ -32,10 +32,24 @@ USB mode kept until power-off. Beta 1.6.1 is the same app as 1.6.0. One look eve
 - **The app always shows the radio's real model.** After a switch, a refused or unanswered switch, a reconnect, or a
   switch made on the radio itself, the app reads the model again and says so until it knows. Firmware v1.2.0 tells the
   app at once; with older firmware a switch on the radio is noticed within about 2 s by the model's name.
+- **Voice packs and iNav Lua in the app** (System › Downloads, or Phone storage › Get packs): the EdgeTX voice pack and
+  iNav's Lua telemetry, downloaded only when you ask, with size, version and licence shown first and every file checked.
+- **GPS on Value and Big value widgets**, in the radio's own format (degrees-minutes-seconds or NMEA).
+- **One change at a time.** While the app writes to the radio (a save, a new mix or input, a model switch, duplicate,
+  delete or restore, radio settings, calibration) it shows what it is doing and can't be tapped until the radio
+  confirms, so two changes never cross. If a save fails, the card offers Retry, Discard and Diagnostics; unplugging
+  mid-save keeps your change on the phone for a Retry.
+- **The radio is identified first.** On every connect the app asks the radio who it is before reading anything, so one
+  radio's models, Home screens and settings never show up on another. The model list in the top bar loads by itself.
 - **Report a bug / Request a feature** (System › Feedback): share a bug report with the diagnostic log wherever you
   choose, or open a GitHub issue with your versions filled in. The app sends nothing by itself.
 
 Fixes:
+- Changes made in the app could be lost on the radio when you moved to another page while a save was finishing, or
+  when a save failed. They are now kept and sent, and the app says when one couldn't be.
+- **Home** came back empty after an update or restart on some phones. Your screens are now kept per radio and model,
+  and screens saved by older versions are carried over.
+- **＋ New mix / ＋ New input** now show progress and open the new line; a refusal says why, with Retry.
 - Trim and key beeps on Android sounded like one flat tone and most were skipped. The phone now plays the radio's own
   tones: the pitch follows the trim, with your Speaker pitch and Beep length.
 - Model-tab changes could be undone by a later edit on another model page.
@@ -48,8 +62,12 @@ Fixes:
 - The link reconnects faster after a cable blip.
 - Lua screens: EdgeTX's full set of key events is defined, so the iNav stick menu no longer opens on any stick move.
 
-Updates keep your models, SD card files and settings, including from production 1.3.2. (1.5.0–1.5.2 and 1.3.3 were
-built but never uploaded; their changes are included here.)
+Known issue: FrSky QX7 and other radios with an STM32F2 processor (X9D, X9D+, X9 Lite, T12, TX12, T8 and similar) can't
+tell the app who they are on firmware v1.2.0, so My Radios and per-radio lists use one shared set for them. Fixed in
+firmware v1.2.1.
+
+Updates keep your models, SD card files and settings, including from production 1.3.2. (1.5.0–1.5.2, 1.3.3 and
+1.6.0/1.6.1 were built but never released; their changes are included here.)
 
 ## v1.4.3 — Beta (open testing) · October 2026
 Needs UltraEdge firmware **1.1.22** ([GitHub pre-release](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.22), 56

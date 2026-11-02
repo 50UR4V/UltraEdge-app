@@ -68,6 +68,14 @@ under the **MIT License**. The app's Kotlin implementation of the wire format is
 text is under **CC BY 4.0**, so any radio, app or accessory can implement it. https://github.com/50UR4V/ue-protocol
 (Releases before 2026-10-18 were published under Apache-2.0.)
 
+## Downloaded on request, not bundled
+System › Downloads fetches these, only when you ask, from their own GitHub releases into the phone's UltraEdge folder.
+They are not part of the app, and their licences stay with them:
+- **EdgeTX voice packs** (edgetx-sdcard-sounds), © the EdgeTX project and contributors, **GPL-2.0**.
+  https://github.com/EdgeTX/edgetx-sdcard-sounds
+- **iNav Lua Telemetry** (OpenTX-Telemetry-Widget), © the iNav project and contributors, **GPL-3.0**. The app installs
+  its SCRIPTS/ part. https://github.com/iNavFlight/OpenTX-Telemetry-Widget
+
 ## UltraEdge app
 © 2026 Sourav Karmakar. All rights reserved. The app is proprietary and is distributed through Google Play.
 

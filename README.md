@@ -27,10 +27,10 @@ distributed only through Google Play; there are no APK downloads here, and the a
 - Lua tools such as ExpressLRS configuration, run inside the app
 
 ## Which version?
-**Production:** app 1.6.0 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
+**Production:** app 1.6.2 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
 firmware [v1.2.0](https://github.com/50UR4V/edgetx-ue/releases/latest) for 56 EdgeTX radios: companion builds on
 black-and-white radios, full builds on colour radios. Hardware-verified 2026-11-01: RadioMaster Pocket, Zorro and
-TX16S, FrSky QX7; the other 52 are built, not hardware-tested yet. **Beta:** app 1.6.1
+TX16S, FrSky QX7; the other 52 are built, not hardware-tested yet. **Beta:** app 1.6.3
 ([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app and firmware. Want
 the radio's own menus on Pocket, Zorro or QX7? Use the
 [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. UltraEdge is made for any
