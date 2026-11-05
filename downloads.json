@@ -32,6 +32,38 @@
    "keep": "SCRIPTS/"
   },
   {
+   "id": "lua-elrs-v3",
+   "kind": "luafile",
+   "name": "ExpressLRS Lua (V3)",
+   "lang": "",
+   "voice": "",
+   "repo": "ExpressLRS/ExpressLRS",
+   "tag": "3.6.4",
+   "url": "https://github.com/ExpressLRS/ExpressLRS/releases/download/3.6.4/elrsV3.lua",
+   "size": 30064,
+   "sha256": "1d0fc4411f356b5ca27d7eafa36f59281b7bc3b3c09884f17e4436c0651a4d50",
+   "licence": "GPL-3.0",
+   "source": "https://github.com/ExpressLRS/ExpressLRS/releases/tag/3.6.4",
+   "about": "The ExpressLRS 3.x configuration tool: packet rate, power, binding, WiFi update. Run it from System › Tools.",
+   "keep": "SCRIPTS/TOOLS/elrsV3.lua"
+  },
+  {
+   "id": "lua-elrs-v4",
+   "kind": "luafile",
+   "name": "ExpressLRS Lua (V4)",
+   "lang": "",
+   "voice": "",
+   "repo": "ExpressLRS/ExpressLRS",
+   "tag": "4.1.0",
+   "url": "https://github.com/ExpressLRS/ExpressLRS/releases/download/4.1.0/elrs.lua",
+   "size": 30517,
+   "sha256": "c52bed26ff02f84e5857f01b8c88dbac95029e8f46e6e6cef398419ad91f0e14",
+   "licence": "GPL-3.0",
+   "source": "https://github.com/ExpressLRS/ExpressLRS/releases/tag/4.1.0",
+   "about": "The ExpressLRS 4.x configuration tool, for modules and receivers on ELRS 4. Run it from System › Tools.",
+   "keep": "SCRIPTS/TOOLS/elrs.lua"
+  },
+  {
    "id": "sounds-hk",
    "kind": "sounds",
    "name": "Cantonese",
