@@ -4,10 +4,14 @@
 [![Firmware: GPL v2](https://img.shields.io/badge/firmware-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue)
 [![Protocol: MIT](https://img.shields.io/badge/protocol-MIT-yellow.svg)](https://github.com/50UR4V/ue-protocol)
 [![User Manual](https://img.shields.io/badge/docs-User%20Manual-2dd4bf.svg)](UserManual/README.md)
+[![iPhone: sponsor the testing](https://img.shields.io/badge/iPhone-sponsor%20the%20testing-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/50UR4V)
 
 **Your Android phone as the touchscreen for your EdgeTX radio, over a USB cable.**
 
 <a href="https://play.google.com/store/apps/details?id=com.ultraedge.companion"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="220"></a>
+
+**iPhone:** in development. One basic test on a borrowed iPhone so far; [sponsor the testing](https://github.com/sponsors/50UR4V)
+to get it to the App Store (planned February 2027, tentative).
 
 Plug the phone into a radio running UltraEdge firmware (EdgeTX plus a small companion module) to edit models, watch
 telemetry and run Lua tools on a large screen. The radio runs the control loop. The phone edits supported settings,
@@ -70,6 +74,9 @@ For the radio itself, copy them to its SD card with a card reader.
 ## Related projects
 - [EdgeTX-UE](https://github.com/50UR4V/edgetx-ue): the firmware (EdgeTX plus the companion overlay), GPL-2.0-only.
 - [UE Protocol](https://github.com/50UR4V/ue-protocol): the radio↔phone link (specification, reference codec, tests).
+
+**Where it's going:** the app is the first step toward a modular radio, where the gimbals, switches and case you like
+stay while the screen, processing and RF can be upgraded. Nothing beyond the app and firmware is available yet.
 
 ## Privacy and licences
 UltraEdge collects no personal data and needs no account. It talks to your radio over USB and uses the internet only
