@@ -43,7 +43,8 @@ the radio's own menus on Pocket, Zorro or QX7? Use the
 ## Get it
 1. Install from [Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion) (Android 7.0 or
    newer, a phone with USB host/OTG).
-2. Flash UltraEdge firmware to your radio: see [EdgeTX-UE releases](https://github.com/50UR4V/edgetx-ue/releases).
+2. Flash UltraEdge firmware to your radio: see [EdgeTX-UE releases](https://github.com/50UR4V/edgetx-ue/releases), or
+   build your own file with the [firmware builder](https://github.com/50UR4V/ultraedge-firmware-builder).
 3. Plug in over USB. When Android asks whether to open UltraEdge for the USB device, tap **OK**. Full guide: [User Manual](UserManual/README.md).
 
 ## Useful downloads (SD card and Lua scripts)
