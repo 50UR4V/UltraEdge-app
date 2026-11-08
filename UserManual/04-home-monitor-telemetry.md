@@ -12,6 +12,9 @@ outputs strip. Add as many more screens as you like.
 - **Swipe** left and right between screens.
 - The **🔊 / 🔇** button mutes all call-outs at once, for example to silence a repeating alarm on the bench. Your
   phone's own volume isn't touched.
+- **Upgrade saved Home screens:** after a firmware update, Home may show this once for a model that has older saved
+  screens. Pick a copy and tap **Restore selected**, or **Keep current**. Nothing is deleted. There is no System entry
+  for it.
 
 ### Editing a screen
 

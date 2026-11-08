@@ -15,7 +15,7 @@
 - The firmware is EdgeTX with an additional companion module, so the radio flies exactly as EdgeTX does.
   - **Full builds (TX16S and other colour radios; the v1.1.2.4 fallback on Pocket, Zorro, QX7):** unplug the phone and
     the radio is ordinary EdgeTX, menus included.
-  - **Companion builds (v1.2.0 on Pocket, Zorro, QX7, and other black-and-white radios):** the radio's model and radio-settings menus are removed. Without
+  - **Companion builds (v1.2.1 on Pocket, Zorro, QX7, and other black-and-white radios):** the radio's model and radio-settings menus are removed. Without
     a working phone you can't change settings, bind or range-check at the field, so carry a spare phone or cable.
 
 ## Not yet in the app

@@ -12,18 +12,18 @@
 
 ## Supported radios
 
-UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.0 is hardware-verified on the four radios below; the other
+UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.1 is hardware-verified on the four radios below (TX16S 2026-11-07, the others 2026-11-08); the other
 52 are built, not hardware-tested yet.
 [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) shows each radio's
 build and status. For any other radio, build the firmware yourself (see the EdgeTX-UE `BUILD-HOWTO.md`) or ask on
 [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
 
-| Radio | Firmware v1.2.0 (production and beta) | Full-build fallback ([v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4)) |
+| Radio | Firmware v1.2.1 (production and beta) | Full-build fallback ([v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4)) |
 |---|---|---|
 | RadioMaster **Pocket** | Companion build | Full build: all EdgeTX menus *plus* UltraEdge |
 | RadioMaster **Zorro** | Companion build | Full build |
 | FrSky **QX7 / QX7S (not the ACCESS model)** | Companion build | Full build |
-| RadioMaster **TX16S** | Full build | Not needed: v1.2.0 is already a full build |
+| RadioMaster **TX16S** | Full build | Not needed: v1.2.1 is already a full build |
 
 **Companion builds** remove the radio's own model and radio-settings menus. That frees space for UltraEdge, and on a
 128×64 screen you'd use the phone for those settings anyway.
@@ -89,7 +89,7 @@ Install **UltraEdge** from Google Play.
 > not confirmed"*, unplug and replug, then accept the prompt.
 
 ### USB mode on companion builds
-*Firmware v1.2.0.*
+*Firmware v1.2.0 or newer.*
 
 - **Flying days:** plug in and go. The radio connects to UltraEdge without asking. If the cable drops out, it
   reconnects in the same mode by itself, also without asking. Every UltraEdge build keeps the USB mode until you
@@ -107,5 +107,5 @@ steps (centre, then move to the extremes). See
 
 ## 6. Learn your way around
 
-Read [Finding your way around](03-finding-your-way.md) . Or jump to the
+Read [Finding your way around](03-finding-your-way.md). Or jump to the
 [Recipes](13-recipes.md) if you have a specific job to do.

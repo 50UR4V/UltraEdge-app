@@ -39,7 +39,7 @@ flies that saved configuration. The app is a **configuration and display** tool.
 | MODEL › LOGICAL SWITCHES / SPECIAL FUNCTIONS | **Logic** and **Funcs** tabs. The function list shows **only what your radio's firmware supports** |
 | MODEL › GLOBAL VARIABLES / FLIGHT MODES | **GVars** and **Modes** tabs (FM trim modes included) |
 | MODEL › TELEMETRY (Discover) | **Telem** tab: live tiles, **↻ Discover**, sensor settings |
-| RADIO › SETUP / HARDWARE / TRAINER / CALIBRATION | **System › Radio Setup / Hardware / Switches / Trainer / Calibration** |
+| RADIO › SETUP / HARDWARE / TRAINER / CALIBRATION | **System › Radio Setup / Trainer / Hardware (Switches, Calibration)** |
 | MODEL SELECT (copy, delete, select) | **System › Manage Models**, plus a **library** of backups kept on the phone |
 | SYS › TOOLS (ExpressLRS Lua) | **System › Tools**. The Lua runs **on the phone** with full-size buttons |
 | Main view / telemetry screens / widgets | **Home**: swipeable screens with widgets, Lua telemetry scripts and the Instrument layout |
@@ -49,7 +49,7 @@ flies that saved configuration. The app is a **configuration and display** tool.
 ## What it does well
 
 - **No menu diving.** Settings are one or two taps away on a large touch screen.
-- **Pick by moving.** For any *Source* or *Switch* field, move the stick or flip the switch and UltraEdge selects it.
+- **Pick by moving.** For any *Source* or *Switch* field, move the stick or flip the switch to highlight it, then tap to choose.
 - **See what you're doing.** Inputs and mixes show a live response graph as you change weight, expo, curve or offset.
 - **Only valid choices.** Option lists come from your radio's firmware build.
 - **Backups.** Keep a library of models on the phone and restore them to the same radio or another one.

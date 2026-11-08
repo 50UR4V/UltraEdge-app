@@ -33,7 +33,7 @@ distributed only through Google Play; there are no APK downloads here, and the a
 ## Which version?
 **Production:** app 1.6.4 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
 firmware [v1.2.1](https://github.com/50UR4V/edgetx-ue/releases/latest) for 56 EdgeTX radios: companion builds on
-black-and-white radios, full builds on colour radios. Hardware-verified: RadioMaster TX16S (2026-11-07), Pocket and Zorro and FrSky QX7 (2026-11-08); the other 52 are built, not hardware-tested yet
+black-and-white radios, full builds on colour radios. Hardware-verified: RadioMaster TX16S (2026-11-07), RadioMaster Pocket and Zorro, FrSky QX7 (2026-11-08); the other 52 are built, not hardware-tested yet
 ([Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)). **Beta:** app 1.6.5
 ([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app and firmware. Want
 the radio's own menus on Pocket, Zorro or QX7? Use the

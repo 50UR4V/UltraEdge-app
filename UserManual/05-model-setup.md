@@ -102,7 +102,7 @@ the bay).
 | **Range test** | Reduced-power range check (walk 30 m away with the model; controls must still respond) |
 | **Stop** | Ends bind or range test |
 
-**The receiver card** (with firmware v1.2.0) shows what the module is doing:
+**The receiver card** (with firmware v1.2.0 or newer) shows what the module is doing:
 
 - **Binding… N s**, then **Receiver connected ✓** as soon as telemetry comes in (or a MULTI module reports the bind
   finished).

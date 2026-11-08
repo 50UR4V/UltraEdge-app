@@ -20,14 +20,14 @@
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
 | **Which phones?** | Android only: Android 7.0 or newer with USB host (OTG) support. |
 | **Need internet or an account?** | No account. The app uses the internet only when you ask **System › Downloads** for a voice pack or the iNav Lua telemetry; everything else runs over USB and stays on the phone. |
-| **Which radios?** | Made for any EdgeTX radio. Firmware v1.2.0, hardware-verified: RadioMaster Pocket, Zorro, QX7 / QX7S (not the ACCESS model) as companion builds, TX16S as a full build. Want the radio's own menus on Pocket, Zorro or QX7? Use the [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. Other radios: v1.2.0 builds, not hardware-tested yet. A radio without a build: build it yourself or ask. See [Supported radios](02-getting-started.md#supported-radios). |
+| **Which radios?** | Made for any EdgeTX radio. v1.2.1 is hardware-verified on Pocket, Zorro, QX7/QX7S (not ACCESS) and TX16S; see [Supported radios](02-getting-started.md#supported-radios). |
 
 ## Connection problems
 
 | Symptom | Fix |
 |---|---|
 | Nothing happens when I plug in | Use a **data** cable (many cables only charge). Set the radio's **USB mode** to *Ask* or *Serial*, not *Joystick* or *Storage*. Try the other end of an OTG adapter. |
-| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page; the USB mode is set on the radio's **UltraEdge** screen (press the menu key). On v1.2.0 (and 1.1.22), **USB now** must say *UltraEdge*: see [USB mode on companion builds](02-getting-started.md#usb-mode-on-companion-builds). On 1.1.20, press ENTER until the screen says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
+| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page; the USB mode is set on the radio's **UltraEdge** screen (press the menu key). On v1.2.x (and 1.1.22), **USB now** must say *UltraEdge*: see [USB mode on companion builds](02-getting-started.md#usb-mode-on-companion-builds). On 1.1.20, press ENTER until the screen says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
 | "USB permission not confirmed" | Unplug, replug, and accept Android's prompt. Tick *use by default*. |
 | Stuck on **LINKING** | Unplug and replug once. Check the radio has UltraEdge firmware (Version page: `ultraedge-…`). Stock EdgeTX doesn't talk to the app. |
 | Disconnects now and then | Check the cable and connector. The app reconnects by itself when you replug, and unsaved edits show a **Retry** dialog. |

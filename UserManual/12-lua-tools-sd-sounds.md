@@ -38,6 +38,15 @@ No tools listed? Import `ExpressLRS.lua` (see below) and choose **Tools** as the
 Add a **Lua script** widget to a Home screen (long-press Home, tap a zone, *Lua script*). Pick an installed script or
 **＋ Import script / zip…**. The script draws on a virtual radio screen; **System › Lua screens** sets that screen's size.
 
+## Files
+
+**System › Files** shows the radio's SD card (firmware v1.2.1). Copy files between the radio and the phone, make
+folders, and delete files and empty folders (long-press a folder).
+
+- The app writes only to SOUNDS, SCRIPTS, WIDGETS, IMAGES, THEMES and LOGS. It never writes to MODELS or RADIO.
+- It doesn't write to LOGS while the radio is recording a flight log.
+- Don't change files that a running Lua script is writing.
+
 ## Phone storage
 
 **System › Phone storage** is the phone's own UltraEdge folder: the scripts, sounds and images the app uses. These

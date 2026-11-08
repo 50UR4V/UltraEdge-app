@@ -13,9 +13,9 @@ one-line status, so the screen is also a quick check of the radio, the phone and
 | Radio Setup | [Manage Models](10-models-and-backups.md) | Call-outs and phone |
 | Global Functions | [Flight Logs](11-flight-logs.md) | My Radios |
 | Trainer | [Tools](12-lua-tools-sd-sounds.md) | Lua screens |
-| Hardware (with Switches and Calibration) | [Phone storage](12-lua-tools-sd-sounds.md#phone-storage) | Diagnostics |
-| About radio | [Downloads](12-lua-tools-sd-sounds.md#downloads) | [Feedback](14-troubleshooting-faq.md#getting-help) |
-| | | About and licences |
+| Hardware (with Switches and Calibration) | [Files](12-lua-tools-sd-sounds.md#files) | Diagnostics |
+| About radio | [Phone storage](12-lua-tools-sd-sounds.md#phone-storage) | [Feedback](14-troubleshooting-faq.md#getting-help) |
+| | [Downloads](12-lua-tools-sd-sounds.md#downloads) | About and licences |
 
 Radio cards are dimmed until the radio is attached.
 
@@ -101,7 +101,7 @@ Settings for this phone only; the radio's own sound, backlight and haptic settin
 
 ## My Radios
 
-*Firmware v1.2.0.*
+*Firmware v1.2.0 or newer.*
 
 ![My Radios](media/my-radios.jpg)
 
