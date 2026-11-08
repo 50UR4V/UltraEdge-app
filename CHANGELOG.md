@@ -3,6 +3,34 @@
 *Production = Google Play production, hardware-verified. Beta = Google Play open testing, early access to the next
 version. In release 1.6 both tracks run the same app.*
 
+## v1.6.4 — Production · v1.6.5 — Beta · November 2026
+- Pairs with UltraEdge firmware **v1.2.1** on both tracks ([GitHub](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.1)).
+  Firmware v1.2.0 still works; the app then says which features need the update and how to get it.
+- **Saves take about a second.** A small change (a weight, a name) is shown at once and saved in the background, with a
+  thin line at the top while it runs; nothing locks. The change stays on the phone until the radio confirms it.
+- **Special functions work as on the radio.** New function opens the full editor on the first free slot, and you can set
+  the function before the trigger or the other way round. The trigger list is the radio's own: switches, trims,
+  logical switches, ON, One, flight modes, telemetry, Act and Trn, with Invert. Play Track and Background music list the
+  radio's sounds, Play Script only its `SCRIPTS/FUNCTIONS` scripts. The row menu says Clear, which is what it does.
+- **Your radio's own names.** The app lists only the switches your radio has, by the radio's names (on a QX7 the fifth
+  switch is SF), without a middle position on a two-position switch, and shows inputs by their names (Ail, Ele…).
+- **New mix and New input go on the channel you pick**, from the list of channels or inputs without lines, as on the
+  radio. Before, New mix added a line to the selected line's channel.
+- **System › Files:** the radio's SD card on the phone. Copy files between the radio and the phone, make folders, and
+  delete files and empty folders (long-press a folder). The radio's MODELS and RADIO folders are never written.
+- **Move a stick or switch to find it**, in every source and switch list: its row is highlighted; tap it to choose it,
+  or go back to keep what was there (as on a colour EdgeTX radio).
+- **Calibration shows every pot, slider and 6-position switch** your radio has, by its own names. The 6-pos counts 1–6
+  as you press its buttons, and the app warns before saving with only some of them. With firmware v1.2.1 a 6-pos that a
+  settings reset left uncalibrated works again at start-up (TX16S and similar).
+- **QX7 and similar radios are recognised** (STM32F2 radios, with firmware v1.2.1), so each keeps its own lists.
+- **Home screens survive the firmware update.** Screens saved while the radio couldn't identify itself (firmware v1.2.0
+  on a QX7 and similar) or by an older app come back when the radio first identifies itself. When there is more than one
+  saved copy, **Upgrade saved Home screens** lists each with its date and widgets so you pick. Nothing is deleted.
+- Back from older versions: the live output bar on each Mixes channel, text fields that stop at the radio's length
+  limit, every voice language in Sounds, and model backups that include the radio settings.
+- Beta 1.6.5 is the same app as 1.6.4.
+
 ## v1.6.2 — Production · v1.6.3 — Beta · November 2026
 - Pairs with UltraEdge firmware **v1.2.0** on both tracks ([GitHub](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.0)).
   Older firmware works, with a simpler receiver card.
