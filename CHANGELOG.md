@@ -3,6 +3,20 @@
 *Production = Google Play production, hardware-verified. Beta = Google Play open testing, early access to the next
 version. In release 1.6 both tracks run the same app.*
 
+## v1.6.6 — Production · v1.6.7 — Beta · November 2026
+- Pairs with UltraEdge firmware **v1.2.1**, as 1.6.4 did. No firmware update needed.
+- **Lua works more like on the radio.** Lua screens and widgets animate smoothly, and their call-outs play on Home
+  (iNav's armed, GPS and battery call-outs were silent since 1.5.1). Values come back as the radio gives them, so
+  iNav shows "14" satellites, not "14.0". Maths such as `atan2` works, and more EdgeTX scripts run.
+- **Lua tools** draw sharp and fast and read your sticks live, so StickTime can be flown as a tool.
+- **A script that misbehaves can't spoil the session.** A stuck script is stopped with a message and the app keeps
+  running. A widget that hits an error stops instead of repeating its call-outs, and starts again when the radio
+  reconnects or the model changes.
+- **System › Downloads** now reads its list from UltraEdge's public GitHub page, so new entries appear without an app
+  update. New: the StickTime simulator and the ExpressLRS V3 and V4 Lua scripts.
+- Lua widgets can draw at the widget's own size.
+- Updates keep your models, files and settings.
+
 ## v1.6.4 — Production · v1.6.5 — Beta · November 2026
 - Pairs with UltraEdge firmware **v1.2.1** on both tracks ([GitHub](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.1)).
   Firmware v1.2.0 still works; the app then says which features need the update and how to get it.

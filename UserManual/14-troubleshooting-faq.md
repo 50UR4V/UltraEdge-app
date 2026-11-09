@@ -19,7 +19,7 @@
 | **Use the radio as a simulator joystick?** | Yes, that's the radio's own feature. Set **USB mode: Ask** (System › Radio Setup › Sticks & ports) and pick *Joystick* when plugged into the PC. Companion builds: press ENTER on the UltraEdge screen ([how](02-getting-started.md#usb-mode-on-companion-builds)). |
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
 | **Which phones?** | Android only: Android 7.0 or newer with USB host (OTG) support. |
-| **Need internet or an account?** | No account. The app uses the internet only when you ask **System › Downloads** for a voice pack or the iNav Lua telemetry; everything else runs over USB and stays on the phone. |
+| **Need internet or an account?** | No account. The app uses the internet only when you ask **System › Downloads** for a voice pack or a Lua script; everything else runs over USB and stays on the phone. |
 | **Which radios?** | Made for any EdgeTX radio. v1.2.1 is hardware-verified on Pocket, Zorro, QX7/QX7S (not ACCESS) and TX16S; see [Supported radios](02-getting-started.md#supported-radios). |
 
 ## Connection problems

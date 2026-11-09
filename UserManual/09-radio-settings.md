@@ -97,7 +97,7 @@ Settings for this phone only; the radio's own sound, backlight and haptic settin
 - **Call-out volume:** voice and beep call-outs on the phone.
 - **Voice language** and **voice pack:** the pack lives in [Phone storage › Sounds](12-lua-tools-sd-sounds.md#phone-storage).
 - **Vibration strength** and **screen brightness** while UltraEdge is open (0 = follow the phone).
-- **Connectivity:** UltraEdge uses the internet only when you ask **System › Downloads** for a voice pack or the iNav Lua telemetry. Everything else runs over USB.
+- **Connectivity:** UltraEdge uses the internet only when you ask **System › Downloads** for a voice pack or a Lua script. Everything else runs over USB.
 
 ## My Radios
 

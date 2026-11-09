@@ -60,4 +60,4 @@ flies that saved configuration. The app is a **configuration and display** tool.
 
 - It is **not a ground station or flight controller**. It doesn't send control signals.
 - It doesn't replace your flight controller's configurator. Betaflight, INAV and ArduPilot setup still happens there.
-- It needs no account. It uses the internet only when you ask **System › Downloads** for a voice pack or the iNav Lua telemetry. Everything else runs over the USB cable and stays on your phone.
+- It needs no account. It uses the internet only when you ask **System › Downloads** for a voice pack or a Lua script. Everything else runs over the USB cable and stays on your phone.

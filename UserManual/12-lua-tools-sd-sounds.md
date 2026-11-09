@@ -76,14 +76,17 @@ files are on the phone, not on the radio's SD card.
 
 ## Downloads
 
-**System › Downloads** (also **Phone storage › Get packs**) fetches two packs into Phone storage:
+**System › Downloads** (also **Phone storage › Get packs**) fetches packs into Phone storage:
 
-- the **EdgeTX voice pack** for the phone's call-outs (**Choose a voice** if there's more than one), and
-- the **iNav Lua telemetry** screen and its tool.
+- the **EdgeTX voice pack** for the phone's call-outs (**Choose a voice** if there's more than one),
+- the **iNav Lua telemetry** screen and its tool, and
+- **Lua tools and scripts**, such as the **StickTime** FPV simulator (run it from **System › Tools**).
 
 Each comes from the project's own GitHub release, at a fixed version. The app shows the source, version, size and
-licence before you tap **Download**, and checks every file against its published checksum. This is the only time
-UltraEdge uses the internet; nothing about you or your radio is sent.
+licence before you tap **Download**, and checks every file against its published checksum. The list of what you can
+download is read from UltraEdge's public GitHub page each time you open the page, so new entries appear without an app
+update; offline, the page shows the last list it read. This is the only time UltraEdge uses the internet; nothing about
+you or your radio is sent.
 
 On a full build the radio plays sounds and runs Lua from its own SD card, so it needs the pack there too. The page
 links to the same zip; unzip it to the top folder of the radio's SD card.

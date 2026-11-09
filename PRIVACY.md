@@ -1,6 +1,6 @@
 # UltraEdge — Privacy Policy
 
-**Effective date:** 1 November 2026 · This policy is also published at https://bampi2k.com/ultraedge/privacy
+**Effective date:** 9 November 2026 · This policy is also published at https://bampi2k.com/ultraedge/privacy
 **App:** UltraEdge (`com.ultraedge.companion`)
 **Developer:** Sourav Karmakar
 **Privacy contact:** 50ur4v.x@gmail.com · or open an issue at https://github.com/50UR4V/UltraEdge-app/issues
@@ -10,14 +10,15 @@ does not access, collect, use, or share.
 
 ## Summary
 **UltraEdge collects no personal or sensitive user data, and shares none.** It has no user accounts, no
-analytics, no advertising, and no third-party tracking SDKs. It uses the internet for one thing only: downloading
-the voice packs and Lua scripts you ask for in System › Downloads.
+analytics, no advertising, and no third-party tracking SDKs. It uses the internet for one thing only: System › Downloads,
+which reads the list of available packs and downloads the voice packs and Lua scripts you ask for.
 
 ## Data the app accesses, collects, uses, and shares
 - **Collected / transmitted off the device: none.** UltraEdge communicates **only with the EdgeTX radio you
-  physically connect it to over the USB cable**, except when you ask System › Downloads for a voice pack or the iNav
-  Lua telemetry: the app then downloads that file from the project's GitHub release page (github.com), over HTTPS.
-  Nothing about you, your phone or your radio is sent; GitHub sees the request as any download. It reads and edits that radio's configuration, shows live
+  physically connect it to over the USB cable**, except in System › Downloads: when you open it, the app reads the
+  list of available packs from UltraEdge's public GitHub page (raw.githubusercontent.com), and when you ask for a voice
+  pack or a Lua script it downloads that file from the project's GitHub release page (github.com), over HTTPS.
+  Nothing about you, your phone or your radio is sent; GitHub sees each request as any download. It reads and edits that radio's configuration, shows live
   telemetry, and — only when you choose to — copies flight-log files from the radio's SD card to your phone.
   All of this happens locally between the phone and the radio.
 - **Personal and sensitive data types collected: none** (no location, contacts, camera, microphone,

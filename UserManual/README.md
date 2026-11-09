@@ -31,7 +31,7 @@ ExpressLRS Lua, flight logs.
 | 9 | [Radio settings](09-radio-settings.md) | Radio Setup, Hardware, Switches, Trainer, **Calibration**, My Radios |
 | 10 | [Models & backups](10-models-and-backups.md) | Manage Models, duplicate/delete/select, library, archives, copy between radios |
 | 11 | [Flight logs](11-flight-logs.md) | Logging, automatic copy, the built-in log viewer (charts + GPS track) |
-| 12 | [Lua, Tools and Phone storage](12-lua-tools-sd-sounds.md) | ExpressLRS Lua, Lua widgets, the radio's SD card (System › Files), importing scripts, downloading voice packs and iNav Lua |
+| 12 | [Lua, Tools and Phone storage](12-lua-tools-sd-sounds.md) | ExpressLRS Lua, Lua widgets, the radio's SD card (System › Files), importing scripts, downloading voice packs and Lua scripts (iNav, StickTime, ExpressLRS) |
 | 13 | [Recipes: how do I…?](13-recipes.md) | Step-by-step for the common jobs (see the finder below) |
 | 14 | [Troubleshooting & FAQ](14-troubleshooting-faq.md) | "Can it do X?", fixes for the usual EdgeTX headaches |
 | 15 | [Safety & current limits](15-safety-and-limits.md) | What the app never does, what still needs the radio |
