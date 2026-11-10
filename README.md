@@ -8,6 +8,8 @@
 
 **Your Android phone as the touchscreen for your EdgeTX radio, over a USB cable.**
 
+**New here?** Follow the [step-by-step quick start](QUICK-START.md): from a stock EdgeTX radio to editing models on your phone.
+
 <a href="https://play.google.com/store/apps/details?id=com.ultraedge.companion"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="220"></a>
 
 **iPhone:** in development. One basic test on a borrowed iPhone so far; [sponsor the testing](https://github.com/sponsors/50UR4V)

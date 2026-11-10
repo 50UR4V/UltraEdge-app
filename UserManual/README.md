@@ -18,6 +18,8 @@ ExpressLRS Lua, flight logs.
 
 ## Contents
 
+First time? The [step-by-step quick start](../QUICK-START.md) takes you from a stock EdgeTX radio to your first change, then links back here.
+
 | # | Section | What's in it |
 |---|---|---|
 | 1 | [Overview](01-overview.md) | What UltraEdge is and isn't, how it compares to EdgeTX, safety model |
