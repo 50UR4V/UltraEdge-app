@@ -95,10 +95,18 @@ Install **UltraEdge** from Google Play.
 - **Flying days:** plug in and go. The radio connects to UltraEdge without asking. If the cable drops out, it
   reconnects in the same mode by itself, also without asking. Every UltraEdge build keeps the USB mode until you
   switch the radio off.
-- **Simulator practice:** press the radio's menu key to open the **UltraEdge** screen, then press **ENTER**. "USB now"
-  steps through **UltraEdge → Simulator (joystick) → SD card** and switches straight away, with no need to replug.
-  It lasts until you switch the radio off, so your next flying day starts in UltraEdge again.
-- **Make it permanent:** hold **ENTER** to save the current mode as the **Default**.
+- **Simulator practice:** press any settings key on the radio (Pocket and Zorro: **SYS** or **MDL**; QX7:
+  **MENU**) to open the **UltraEdge** screen, then press **ENTER**. "USB now" steps through **UltraEdge → Simulator
+  (joystick) → SD card** and switches straight away, with no need to replug. It lasts until you switch the radio off,
+  so your next flying day starts in UltraEdge again.
+- **Make it permanent:** hold **ENTER** to save the current mode as the **Default**. **EXIT** goes back.
+
+| Open the screen | Press ENTER | Press ENTER again | Hold ENTER (here on Simulator) |
+|---|---|---|---|
+| ![UltraEdge screen: USB now UltraEdge, Default UltraEdge](media/radio-ue-screen-1-flying.svg) | ![USB now Simulator](media/radio-ue-screen-2-simulator.svg) | ![USB now SD card](media/radio-ue-screen-3-sdcard.svg) | ![USB now Simulator, Default Simulator](media/radio-ue-screen-4-saved.svg) |
+| Flying: the phone app connects. | Simulator: the PC sees a joystick. | SD card: the PC sees the card as a drive. | Saves the current mode as the Default. |
+
+*Simulated screens of a 128×64 radio (Pocket, Zorro, QX7). The version lines show your own build.*
 
 ## 5. Calibrate (companion builds, first time)
 

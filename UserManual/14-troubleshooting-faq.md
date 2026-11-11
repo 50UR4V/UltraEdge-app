@@ -27,7 +27,7 @@
 | Symptom | Fix |
 |---|---|
 | Nothing happens when I plug in | Use a **data** cable (many cables only charge). Set the radio's **USB mode** to *Ask* or *Serial*, not *Joystick* or *Storage*. Try the other end of an OTG adapter. |
-| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page; the USB mode is set on the radio's **UltraEdge** screen (press the menu key). On v1.2.x (and 1.1.22), **USB now** must say *UltraEdge*: see [USB mode on companion builds](02-getting-started.md#usb-mode-on-companion-builds). On 1.1.20, press ENTER until the screen says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
+| Phone won't connect to a **companion-build** radio | A companion build has no Radio Setup page; the USB mode is set on the radio's **UltraEdge** screen (press **SYS** or **MDL**; QX7: **MENU**). On v1.2.x (and 1.1.22), **USB now** must say *UltraEdge*: see [USB mode on companion builds](02-getting-started.md#usb-mode-on-companion-builds). On 1.1.20, press ENTER until the screen says *Serial* (or *Ask*), then replug. **Older firmware, or no screen access:** on a computer, set `USBMode: 3` in `RADIO/radio.yml` on the SD card. |
 | "USB permission not confirmed" | Unplug, replug, and accept Android's prompt. Tick *use by default*. |
 | Stuck on **LINKING** | Unplug and replug once. Check the radio has UltraEdge firmware (Version page: `ultraedge-…`). Stock EdgeTX doesn't talk to the app. |
 | Disconnects now and then | Check the cable and connector. The app reconnects by itself when you replug, and unsaved edits show a **Retry** dialog. |
