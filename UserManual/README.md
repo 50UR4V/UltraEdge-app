@@ -12,9 +12,9 @@ ExpressLRS Lua, flight logs.
 
 | | App | Firmware | Status |
 |---|---|---|---|
-| **Production** | 1.6.4 (Google Play) | v1.2.1 (GitHub release, Latest): companion builds on black-and-white radios, full builds on colour radios | Hardware-verified on v1.2.1 by the owner: TX16S 2026-11-07; Pocket, Zorro and QX7 2026-11-08. The other 52 radios: built, not hardware-tested yet. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) |
-| **Beta** | 1.6.5 (Google Play open testing), the same app as 1.6.4 | v1.2.1, the same files | Same as production |
-| **Full-build fallback** | 1.6.4 or 1.6.5 | [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4), full build on Pocket, Zorro, QX7 | For pilots who want to keep the radio's own menus |
+| **Production** | 1.6.6 (Google Play) | v1.2.1 (GitHub release, Latest): companion builds on black-and-white radios, full builds on colour radios | Hardware-verified on v1.2.1 by the owner: TX16S 2026-11-07; Pocket, Zorro and QX7 2026-11-08. The other 52 radios: built, not hardware-tested yet. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) |
+| **Beta** | 1.6.7 (Google Play open testing), the same app as 1.6.6 | v1.2.1, the same files | Same as production |
+| **Full-build fallback** | 1.6.6 or 1.6.7 | [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4), full build on Pocket, Zorro, QX7 | For pilots who want to keep the radio's own menus |
 
 ## Contents
 
@@ -72,7 +72,7 @@ Grey dots in the clips show where a finger touched.
 - **UltraEdge app** (this manual, issues, changelog): <https://github.com/50UR4V/UltraEdge-app>
 - **EdgeTX-UE firmware** (download/flash for your radio): <https://github.com/50UR4V/edgetx-ue>
 - **UE Protocol** (the open radio↔phone protocol): <https://github.com/50UR4V/ue-protocol>
-- **3D-printable phone mounts**: planned
+- **3D-printable phone mounts**: [ultraedge-mounts](https://github.com/50UR4V/ultraedge-mounts) (RadioMaster Pocket, TX16S MKII, FrSky QX7)
 
 [![App: proprietary](https://img.shields.io/badge/app-proprietary-lightgrey.svg)](https://github.com/50UR4V/UltraEdge-app/blob/main/OPEN-SOURCE-NOTICES.md)
 [![Firmware: GPL v2](https://img.shields.io/badge/firmware-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue)
