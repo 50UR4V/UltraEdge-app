@@ -76,6 +76,8 @@ For the radio itself, copy them to its SD card with a card reader.
 ## Related projects
 - [EdgeTX-UE](https://github.com/50UR4V/edgetx-ue): the firmware (EdgeTX plus the companion overlay), GPL-2.0-only.
 - [UE Protocol](https://github.com/50UR4V/ue-protocol): the radio↔phone link (specification, reference codec, tests).
+- **Wireless link (in testing):** an ESP32-C3 Bluetooth bridge on the radio's AUX port. RF test: [Running a Bluetooth
+  bridge beside ExpressLRS](docs/rf-tests/2026-11-11-tx16s-ble/README.md).
 
 **Where it's going:** the app is the first step toward a modular radio, where the gimbals, switches and case you like
 stay while the screen, processing and RF can be upgraded. Nothing beyond the app and firmware is available yet.
