@@ -64,6 +64,38 @@
    "keep": "SCRIPTS/TOOLS/elrs.lua"
   },
   {
+   "id": "ultrasim-aircraft",
+   "kind": "simpack",
+   "name": "UltraSim aircraft",
+   "lang": "",
+   "voice": "",
+   "repo": "50UR4V/UltraEdge-app",
+   "tag": "ultrasim-packs-1",
+   "url": "https://github.com/50UR4V/UltraEdge-app/releases/download/ultrasim-packs-1/UltraSim-aircraft-1.zip",
+   "size": 1557,
+   "sha256": "99abf3dd2cf5a125ae3281336e18c425739e4b75c03627ad24051eb4e1edd93b",
+   "licence": "UltraEdge app licence",
+   "source": "https://github.com/50UR4V/UltraEdge-app/releases/tag/ultrasim-packs-1",
+   "about": "Three aircraft for UltraSim: a 5-inch quad, and the Swift 800 and Cruiser 1200 flying wings.",
+   "keep": "SCRIPTS/TOOLS/UltraSim/craft/"
+  },
+  {
+   "id": "ultrasim-tracks",
+   "kind": "simpack",
+   "name": "UltraSim tracks",
+   "lang": "",
+   "voice": "",
+   "repo": "50UR4V/UltraEdge-app",
+   "tag": "ultrasim-packs-1",
+   "url": "https://github.com/50UR4V/UltraEdge-app/releases/download/ultrasim-packs-1/UltraSim-tracks-1.zip",
+   "size": 7920,
+   "sha256": "93bce114e4f596126f6306cad057e19de993fcf9fe5cd5f89b5d01072b787e51",
+   "licence": "UltraEdge app licence",
+   "source": "https://github.com/50UR4V/UltraEdge-app/releases/tag/ultrasim-packs-1",
+   "about": "Seven tracks for UltraSim: Meadow GP, Sunset Eight, Bando Run, Canyon Run and Downtown for quads; Valley Pylons and Island Circuit for flying wings.",
+   "keep": "SCRIPTS/TOOLS/UltraSim/tracks/"
+  },
+  {
    "id": "sounds-hk",
    "kind": "sounds",
    "name": "Cantonese",
