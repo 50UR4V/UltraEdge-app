@@ -1,6 +1,6 @@
 # 16. Wireless (Bluetooth)
 
-[← Safety & current limits](15-safety-and-limits.md) · [Contents](README.md)
+[← Safety & current limits](15-safety-and-limits.md) · [Contents](README.md) · [Next: Cloud backup & account →](17-cloud-backup-and-account.md)
 
 *App 1.7.1 and UltraEdge firmware v1.2.2 or newer.*
 
@@ -25,13 +25,12 @@ The Baylink is flashed once over USB, before it goes into its shell, from a desk
 Chrome on **https://ultraedge.app**. No sign-in is needed. The page asks **where the module will go: Module bay or AUX1
 port**; pick the right one, because a Bluetooth update can't change it later (only another USB flash can).
 
-Registering the Baylink (free, Google sign-in) comes later and happens in the app, over Bluetooth: the shell stays
-closed. A Baylink that isn't registered still works in this release. Its licence belongs to the module, not to a phone
-or a radio.
+Activating the Baylink is free and happens in the app over Bluetooth, with one email: the shell stays closed (section
+6). A Baylink that isn't activated still works in this release. Its licence belongs to the module, not to a phone or a
+radio.
 
 > [!NOTE]
-> **Coming soon.** Registration and the browser flasher open on ultraedge.app shortly after this release. The page
-> will also have the wiring guide for each radio and the printable case
+> **Coming soon.** The wiring guide for each radio and the printable case follow on ultraedge.app
 > ([ultraedge-mounts](https://github.com/50UR4V/ultraedge-mounts), CC BY-SA 4.0).
 
 ## 3. Module in the bay
@@ -72,6 +71,10 @@ On radios with an **AUX1** port (TX16S, Pocket, Zorro) the module can be wired t
    wireless.
 3. On the radio's ULTRAEDGE screen, **Connect: BLE AUX** is offered once AUX1 is UltraEdge.
 4. Unplug the USB cable and tap **Connect over Bluetooth**.
+
+**Moving a bay module to AUX1.** You can reuse the same board. Take it out of its shell, flash it again over USB on the
+flasher page (section 2) and choose **AUX1 port**, with **Erase the whole chip first** left off. Its registration and
+paired phones stay. Then wire it to AUX1 and follow the steps above. Moving it back to the bay works the same way.
 
 **USB always comes first.** Plug the cable in and the app uses it; the app shows **Radio is on its USB cable. Bluetooth
 comes back when you unplug it.** Unplug it and the wireless link is used again. The radio never switches links in the
@@ -119,8 +122,9 @@ and can flash their old firmware back later. Then move your Baylink into their b
 remembers the module, not the radio, so it connects without pairing and shows their models. Their model needs External
 RF Off (**Module bay** in the app sets UE-BLE).
 
-**Giving away or selling your Baylink:** make it forget every phone first. Its licence belongs to the module, so it
-works for the new owner.
+**Giving away or selling your Baylink:** make it forget every phone first, and tap **Release this Baylink** (section 6)
+to free your slot. Its licence belongs to the module, so it works for the new owner, who can move it to their own name
+with **Activate on my account**.
 
 If something goes wrong the app says what and waits for **Retry**:
 
@@ -143,7 +147,33 @@ If something goes wrong the app says what and waits for **Retry**:
   update stops, the module keeps its current firmware. The radio link pauses during the update and comes back after
   the module restarts.
 
-A module that isn't registered yet still works in this release; the page says so.
+A module that isn't activated yet still works in this release; the page says so.
+
+### Activate your Baylink
+Activation ties the module to your email address so support can help you and a stolen module can be blocked. It is free.
+1. Connect over Bluetooth and open **Wireless module**. Tap **Activate this Baylink**. The module makes its own key (a
+   few seconds; keep the phone close). The private half of that key never leaves the module.
+2. Tap **Email support**. Your email app opens with the activation request filled in; send it. (Or **Copy request** and
+   paste it into an email to 50ur4v.x@gmail.com.)
+3. You get an activation code back by email. Copy it, tap **Enter activation code**, paste it and tap **Activate**.
+4. The module saves it and the page shows **✓ Activated** and then **Registered** with its serial number.
+
+Until the code arrives the module works as before. If you tap **Activate this Baylink** again, the module keeps the same
+key, so the request you sent stays good. **Make a new request** gives it a new key (only when support asks for it). One email address can have up to 5 Baylinks.
+
+### Selling, buying, losing it
+- **Bought or were given a Baylink?** Tap **Activate on my account** and send the request as above. Support moves it to
+  your email address; the previous owner's slot frees up. The module works in the meantime.
+- **Selling or giving it away?** Tap **Release this Baylink** and send the email. Your slot frees up; the module keeps
+  working for the next owner.
+- **Stolen?** Email support with the module's serial or the licence details you sent earlier. It goes on the stolen list
+  that comes with the next app update; the app then shows it as reported stolen.
+- **Deleting your data** removes your email address from the record; the module keeps working.
+
+### Licence details for support
+**Copy licence details** puts the module's licence card on the clipboard: chip ID, serial, kind, firmware, key set,
+licence state, issue date and the licence itself. Paste it into any email to support. Nothing in it is secret: the
+licence only works on its own module, and the module's private key never leaves it.
 
 ## 7. Power and the settings file (advanced)
 The link is **always on at low power** by default: about 0 dBm on air, well below what a typical RC link transmits.
@@ -176,5 +206,9 @@ If you used `/UE/AUXARM.TXT` before, its switch is carried over the first time.
 | **Bluetooth permission is needed** | Allow Nearby devices (or Location on Android 11 and older) for UltraEdge in Android's settings |
 | **The Bluetooth link to the module dropped** | Out of range, or `arm_switch` turned it off. Tap **Connect over Bluetooth** again; an edit that wasn't confirmed offers **Retry** |
 | **AUX port used for something else** | AUX1 is set to another mode on the radio. Change it there if you want wireless |
+| **The module didn't answer** (activating) | Keep the phone close to the radio and tap **Try again**. If it keeps happening, tap **Share diagnostics** and send the log |
+| **This code is for an older request** / **for another Baylink** | Use the code from the reply to your latest request, for this module. Copy the whole code |
+| **This module's firmware can't be activated from the app yet** | Update the module firmware first (section 6), then activate |
+| **This module's firmware is too old to activate or update over Bluetooth** | Update it once over USB with the web flasher on ultraedge.app (section 2), then activate |
+| **Support asked for a new request** | Tap **Make a new request** and send it. The request you sent before stops working |
 | **The app doesn't find my module, but another one** | The app connects only to the module it remembers. If you changed modules, choose the new one when asked, or Forget the old one (section 5) |
-
