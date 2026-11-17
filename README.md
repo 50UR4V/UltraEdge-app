@@ -97,6 +97,3 @@ when you ask System › Downloads for a voice pack or the iNav Lua telemetry. Se
 [Open an issue](https://github.com/50UR4V/UltraEdge-app/issues) for a bug or a request. Attach the diagnostics log
 (**System › Diagnostics › Share log**) and, for firmware problems, your radio's Version page lines.
 
----
-*UltraEdge is an independent community project, not affiliated with or endorsed by EdgeTX, FrSky or RadioMaster. Their
-names are trademarks of their respective owners.*

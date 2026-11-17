@@ -99,6 +99,3 @@ SD card backup back if you need to.
 
 **Help:** [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues), or **System › Feedback › Report a bug** in
 the app.
-
-*UltraEdge is a project built on EdgeTX. It isn't an official EdgeTX app and isn't endorsed by EdgeTX, FrSky,
-RadioMaster or ExpressLRS.*

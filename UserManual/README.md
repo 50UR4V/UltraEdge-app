@@ -79,5 +79,3 @@ Grey dots in the clips show where a finger touched.
 [![Protocol: MIT](https://img.shields.io/badge/protocol-MIT-yellow.svg)](https://github.com/50UR4V/ue-protocol)
 [![Manual: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
 
----
-UltraEdge is a community project. It is not affiliated with or endorsed by EdgeTX, FrSky, RadioMaster or ExpressLRS.

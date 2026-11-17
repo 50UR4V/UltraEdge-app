@@ -2,7 +2,6 @@
 
 [← Safety & current limits](15-safety-and-limits.md) · [Contents](README.md)
 
-
 *App 1.7.1 and UltraEdge firmware v1.2.2 or newer.*
 
 Love UltraEdge but hate cables? **UltraEdge Wireless is here.** An **UltraEdge Baylink** (the wireless module) in the
@@ -166,7 +165,6 @@ If you used `/UE/AUXARM.TXT` before, its switch is carried over the first time.
 > Raising the power or flying with the link on is your choice. Check your RC link's range with the module on, at the
 > power you set, before you fly.
 
-
 ## Troubleshooting
 
 | Problem | Try |
@@ -180,5 +178,3 @@ If you used `/UE/AUXARM.TXT` before, its switch is carried over the first time.
 | **AUX port used for something else** | AUX1 is set to another mode on the radio. Change it there if you want wireless |
 | **The app doesn't find my module, but another one** | The app connects only to the module it remembers. If you changed modules, choose the new one when asked, or Forget the old one (section 5) |
 
----
-UltraEdge is a community project, not affiliated with or endorsed by EdgeTX, FrSky or RadioMaster.

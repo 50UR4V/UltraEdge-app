@@ -145,4 +145,3 @@ basis, UltraEdge keeps the wireless link active while the model is armed by defa
   20 dBm). Clock time, GPS, stick and switch positions and battery data were removed before publishing.
 - [`tx16s-ab-2026-11-11.svg`](tx16s-ab-2026-11-11.svg): Figure 1.
 
-*UltraEdge is not affiliated with or endorsed by EdgeTX, ExpressLRS, FrSky or RadioMaster.*

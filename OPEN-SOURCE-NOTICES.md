@@ -79,7 +79,3 @@ They are not part of the app, and their licences stay with them:
 ## UltraEdge app
 © 2026 Sourav Karmakar. All rights reserved. The app is proprietary and is distributed through Google Play.
 
----
-
-*Trademarks: EdgeTX, FrSky and RadioMaster are trademarks of their respective owners. UltraEdge is an independent
-community project and is not affiliated with or endorsed by them.*
