@@ -37,6 +37,9 @@ First time? The [step-by-step quick start](../QUICK-START.md) takes you from a s
 | 13 | [Recipes: how do I…?](13-recipes.md) | Step-by-step for the common jobs (see the finder below) |
 | 14 | [Troubleshooting & FAQ](14-troubleshooting-faq.md) | "Can it do X?", fixes for the usual EdgeTX headaches |
 | 15 | [Safety & current limits](15-safety-and-limits.md) | What the app never does, what still needs the radio |
+| 16 | [Wireless](16-wireless.md) | The UltraEdge wireless module in the module bay or on AUX1, turning it on, `/UE/WIRELESS.TXT` |
+| 17 | [Cloud backup & account](17-cloud-backup-and-account.md) | Google Drive backup, optional sign-in, install info, deleting your data |
+| 18 | [Setup Assistants](18-setup-assistants.md) | Wire a flying wing, V-tail, flaperons or crow wing by watching the surfaces |
 
 ## "How do I…?" finder
 
@@ -47,7 +50,9 @@ First time? The [step-by-step quick start](../QUICK-START.md) takes you from a s
 | Set **failsafe** correctly (and know when it doesn't matter) | [Recipe: failsafe](13-recipes.md#failsafe) |
 | Add a **throttle cut** / throttle hold | [Recipe: throttle cut](13-recipes.md#throttle-cut--throttle-hold) |
 | Set up **dual rates & expo** | [Recipe: rates & expo](13-recipes.md#dual-rates--expo-on-a-switch) |
-| Mix a **flying wing (elevons)**, **V-tail**, **flaperons** | [Recipes: wings & tails](13-recipes.md#elevon-flying-wing--delta-mixing) |
+| Mix a **flying wing (elevons)**, **V-tail**, **flaperons** | [Setup Assistants](18-setup-assistants.md) · [Recipes: wings & tails](13-recipes.md#elevon-flying-wing--delta-mixing) |
+| Connect **without a cable** (Bluetooth) | [Wireless](16-wireless.md) |
+| Back up models and logs to **Google Drive** | [Cloud backup](17-cloud-backup-and-account.md) |
 | Reverse a servo, set endpoints / subtrim | [Outputs](06-inputs-mixes-outputs.md#outputs) |
 | Get a **battery-voltage / RSSI warning** | [Recipe: telemetry alarms](13-recipes.md#low-battery--link-quality-warning) · [Telem › ⚠ Alarms](04-home-monitor-telemetry.md#telemetry) |
 | Make a **timer** that runs with the throttle | [Recipe: throttle timer](13-recipes.md#a-flight-timer-that-runs-with-the-throttle) |
