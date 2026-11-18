@@ -9,8 +9,9 @@ UltraEdge is **made for any EdgeTX radio**: it turns your Android phone into a b
 UltraEdge has two parts that work together:
 
 - **UltraEdge firmware.** This is EdgeTX with a small companion module added. It flies exactly like stock EdgeTX.
-  The companion module stays idle until a phone is plugged in.
-- **The UltraEdge app** for Android. Over a USB cable it reads the radio's models and settings, shows them on the
+  The companion module stays idle until a phone connects.
+- **The UltraEdge app** for Android. Over a USB cable, or over Bluetooth with an UltraEdge
+  [wireless module](16-wireless.md), it reads the radio's models and settings, shows them on the
   phone's screen, and writes your changes back to the radio.
 
 With UltraEdge, the phone does the work a PC with EdgeTX Companion would do, plus the radio's own small menus. It
@@ -60,4 +61,4 @@ flies that saved configuration. The app is a **configuration and display** tool.
 
 - It is **not a ground station or flight controller**. It doesn't send control signals.
 - It doesn't replace your flight controller's configurator. Betaflight, INAV and ArduPilot setup still happens there.
-- It needs no account. It uses the internet only when you ask **System › Downloads** for a voice pack or a Lua script. Everything else runs over the USB cable and stays on your phone.
+- It needs no account. Google sign-in is optional, only for [backups to your own Google Drive](17-cloud-backup-and-account.md). The app uses the internet only for what you start: Downloads, the firmware update check, Drive backup, the 3D replay's maps and the wind lookup, plus anonymous install info if you allow it. Everything else stays between your phone and your radio.

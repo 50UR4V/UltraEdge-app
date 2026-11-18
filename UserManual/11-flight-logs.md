@@ -55,5 +55,44 @@ Everything is worked out on the phone. No upload and no account.
 
 > [!NOTE]
 > **EdgeTX ↔ UltraEdge:** stock EdgeTX needs the SD card in a PC and Companion's log viewer (or a third-party tool).
-> UltraEdge pages logs newest-first, so a card with hundreds of logs stays fast. Smarter organisation (per radio, per
-> model, per session) and cloud backup are planned.
+> UltraEdge pages logs newest-first, so a card with hundreds of logs stays fast. To keep logs in your own Google
+> Drive, see [Cloud backup](17-cloud-backup-and-account.md).
+
+## 4. Import a flight-controller log
+*App 1.7.0 beta or newer.*
+
+You can open a log from your **flight controller**, as well as the radio's own logs. It gets the same viewer as a
+radio log. Copy the file to the phone first, for example into **Downloads**.
+
+| Flight controller | File | Where to get it |
+|---|---|---|
+| **ArduPilot** | `.BIN` (DataFlash) or a Mission Planner `.log` export | FC SD card › `APM/LOGS`, or Mission Planner › DataFlash Logs › *Download DataFlash Log Via Mavlink*, or QGroundControl › Analyze Tools › Log Download |
+| **iNav** | `.TXT` (blackbox) | FC SD card › `LOGS`, or iNav Configurator › Blackbox › *Save flash to file* |
+
+1. Open **System › Flight Logs** and scroll to **FLIGHT CONTROLLER LOGS · iNav · ArduPilot**.
+2. Tap **＋ Import log…** and pick the file, for example from **Downloads**. Pick one file at a time.
+3. The app shows *✓ imported …* and the log appears in the list below. **View**, **Share** or **Delete** it like a
+   radio log.
+
+The **ⓘ iNav**, **ⓘ ArduPilot** and **ⓘ EdgeTX** buttons show where to find each kind of log and which values
+UltraEdge reads from it. The log is read on the phone and never uploaded.
+
+> [!NOTE]
+> **"isn't an iNav blackbox, ArduPilot DataFlash or EdgeTX log":** check the file type. An ArduPilot telemetry log
+> (`.tlog`) isn't supported; use the `.BIN`. A file that was cut short while copying can also fail; copy it again.
+> For the GPS track and replay, the log needs GPS (ArduPilot's default `LOG_BITMASK` includes it; on iNav, turn on
+> blackbox logging with a GPS fitted).
+
+## 5. 3D replay and Recovery assist
+*App 1.7.0 or newer.* For a log with GPS (radio, iNav or ArduPilot):
+- **3D replay** flies the log again on satellite maps, with place names and roads, at up to 20× speed. The first time,
+  the app tells you that it loads the 3D engine from Cesium and map tiles from Esri and OpenStreetMap; the log itself
+  stays on the phone.
+- **Recovery assist** estimates where a lost model came down from the end of its log. **Refine with wind** asks
+  Open-Meteo for that day's wind (the app sends only the launch point rounded to about 1 km, and the date). **Show my
+  position** adds your own position and distance, after Android asks for location; it is used on the phone only.
+  **Navigate**, **Copy** and **Share** hand the search point to an app you choose.
+
+> [!TIP]
+> Screenshots of these screens show coordinates and your distance. Blur them before you post one.
+

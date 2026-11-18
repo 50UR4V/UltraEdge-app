@@ -16,6 +16,13 @@ outputs strip. Add as many more screens as you like.
   screens. Pick a copy and tap **Restore selected**, or **Keep current**. Nothing is deleted. There is no System entry
   for it.
 
+### Trims on Home
+
+The trim bars show where each trim sits and, next to it, its value in **µs** at the output ("+12µs"); a centred trim
+shows no number. One trim step is 1 µs for a 100 % input. Beyond ±128 (only with **Extended trims**) the bar turns
+amber. Home follows the model's **Display trims** (Model › Trims): **No** hides the values, **Change** shows a value
+for 2 seconds after it moves, **Yes** always shows it.
+
 ### Editing a screen
 
 **Long-press** a screen to edit it. The edit bar appears:
@@ -93,7 +100,9 @@ Turn the vario on with a **Vario** special function.
 UltraEdge plays the radio's sounds **through the phone**: the start-up welcome, number call-outs, Special-Function
 tracks and warnings. Phone-side Lua scripts can also speak (`playFile`, `playNumber`, `playTone`).
 
-If a script asks for a voice file the phone doesn't have, UltraEdge **reads it out with text-to-speech** instead, and
-reminds you to import the voice pack (**System › Phone storage › Import**).
+If a voice file isn't on the phone, UltraEdge **says its words with text-to-speech** instead (for example "acro
+mode", in the chosen voice language), for the radio's call-outs and for Lua scripts alike, and reminds you to import the
+voice pack (**System › Phone storage › Import**). The app carries the words only; the recorded voices come from the
+voice pack.
 
 Mute everything with the 🔊 button on Home or **System › Call-outs and phone › Show mute button**.

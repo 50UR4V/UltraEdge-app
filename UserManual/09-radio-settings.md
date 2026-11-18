@@ -88,6 +88,12 @@ when you report a problem. Also here:
 
 - **radio.yml:** a read-only overview of every global setting, as the radio stores it.
 - **Back up radio settings:** shares the radio's `radio.yml` file. Keep it with your model backups.
+- **Check for firmware update:** asks GitHub for the newest UltraEdge firmware (the release marked Latest). When it has
+  a newer file of the same kind (companion or full) for your exact radio, **Download** saves it in Phone storage ›
+  FIRMWARE after checking its SHA-256 and that the file is for your radio; then **Share the file…** and follow the
+  steps on the page (copy it to the radio's SD card, flash it from the EdgeTX bootloader). The app never writes the
+  firmware to the radio itself. A radio whose firmware doesn't say which radio it is: pick your radio from the list
+  and confirm it (check the name on the radio; the Q X7 and the Q X7 ACCESS need different files).
 
 ## Call-outs and phone
 
@@ -97,7 +103,7 @@ Settings for this phone only; the radio's own sound, backlight and haptic settin
 - **Call-out volume:** voice and beep call-outs on the phone.
 - **Voice language** and **voice pack:** the pack lives in [Phone storage › Sounds](12-lua-tools-sd-sounds.md#phone-storage).
 - **Vibration strength** and **screen brightness** while UltraEdge is open (0 = follow the phone).
-- **Connectivity:** UltraEdge uses the internet only when you ask **System › Downloads** for a voice pack or a Lua script. Everything else runs over USB.
+- **Connectivity:** UltraEdge uses the internet only when you ask: **System › Downloads** for a voice pack or a Lua script, and **About radio › Check for firmware update**. Everything else runs over USB.
 
 ## My Radios
 

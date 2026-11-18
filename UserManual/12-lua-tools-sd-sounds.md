@@ -29,6 +29,30 @@ With the **ExpressLRS** script you can:
 
 No tools listed? Import `ExpressLRS.lua` (see below) and choose **Tools** as the destination.
 
+## UltraSim (FPV simulator)
+
+**UltraSim** is UltraEdge's own simulator: fly a 5-inch quad or a flying wing on the phone's screen with your radio's
+sticks. Open it from its own icon in the rail (the quad, just below **System**), or from **System › Tools › UltraSim**.
+It runs only in the app, not on the radio's screen. With firmware v1.2.2 the radio sends the sticks faster over USB,
+so the simulator feels closer to a real quad; older firmware works too.
+
+- **Race** the track (laps, best lap, a ghost of your best lap, up to three AI pilots), or fly **Freestyle**.
+- **Aircraft** and **Track** pick what you fly. A quad flies the quad tracks, a wing the wing tracks.
+- **Settings**: picture, field of view, camera tilt, rates, laps, sound, AI pilots, ghost.
+
+The simulator comes with the app; its **tracks and aircraft are downloads**. Get **UltraSim tracks** and **UltraSim
+aircraft** in **System › Downloads** (both, since an aircraft needs a track of its kind). With none installed, UltraSim
+says *No tracks or aircraft yet* and **Open Downloads** takes you there. **Remove** on the same page deletes a pack's
+files again; your best laps stay.
+
+> [!WARNING]
+> **The radio keeps transmitting while you fly UltraSim.** A powered model that is bound to the radio follows the
+> sticks. UltraSim warns you when an RF module is on and won't start while a receiver answers. Unplug the model's battery,
+> or use a model with both RF modules off.
+
+Your own tracks and aircraft are Lua files in `SCRIPTS/TOOLS/UltraSim/tracks` and `/craft` in Phone storage; copy one of
+the downloaded files and change it. A pack that doesn't load is named on UltraSim's menu.
+
 ## Telemetry screens & widgets (iNav OSD…)
 
 > [!NOTE]
@@ -79,14 +103,15 @@ files are on the phone, not on the radio's SD card.
 **System › Downloads** (also **Phone storage › Get packs**) fetches packs into Phone storage:
 
 - the **EdgeTX voice pack** for the phone's call-outs (**Choose a voice** if there's more than one),
-- the **iNav Lua telemetry** screen and its tool, and
+- the **iNav Lua telemetry** screen and its tool,
+- **UltraSim tracks** and **UltraSim aircraft** for [UltraSim](#ultrasim-fpv-simulator) (with **Remove** once they're
+  on the phone), and
 - **Lua tools and scripts**, such as the **StickTime** FPV simulator (run it from **System › Tools**).
 
 Each comes from the project's own GitHub release, at a fixed version. The app shows the source, version, size and
 licence before you tap **Download**, and checks every file against its published checksum. The list of what you can
 download is read from UltraEdge's public GitHub page each time you open the page, so new entries appear without an app
-update; offline, the page shows the last list it read. This is the only time UltraEdge uses the internet; nothing about
-you or your radio is sent.
+update; offline, the page shows the last list it read. Nothing about you or your radio is sent.
 
 On a full build the radio plays sounds and runs Lua from its own SD card, so it needs the pack there too. The page
 links to the same zip; unzip it to the top folder of the radio's SD card.

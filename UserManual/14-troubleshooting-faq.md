@@ -10,7 +10,8 @@
 | **Edit without the radio attached?** | You can browse cached models, your library, logs and settings. Edits need the radio attached, because the radio holds the model. |
 | **Copy a model between radios?** | Yes: Export/library → **Restore to radio** on the other one. See [Models & backups](10-models-and-backups.md#copy-a-model-to-another-radio). |
 | **Back up all my models?** | Export each one as an archive (model + image + logs + scripts) and keep them in the phone's library. **System › About radio › Back up radio settings** also saves the radio settings. |
-| **Show telemetry on the phone?** | Yes: live tiles (**Telem**), widgets and full-size Lua telemetry screens (for example iNav OSD) on **Home**. No Bluetooth module or special build needed; it all goes over the USB cable. |
+| **Use it without a cable?** | Yes, with an UltraEdge [wireless module](16-wireless.md) in the module bay of a Pocket, Zorro or TX16S (QX7: with the model's Internal RF Off), or on AUX1, and firmware v1.2.2. |
+| **Show telemetry on the phone?** | Yes: live tiles (**Telem**), widgets and full-size Lua telemetry screens (for example iNav OSD) on **Home**. It all goes over the USB cable, or over Bluetooth with an UltraEdge [wireless module](16-wireless.md). |
 | **Voice call-outs through the phone?** | Yes. Radio sounds and Lua call-outs play on the phone's speaker, with text-to-speech when a voice file is missing. |
 | **Show my flight on a map / find a lost model?** | The log viewer draws the **GPS track** from your SD logs, so the end of the track is where to look. Logging must be on and GPS telemetry present. |
 | **View logs without a PC?** | Yes: **System › Flight Logs** copies them automatically and charts them. |
@@ -19,7 +20,7 @@
 | **Use the radio as a simulator joystick?** | Yes, that's the radio's own feature. Set **USB mode: Ask** (System › Radio Setup › Sticks & ports) and pick *Joystick* when plugged into the PC. Companion builds: press ENTER on the UltraEdge screen ([how](02-getting-started.md#usb-mode-on-companion-builds)). |
 | **Fly the model from the phone?** | **No, deliberately.** The phone never sends control signals. |
 | **Which phones?** | Android only: Android 7.0 or newer with USB host (OTG) support. |
-| **Need internet or an account?** | No account. The app uses the internet only when you ask **System › Downloads** for a voice pack or a Lua script; everything else runs over USB and stays on the phone. |
+| **Need internet or an account?** | No. Google sign-in is optional, only for [Drive backup](17-cloud-backup-and-account.md). The internet is used only for what you start (Downloads, firmware check, Drive, 3D replay maps, wind lookup) and for anonymous install info if you allow it. |
 | **Which radios?** | Made for any EdgeTX radio. v1.2.1 is hardware-verified on Pocket, Zorro, QX7/QX7S (not ACCESS) and TX16S; see [Supported radios](02-getting-started.md#supported-radios). |
 
 ## Connection problems

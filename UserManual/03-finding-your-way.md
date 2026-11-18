@@ -32,6 +32,7 @@ UltraEdge runs in landscape. The screen has three parts:
 | **Modes** | MODEL › FLIGHT MODES | Flight modes and their trims |
 | **Telem** | MODEL › TELEMETRY | Live sensors, discovery |
 | **System** | RADIO menus + Model select + Tools | Radio settings, models, logs, Lua tools, SD card, app settings |
+| **UltraSim** (quad icon) | (app only) | Opens the [UltraSim FPV simulator](12-lua-tools-sd-sounds.md#ultrasim-fpv-simulator) straight away; closing it returns to the page you were on |
 
 ## Two-pane editing
 

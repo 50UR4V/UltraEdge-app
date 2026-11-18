@@ -17,8 +17,8 @@ production track and on open testing (beta); both have the same features.
     each radio you connect. Nothing that identifies you.
   - **Google sign-in, for backups to your own Google Drive:** your name and e-mail are added to the install record. The
     app can see only the files it creates in your Drive.
-  - **Activating a Baylink:** an email you send us with the module's chip ID; we keep your e-mail address with it to issue
-    and re-issue its licence ([details](#modules)).
+  - **Activating a Baylink:** the module's chip ID and your Google account (or the email you send us); we keep them to
+    issue and re-issue its licence ([details](#modules)).
   - **Online features you start yourself:** 3D flight replay (map tiles), the wind lookup in Recovery Assist (a launch
     point rounded to about 1 km), Downloads, and the firmware update check.
 - No advertising, no analytics SDK, no tracking across apps, and nothing is sold.
@@ -28,13 +28,14 @@ production track and on open testing (beta); both have the same features.
 
 | What | When | Sent to | What is sent |
 |---|---|---|---|
-| Anonymous install info | Only after you tap **Allow** on the first-run card; at most once a day | Google (EU region), under a random ID from an anonymous Google sign-in | App version and code, Android version, phone make and model, each connected radio's type and UltraEdge firmware version with its first and last connection date, the version of this notice you agreed to, first and last seen dates |
+| Anonymous install info | Only after you tap **Allow** on the first-run card, or while you're signed in with Google; at most once a day | Google (EU region), under a random ID from an anonymous Google sign-in | App version and code, Android version, phone make and model, each connected radio's type and UltraEdge firmware version with its first and last connection date, the version of this notice you agreed to, first and last seen dates |
 | Google sign-in | When you tap **Sign in with Google** | Google; your name and e-mail are added to the install record | Your Google account's name, e-mail address and account ID |
 | Google Drive backup | When you tap **Sync now** / **Back up now**, or once a day if you turn on automatic backup (Wi-Fi only if you choose) | Your own Google Drive | The model files, radio settings and flight logs you back up |
 | 3D flight replay | When you open a replay, after a one-time notice | Cesium (cesium.com) for the 3D engine; Esri (arcgisonline.com) and OpenStreetMap (tile.openstreetmap.org) for map tiles | Ordinary web requests for the map area around the flight. The log itself stays on the phone |
 | Wind lookup (Recovery Assist) | When you tap **Refine with wind**, after a one-time notice | Open-Meteo (open-meteo.com) | The launch point rounded to about 1 km, and the flight's date |
 | Downloads | When you open System › Downloads, and for each pack you download | GitHub (raw.githubusercontent.com, github.com) | Ordinary download requests; nothing about you or your radio |
 | Firmware update check | When you tap **Check for firmware update** (System › About radio) | GitHub (api.github.com, github.com) | Ordinary requests for the latest UltraEdge firmware release and, if you ask, its file. Nothing is sent to the radio |
+| Baylink activation | When you tap **Activate this Baylink** or **Activate on my account**, signed in with Google | UltraEdge's activation server | The activation request (the module's chip ID, serial, kind, firmware, licence and new public key) and a Google sign-in token that tells the server your Google account ID and e-mail address ([details](#modules)) |
 | App updates | When the Play app finds a newer version | Google Play | Handled by Google Play under Google's privacy policy |
 
 Nothing else leaves the phone. Every connection uses HTTPS.
@@ -53,7 +54,8 @@ Nothing else leaves the phone. Every connection uses HTTPS.
 - **The wireless link.** Over Bluetooth, the app talks only to the UltraEdge wireless module on your radio, which
   passes the same messages to the radio that a USB cable would. The app reads the module's firmware version, its chip
   ID (the chip's hardware address and revision) and its licence state, shows them in System › Call-outs and phone ›
-  Wireless module, and writes them to the diagnostics log on the phone. They are not sent anywhere by the app.
+  Wireless module, and writes them to the diagnostics log on the phone. The app sends them only when you activate the
+  module (below).
 - **Diagnostics.** The app keeps a technical log on the phone. It leaves the phone only if you tap **Share log** or
   **Share diagnostics** and choose where to send it in Android's share sheet.
 
@@ -82,24 +84,31 @@ Nothing else leaves the phone. Every connection uses HTTPS.
   [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the
   Limited Use requirements.
 
+<a id="modules"></a>
 ## Baylink activation (wireless modules)
 <!-- Website: give this heading the anchor #modules (ultraedge.app/privacy links to it). -->
 **This section applies only to UltraEdge Baylinks (the wireless modules).** Nothing else in this policy changes for
 pilots who don't activate a module. Flashing the module firmware on ultraedge.app needs no sign-in and sends us nothing.
 
-**Activating a Baylink** is an email to us: the app builds an activation request and you send it from your own email
-app. The request holds the module's chip ID (its hardware address and chip revision), its serial number, kind and
-firmware version, its licence, and the public half of a key the module made. When we answer with an activation code we
-keep, in a private record: your e-mail address, that chip ID, the serial number, the module's public key, its kind and
-firmware, the date, and whether the module is active, released or reported stolen. We use it to issue and re-issue the
-module's licence, to limit activations to 5 per e-mail address, to move a module to a new owner, and to answer support
-requests. We don't receive anything from your radio, your models, your location or your phone, and never the module's
-private key (it is made in the module and never leaves it). The app sends nothing by itself: you choose what to email.
+**Activating a Baylink.** The app builds an activation request: the module's chip ID (its hardware address and chip
+revision), its serial number, kind and firmware version, its licence, and the public half of a key the module made.
+- **In the app, signed in with Google:** when you tap **Activate this Baylink** or **Activate on my account**, the app
+  sends the request to UltraEdge's activation server with a Google sign-in token, which tells the server your Google
+  account ID and e-mail address. The server answers with the activation code.
+- **By email:** you send the request from your own email app, and we answer with the code.
 
-**Moving and deleting.** "Activate on my account" from a new owner moves the module to their e-mail address. "Release
+Either way we keep, in a private record: your e-mail address (and your Google account ID when you activated in the
+app), that chip ID, the serial number, the module's public key, its kind and firmware, the date, and whether the
+module is active, released or reported stolen. We use it to issue and re-issue the module's licence, to limit
+activations to 5 per account, to move a module to a new owner, and to answer support requests. We don't receive
+anything from your radio, your models, your location or your phone, and never the module's private key (it is made in
+the module and never leaves it). The app sends nothing until you tap Activate.
+
+**Moving and deleting.** "Activate on my account" from a new owner moves the module to their account. "Release
 this Baylink" or a deletion request removes your e-mail address from the record; the module keeps working. If you report
 a module stolen, its chip ID goes on a stolen list that ships, as a one-way hash, inside app updates, so the app
-shows it as reported stolen; we keep that entry until you tell us it was found. Our emails are kept in Gmail (Google); the record is kept privately by the developer. Nobody else gets them. When we
+shows it as reported stolen; we keep that entry until you tell us it was found. Our emails are kept in Gmail (Google); the
+record is kept privately by the developer on the activation server, with a backup copy. Nobody else gets them. When we
 delete your e-mail address from the record, older private copies of it may still contain it for a while; they are
 never shared, and we remove them on request.
 
@@ -109,18 +118,20 @@ never shared, and we remove them on request.
   or ask us to.
 - **Delete it yourself:** System › Cloud backup › **Delete my account & data** deletes your UltraEdge account and this
   install's record at once, and signs you out. Turning off **Anonymous install info** (System › Call-outs and phone ›
-  Privacy) stops all further updates.
+  Privacy) stops further updates while you're not signed in. While you're signed in with Google, the record stays up to
+  date; sign out or delete your account to stop it.
 - **Or ask us:** e-mail 50ur4v.x@gmail.com with the subject "Delete my UltraEdge data" and your Google e-mail or the
   **Install ID** shown in System › Call-outs and phone › Privacy. We delete the account and record within 30 days and
   reply when it is done. Steps: https://bampi2k.com/ultraedge/delete-account
-- **Your Baylinks:** e-mail us with the subject "Delete my UltraEdge data"; we remove your e-mail address from the module
-  record within 30 days. The modules keep working.
+- **Your Baylinks:** e-mail us with the subject "Delete my UltraEdge data"; we remove your e-mail address and Google
+  account ID from the module record within 30 days. The modules keep working.
 - **Your Google Drive files** are yours: delete them in Drive. To remove the app's access to Drive, open
   https://myaccount.google.com/permissions.
 
 ## Third-party services
 Google (sign-in, the install record, Drive and Play), Cesium, Esri, OpenStreetMap, Open-Meteo and GitHub
-handle the requests listed above under their own privacy policies. Navigate, Copy and Share hand data (for example the
+handle the requests listed above under their own privacy policies. UltraEdge's activation server is run by the
+developer. Navigate, Copy and Share hand data (for example the
 recovery coordinates, or a log file) to an app you choose; that app's policy then applies.
 
 ## Security
@@ -132,6 +143,10 @@ UltraEdge is a tool for radio-control hobbyists and is not directed at children.
 
 ## Changes to this policy
 If this policy changes, the new version is posted at this address with a new effective date.
+
+**Earlier versions.** The versions effective 9 and 11 November 2026 covered the app up to version 1.7.0. This version
+adds Baylink activation (in the app and by email), says when the install record is updated for signed-in users, and names the services by what
+you see (Google). We send any earlier version on request.
 
 ## Contact
 Sourav Karmakar — 50ur4v.x@gmail.com (or https://github.com/50UR4V/UltraEdge-app/issues).

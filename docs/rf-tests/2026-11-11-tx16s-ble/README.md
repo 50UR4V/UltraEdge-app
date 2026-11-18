@@ -45,7 +45,8 @@ The bridge was designed with this question in mind, before any measurement:
 - **Bluetooth Low Energy only.** The release bridge firmware has Wi-Fi compiled out. Wi-Fi would mean higher duty cycle
   and wider channels.
 - **An optional off switch.** The radio powers the bridge from the AUX port and can cut that power. A pilot can name
-  any switch in `/UE/AUXARM.TXT` on the SD card, and the bridge is then fully unpowered while that switch is on.
+  any switch as `arm_switch` in `/UE/WIRELESS.TXT` on the SD card, a settings file the radio writes itself, and the
+  bridge is then fully unpowered while that switch is on. By default there is none.
 
 ## 3. Test setup
 | | |
@@ -119,8 +120,8 @@ bridge on at 20 dBm. Unshaded: bridge unpowered.*
 
 **Conclusion.** In this configuration, a BLE bridge at 2 dBm on the radio's AUX port, carrying live traffic beside an
 ExpressLRS 2.4 GHz module at 10 mW, the bridge does not measurably degrade either direction of the RC link. On that
-basis, UltraEdge keeps the wireless link active while the model is armed by default. The optional arm switch in
-`/UE/AUXARM.TXT` remains for pilots who prefer the bridge unpowered in flight.
+basis, UltraEdge keeps the wireless link active while the model is armed by default. The optional arm switch
+(`arm_switch` in `/UE/WIRELESS.TXT`) remains for pilots who prefer the bridge unpowered in flight.
 
 ## 7. What this test does not cover
 - **One radio, one module, one bench.** The TX16S with an external Nomad. An internal module, a different antenna
@@ -136,12 +137,12 @@ basis, UltraEdge keeps the wireless link active while the model is armed by defa
 - **Mount it on the AUX port as designed,** not taped against the RF module or its antenna.
 - **Do a range check** after fitting the bridge, as after any change to the radio, with the bridge on and the phone
   connected.
-- **To have the bridge off in flight,** name a switch in `/UE/AUXARM.TXT` (for example `SF2`). The radio then cuts
-  the bridge's power while that switch is on.
+- **To have the bridge off in flight,** set `arm_switch=SF2` (for example) in `/UE/WIRELESS.TXT` on the SD card. The
+  radio writes that file at its first start with the defaults (`arm_switch=none`, `power_dbm=2`) and a note on each
+  option, and re-reads it every 5 seconds. The radio then cuts the bridge's power while that switch is on.
 
 ## Data
 - [`tx16s-ab-2026-11-11.csv`](tx16s-ab-2026-11-11.csv): the full 10 Hz log, reduced to the ExpressLRS link columns.
   Time is in seconds from the start, and the `esp` column gives the bridge state: `off`, `C2` (on, 2 dBm) or `C6` (on,
   20 dBm). Clock time, GPS, stick and switch positions and battery data were removed before publishing.
 - [`tx16s-ab-2026-11-11.svg`](tx16s-ab-2026-11-11.svg): Figure 1.
-

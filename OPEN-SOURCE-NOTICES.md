@@ -11,7 +11,8 @@ Their licences and notices are reproduced or referenced here. In the app: **Syst
 ---
 
 ## Lua 5.4 — MIT License
-UltraEdge embeds the unmodified Lua 5.4 interpreter to run on-phone Lua telemetry scripts.
+UltraEdge embeds the Lua 5.4.7 interpreter to run on-phone Lua scripts, unchanged except that its Lua 5.3 compatibility
+option (`LUA_COMPAT_5_3`) is turned on in `luaconf.h`.
 
 ```
 Copyright © 1994–2024 Lua.org, PUC-Rio.
@@ -45,8 +46,19 @@ The app bundles these typefaces, unmodified, under the [SIL Open Font License, V
 ## AndroidX, Kotlin and Compose Multiplatform — Apache License 2.0
 AndroidX Core, AppCompat and DrawerLayout © The Android Open Source Project; the Kotlin standard library,
 Compose Multiplatform (runtime, foundation, UI, resources), kotlinx.coroutines and kotlinx.serialization
-© JetBrains s.r.o. and Kotlin contributors; and Ktor (network) © JetBrains s.r.o. and Ktor contributors, are used
-under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+© JetBrains s.r.o. and Kotlin contributors; Ktor (network) © JetBrains s.r.o. and Ktor contributors; **Kable** (Bluetooth LE, the wireless link) © JUUL Labs, Inc.;
+and AndroidX **Credential Manager** and **WorkManager** © The Android Open Source Project, are used under the
+[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+## Google Play and Google sign-in libraries
+Google Play In-App Updates (`com.google.android.play:app-update`), Google Play services Auth and the Google Identity
+library (`googleid`) are provided by Google under the Android Software Development Kit License and Google's terms of
+service. They show Play's update offer and Google sign-in.
+
+## Ed25519 signature check — public domain
+The app checks the wireless module's licence and update signatures with its own Kotlin port of TweetNaCl's
+`crypto_sign_open` (Daniel J. Bernstein, Wesley Janssen, Tanja Lange, Peter Schwabe, Matthew Dempsky, Sjaak Smetsers;
+public domain).
 
 ## EdgeTX and the EdgeTX-UE firmware — GPL-2.0-only
 [![GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
@@ -68,14 +80,42 @@ under the **MIT License**. The app's Kotlin implementation of the wire format is
 text is under **CC BY 4.0**, so any radio, app or accessory can implement it. https://github.com/50UR4V/ue-protocol
 (Releases before 2026-10-18 were published under Apache-2.0.)
 
+## Spoken call-out words
+When a call-out's voice file is missing on the phone, the app speaks its words with the phone's text-to-speech. For this
+the app contains a list of the plain words that the standard call-outs say (for example "acro mode", "flight mode one",
+"gear down"), in 16 languages, keyed by the voice file's name. **No audio is included in the app**; the recorded voices
+come only from a voice pack you download (below) or import.
+
 ## Downloaded on request, not bundled
 System › Downloads fetches these, only when you ask, from their own GitHub releases into the phone's UltraEdge folder.
 They are not part of the app, and their licences stay with them:
 - **EdgeTX voice packs** (edgetx-sdcard-sounds), © the EdgeTX project and contributors, **GPL-2.0**.
   https://github.com/EdgeTX/edgetx-sdcard-sounds
+- **UltraSim tracks and aircraft**, the UltraEdge project's own Lua files, from the UltraEdge-app releases, **CC BY-SA 4.0**.
+  https://github.com/50UR4V/UltraEdge-app/tree/main/ultrasim-packs
 - **iNav Lua Telemetry** (OpenTX-Telemetry-Widget), © the iNav project and contributors, **GPL-3.0**. The app installs
   its SCRIPTS/ part. https://github.com/iNavFlight/OpenTX-Telemetry-Widget
 
 ## UltraEdge app
 © 2026 Sourav Karmakar. All rights reserved. The app is proprietary and is distributed through Google Play.
 
+## Online services the app uses when you ask
+- **Google Play services / Google SDKs** (sign-in and the install record), Apache License 2.0
+  (https://www.apache.org/licenses/LICENSE-2.0): record anonymous install info when you allow it, and link Google
+  sign-in. They are Google services subject to Google's terms.
+- **CesiumJS** (https://cesium.com/platform/cesiumjs/, © Cesium GS, Inc.), Apache License 2.0: the 3D flight replay loads it
+  from Cesium's CDN when you open a replay. Map imagery: Esri World Imagery (© Esri, Maxar, Earthstar Geographics, and the
+  GIS User Community, shown with Esri's attribution) and OpenStreetMap tiles (© OpenStreetMap contributors, ODbL).
+- **Open-Meteo** (https://open-meteo.com/), weather data under CC BY 4.0: the optional wind lookup in Recovery Assist.
+  "Weather data by Open-Meteo.com" is shown in the app.
+
+## UltraEdge wireless module (separate from the app)
+The wireless module is a separate device; nothing below is part of the app.
+- **Module firmware:** proprietary, binary only, under the UltraEdge wireless module firmware licence (published with the
+  firmware on https://ultraedge.app/licence). It contains ESP-IDF and NimBLE (© Espressif Systems and contributors,
+  Apache License 2.0) and **Monocypher** 4.0.2 (© Loup Vaillant and contributors, dual-licensed BSD-2-Clause or CC0-1.0;
+  used under CC0-1.0). The full notices for the image are published with it.
+- **Module case (3D-printable):** © 2026 Sourav Karmakar, under
+  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/): anyone may print, change and sell prints with
+  attribution, and changes stay under the same licence. Files: https://github.com/50UR4V/ultraedge-mounts
+  (`wireless-module/`).

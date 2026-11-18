@@ -1,6 +1,6 @@
 # 15. Safety & current limits
 
-[← Troubleshooting & FAQ](14-troubleshooting-faq.md) · [Contents](README.md)
+[← Troubleshooting & FAQ](14-troubleshooting-faq.md) · [Contents](README.md) · [Next: Wireless →](16-wireless.md)
 
 ## Safety
 
@@ -33,6 +33,6 @@ next.
 
 ## Privacy
 
-UltraEdge needs no account. It uses the internet only when you ask **System › Downloads** for a voice pack or a Lua script. Models, logs and settings stay on the phone and the radio. The radio's
+UltraEdge needs no account; Google sign-in is optional, only for backups to your own Google Drive. The app uses the internet only for what you start (Downloads, the firmware update check, Drive backup, the 3D replay's maps, the wind lookup) and for anonymous install info if you allow it. Models, logs and settings stay on the phone and the radio unless you back them up to your Drive. The radio's
 processor ID is reduced to a short fingerprint used only to keep each radio's caches separate, and it is never sent
 anywhere. See the [privacy policy](https://bampi2k.com/ultraedge/privacy).

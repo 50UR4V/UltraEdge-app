@@ -13,8 +13,8 @@ the sections on the left, each with a one-line summary, and the selected section
 |---|---|---|
 | **Model name** | Edit in place | Up to the radio's name length |
 | **Timer 1 / 2 / 3** | Timer page | Name, Mode, **Switch**, Start, Minute beep, Countdown, Persistent, Direction |
-| **Trims** | Trims page | Trim increment, Display trims, Extended trims |
-| **Throttle** | Throttle page | Reversed, Trim (idle-only throttle trim) |
+| **Trims** | Trims page | Trim Step, Extended trims, Display trims, **Reset** |
+| **Throttle** | Throttle page | Reverse, Source, Trim idle only, Trim switch |
 | **Pre-flight checks** | Pre-flight page | **Throttle warning**, custom throttle position, the **position each switch must be in**, and **pot/slider** positions at power-on |
 | **Other** | Other page | ADC jitter filter, **Use global functions** (whether this model runs the radio's [global functions](08-logic-functions-gvars-modes.md#global-functions)) |
 | **Internal RF / External RF** | Module page | Type, RX channels, First channel, **Failsafe**, plus the **receiver card** with Bind and Range test |
@@ -45,10 +45,33 @@ a call every minute, and **Persistent** to keep the time across power cycles (*F
 > **Flight timer for a quad:** Mode **ON** + Switch = your **arm switch**. It runs exactly while you're armed. See
 > [A flight timer](13-recipes.md#a-flight-timer-that-runs-with-the-throttle).
 
+## Trims
+
+EdgeTX's trim settings, with EdgeTX's own names on every radio:
+
+| Field | Meaning |
+|---|---|
+| **Trim Step** | How far one trim click moves: Exponential, Extra Fine, Fine, Medium, Coarse |
+| **Extended trims** | Trims reach ±512 instead of ±128 |
+| **Display trims** | Whether the trim value is shown: **No**, **Change** (for 2 seconds after it moves) or **Yes**. Home follows it ([Trims on Home](04-home-monitor-telemetry.md#trims-on-home)) |
+| **Reset** | Sets every trim of every flight mode back to zero, after you confirm. Firmware v1.2.2 |
+
+The app lists as many trims as your radio has: 6 on a TX16S (T5 and T6 as trims and trim switches), 4 on Pocket,
+Zorro and QX7. Trim *values* are set with the radio's trim buttons; the app shows them (see
+[Flight modes](08-logic-functions-gvars-modes.md)).
+
+> [!NOTE]
+> **Saving from the app keeps your trims** (firmware v1.2.2). Trims and global-variable values set on the radio, running
+> timers and telemetry stay as they were when the app saves the model. With older firmware the app reads the model
+> again before saving if a trim moved on the radio, so a trim isn't lost either.
+
 ## Throttle
 
-- **Reversed**: for radios or pilots who use a reversed throttle stick.
-- **Trim**: idle-only trim. The throttle trim adjusts idle without moving full throttle (planes and helis).
+- **Reverse**: for radios or pilots who use a reversed throttle stick.
+- **Source**: what the throttle timers and throttle warnings follow: the throttle stick, a pot or slider, or an output
+  channel.
+- **Trim idle only**: the throttle trim adjusts idle without moving full throttle (planes and helis).
+- **Trim switch**: which trim works as the throttle trim.
 
 ## Pre-flight checks
 

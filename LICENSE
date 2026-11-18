@@ -6,3 +6,7 @@ distribute, reverse-engineer, or create derivative works of the App except as pe
 store's terms under which the App is distributed. The App is provided "as is", without warranty of any
 kind. Open-source components embedded in the App are licensed under their own terms; see
 OPEN-SOURCE-NOTICES.md.
+
+Exception: the UltraSim track and aircraft packs in ultrasim-packs/ are not part of the App's terms
+above. They are licensed under the Creative Commons Attribution-ShareAlike 4.0 International licence
+(CC BY-SA 4.0); see ultrasim-packs/LICENSE.

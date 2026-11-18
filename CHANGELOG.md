@@ -3,6 +3,46 @@
 *Production = Google Play production, hardware-verified. Beta = Google Play open testing, early access to the next
 version. In release 1.6 both tracks run the same app.*
 
+## v1.7.1 — Production and Beta · November 2026
+<!-- DRAFT for the owner. Trim-command and wireless lines depend on the RC6 radio pass (RELEASE-NOTES-app-v1.7.1.md holds). -->
+*Production and open testing run the same app again.* Pairs with UltraEdge firmware **v1.2.2**; v1.2.1 still works, and
+the app says which features need v1.2.2.
+- **UltraEdge goes wireless.** Connect over Bluetooth through an UltraEdge wireless module (ESP32-C3) in the radio's
+  module bay: the nano bay of the RadioMaster Pocket and Zorro, the JR bay of the TX16S. On radios with an AUX1 port the
+  module can be wired to AUX1 instead (do it yourself). Turn on System › Call-outs and phone › Wireless link and answer
+  "Where is your wireless module?"; the radio saves the setting itself. USB always comes first: the app says when the
+  radio is on its cable, and Bluetooth comes back when you unplug it. On the QX7 the bay link needs the model's Internal
+  RF Off; the app explains it. The module firmware comes through ultraedge.app shortly, as registration opens.
+- **Everything from beta 1.7.0 is now in production:** Google Drive backup with optional Google sign-in (now under
+  System › Cloud backup, with the backups in an "UltraEdge Backups" folder per radio), 3D flight replay, Recovery assist,
+  iNav and ArduPilot logs, Check for firmware update, and Play updates offered in the app.
+- **UltraSim**, a quad and wing simulator flown with your radio's sticks, from its own icon in the rail. Tracks and
+  aircraft are free downloads in System › Downloads. With firmware v1.2.2 the radio sends the sticks faster over USB.
+- **Setup Assistants** (System › Tools): flying wing, V-tail, two ailerons, flaperons and 4-servo crow. Move each stick,
+  say what the surfaces do, and the assistant writes the mixes with the right signs.
+- **Trims as in EdgeTX.** Home shows each trim's value in µs and follows the model's Display trims; the TX16S shows its
+  6 trims. New on the Trims and Outputs pages with firmware v1.2.2: Reset trims, Add all Trims to Subtrims, Copy trims
+  and Copy axis to subtrim. Throttle gets Source and Trim switch.
+- **An app save leaves the flight alone** (firmware v1.2.2): trims, global variables, running timers and telemetry
+  stay as they were on the radio.
+- **Missing voice files are spoken.** When a call-out's voice file isn't on the phone, the phone says its words.
+- Updates keep your models, files and settings.
+
+## v1.7.0 — Beta · November 2026
+*Open testing only; production stays on 1.6.6.* Pairs with UltraEdge firmware **v1.2.1**, as before.
+- **Google Drive backup.** Sign in with Google (optional) under System › Cloud backup. Each radio gets its own folder
+  for models, flight logs and settings; you choose the sync direction per radio, and restore or replace a model from
+  Manage Models. Signing in is only needed for Drive; everything else works without an account.
+- **3D flight replay** on satellite maps, with place names and roads, playback speed up to 20×, and a settings panel for
+  what's shown. Open a flight log, then 3D replay. Works with EdgeTX, iNav and ArduPilot logs.
+- **Recovery assist** estimates where a downed model came down from the end of its log, using the wind at the time, and
+  can show your own position next to it (optional, used on the phone only).
+- **About radio › Check for firmware update** compares your radio's firmware with the latest release and downloads the
+  right file for that radio, with the flashing steps.
+- **Play updates:** the app offers a newer Play version itself and restarts only when nothing is being written.
+- Optional anonymous install info (asked once) helps with support.
+- Updates keep your models, files and settings.
+
 ## v1.6.6 — Production · v1.6.7 — Beta · November 2026
 - Pairs with UltraEdge firmware **v1.2.1**, as 1.6.4 did. No firmware update needed.
 - **Lua works more like on the radio.** Lua screens and widgets animate smoothly, and their call-outs play on Home

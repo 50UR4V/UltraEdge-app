@@ -6,7 +6,7 @@
 [![User Manual](https://img.shields.io/badge/docs-User%20Manual-2dd4bf.svg)](UserManual/README.md)
 [![iPhone: sponsor the testing](https://img.shields.io/badge/iPhone-sponsor%20the%20testing-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/50UR4V)
 
-**Your Android phone as the touchscreen for your EdgeTX radio, over a USB cable.**
+**Your Android phone as the touchscreen for your EdgeTX radio, over a USB cable or Bluetooth.**
 
 **New here?** Follow the [step-by-step quick start](QUICK-START.md): from a stock EdgeTX radio to editing models on your phone.
 
@@ -31,12 +31,18 @@ distributed only through Google Play; there are no APK downloads here, and the a
 - Radio settings, guided stick and pot calibration, sensor discovery
 - Flight logs copied off the radio, with charts and a GPS track in the app
 - Lua tools such as ExpressLRS configuration, run inside the app
+- **Wireless:** connect over Bluetooth through an UltraEdge wireless module in the radio's module bay (Pocket, Zorro,
+  TX16S), or on AUX1 as a do-it-yourself option ([manual](UserManual/16-wireless.md))
+- Setup Assistants for wings and tails; trims as in EdgeTX, with µs values and trim commands
+- Optional backup to your own Google Drive, 3D flight replay and Recovery assist
+- UltraSim, a quad and wing simulator flown with your radio's sticks
 
 ## Which version?
-**Production:** app 1.6.6 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
-firmware [v1.2.1](https://github.com/50UR4V/edgetx-ue/releases/latest) for 56 EdgeTX radios: companion builds on
-black-and-white radios, full builds on colour radios. Hardware-verified: RadioMaster TX16S (2026-11-07), RadioMaster Pocket and Zorro, FrSky QX7 (2026-11-08); the other 52 are built, not hardware-tested yet
-([Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)). **Beta:** app 1.6.7
+**Production:** app 1.7.1 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
+firmware [v1.2.2](https://github.com/50UR4V/edgetx-ue/releases/latest) for 56 EdgeTX radios: companion builds on
+black-and-white radios, full builds on colour radios. Hardware-verified on v1.2.2: Pocket, Zorro, TX16S and QX7 (November 2026). RadioMaster Boxer: reported working by a tester. The other 51 are
+built, not hardware-tested yet
+([Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)). **Beta:** app 1.7.1
 ([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app and firmware. Want
 the radio's own menus on Pocket, Zorro or QX7? Use the
 [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. Details:
@@ -76,24 +82,25 @@ For the radio itself, copy them to its SD card with a card reader.
 ## Related projects
 - [EdgeTX-UE](https://github.com/50UR4V/edgetx-ue): the firmware (EdgeTX plus the companion overlay), GPL-2.0-only.
 - [UE Protocol](https://github.com/50UR4V/ue-protocol): the radio↔phone link (specification, reference codec, tests).
-- **Wireless link (in testing):** an ESP32-C3 Bluetooth bridge on the radio's AUX port. RF test: [Running a Bluetooth
-  bridge beside ExpressLRS](docs/rf-tests/2026-11-11-tx16s-ble/README.md).
+- **UltraEdge Wireless:** module registration and firmware at [ultraedge.app](https://ultraedge.app). RF test: [Running a
+  Bluetooth bridge beside ExpressLRS](docs/rf-tests/2026-11-11-tx16s-ble/README.md).
 
 **Where it's going:** the app is the first step toward a modular radio, where the gimbals, switches and case you like
 stay while the screen, processing and RF can be upgraded. Nothing beyond the app and firmware is available yet.
 
 ## Privacy and licences
-UltraEdge collects no personal data and needs no account. It talks to your radio over USB and uses the internet only
-when you ask System › Downloads for a voice pack or the iNav Lua telemetry. See the
+UltraEdge needs no account. Google sign-in is optional, only for backups to your own Google Drive. The app uses the
+internet only for what you start (Downloads, the firmware update check, Drive backup, 3D replay maps, the wind lookup)
+and for anonymous install info if you allow it. See the
 [Privacy Policy](https://bampi2k.com/ultraedge/privacy) and [Open-Source Notices](OPEN-SOURCE-NOTICES.md).
 
 | Part | Licence |
 |---|---|
-| UltraEdge app | Proprietary · embeds Lua (MIT), Barlow and Rajdhani fonts (SIL OFL 1.1), AndroidX and Kotlin (Apache-2.0) |
+| UltraEdge app | Proprietary · embeds Lua (MIT), Barlow and Rajdhani fonts (SIL OFL 1.1), AndroidX, Kotlin, Kable and Google SDKs (Apache-2.0); full list in the notices |
 | [EdgeTX-UE firmware](https://github.com/50UR4V/edgetx-ue) | [![GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/LICENSE) GPL-2.0-only, like EdgeTX |
+| [UltraSim tracks and aircraft](ultrasim-packs/) | [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](ultrasim-packs/LICENSE) CC BY-SA 4.0: copy, change and share them with credit |
 | [UE Protocol](https://github.com/50UR4V/ue-protocol) | [![MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](https://github.com/50UR4V/ue-protocol/blob/main/LICENSE) code · [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) spec |
 
 ## Support
 [Open an issue](https://github.com/50UR4V/UltraEdge-app/issues) for a bug or a request. Attach the diagnostics log
 (**System › Diagnostics › Share log**) and, for firmware problems, your radio's Version page lines.
-

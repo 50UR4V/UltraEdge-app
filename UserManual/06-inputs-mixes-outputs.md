@@ -98,6 +98,7 @@ curve. Tap a channel to edit:
 |---|---|
 | **Name** | Channel name (for example *ELEVL*) |
 | **Subtrim** | Fine-tune the servo centre (prefer a mechanical fix for anything over about 10%) |
+| **Copy trims to subtrim**, **Copy axis to subtrim** | Move this channel's trim, or the stick's current position, into its subtrim (firmware v1.2.2; the app asks first) |
 | **Min / Max** | Endpoints: the furthest the servo is allowed to travel. Protects linkages from binding. |
 | **Inverted** | **Reverse the servo.** This is the right place to do it. |
 | **Curve** | An output curve (rarely needed) |
@@ -105,6 +106,9 @@ curve. Tap a channel to edit:
 | **Subtrim mode** | Δ (subtrim shifts the whole range) or = (symmetric) |
 
 Long-press a channel for **Reset**. The model-wide **Extended limits** toggle allows travel up to ±150%.
+
+**Add all Trims to Subtrims** (firmware v1.2.2) moves every trim into its channel's subtrim and centres the trims, after
+you confirm, as on the radio.
 
 > [!TIP]
 > **Servo moves the wrong way?** Toggle **Inverted** on that output. Don't flip the mix weight.

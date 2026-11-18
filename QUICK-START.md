@@ -63,10 +63,10 @@ Install **UltraEdge** from [Google Play](https://play.google.com/store/apps/deta
 
 ## Step 5. Connect
 
-1. **Full builds only:** on the radio, set **USB mode** to **Serial** (or **Ask**). Companion builds need nothing.
+1. **Full builds only:** on the radio, set **USB mode** to **UltraEdge (Serial)** (or **Ask**). Companion builds need nothing.
 2. Plug the cable into the radio's **data** USB port. Some radios have a separate charge-only port.
 3. Android asks *"Open UltraEdge for this USB device?"*. Tap **OK** (tick *use by default* to skip it next time).
-   If the radio asks for a USB mode, choose **Serial**.
+   If the radio asks for a USB mode, choose **UltraEdge (Serial)** (stock EdgeTX calls it **USB Serial (VCP)**).
 4. Wait for the pill at the top right to turn **ATTACHED**.
 
 First plug-in doesn't connect? Unplug and plug in once more, then accept the prompt.

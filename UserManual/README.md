@@ -1,7 +1,7 @@
 # UltraEdge User Manual
 
-UltraEdge makes your Android phone the touchscreen for an **EdgeTX** radio over USB: models, telemetry, binding,
-ExpressLRS Lua, flight logs.
+UltraEdge makes your Android phone the touchscreen for an **EdgeTX** radio, over USB or Bluetooth: models, telemetry,
+binding, ExpressLRS Lua, flight logs.
 
 ![The UltraEdge Home screen](media/home.jpg)
 
@@ -12,9 +12,10 @@ ExpressLRS Lua, flight logs.
 
 | | App | Firmware | Status |
 |---|---|---|---|
-| **Production** | 1.6.6 (Google Play) | v1.2.1 (GitHub release, Latest): companion builds on black-and-white radios, full builds on colour radios | Hardware-verified on v1.2.1 by the owner: TX16S 2026-11-07; Pocket, Zorro and QX7 2026-11-08. The other 52 radios: built, not hardware-tested yet. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) |
-| **Beta** | 1.6.7 (Google Play open testing), the same app as 1.6.6 | v1.2.1, the same files | Same as production |
-| **Full-build fallback** | 1.6.6 or 1.6.7 | [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4), full build on Pocket, Zorro, QX7 | For pilots who want to keep the radio's own menus |
+| **Production** | 1.7.1 (Google Play) | v1.2.2 (GitHub release, Latest): companion builds on black-and-white radios, full builds on colour radios; wireless (module bay and AUX1) in one file per radio on Pocket, Zorro, TX16S and QX7 | Hardware-verified on v1.2.2: Pocket, Zorro, TX16S and QX7 (November 2026). RadioMaster Boxer: reported working by a tester. The other 51 radios: built, not hardware-tested yet. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) |
+| **Beta** | 1.7.1 (Google Play open testing), the same app as production | v1.2.2, the same files | Same as production |
+| **Previous firmware** | 1.7.1 works with it, without the v1.2.2 features (wireless, trim commands, saves that keep the flight) | [v1.2.1](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.1) | Hardware-verified on v1.2.1: TX16S 2026-11-07; Pocket, Zorro and QX7 2026-11-08 |
+| **Full-build fallback** | 1.7.1 | [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4), full build on Pocket, Zorro, QX7 | For pilots who want to keep the radio's own menus |
 
 ## Contents
 
@@ -32,8 +33,8 @@ First time? The [step-by-step quick start](../QUICK-START.md) takes you from a s
 | 8 | [Logic, Functions, GVars & Flight modes](08-logic-functions-gvars-modes.md) | Logical switches, special functions, global variables, flight modes & trims |
 | 9 | [Radio settings](09-radio-settings.md) | Radio Setup, Hardware, Switches, Trainer, **Calibration**, My Radios |
 | 10 | [Models & backups](10-models-and-backups.md) | Manage Models, duplicate/delete/select, library, archives, copy between radios |
-| 11 | [Flight logs](11-flight-logs.md) | Logging, automatic copy, the built-in log viewer (charts + GPS track) |
-| 12 | [Lua, Tools and Phone storage](12-lua-tools-sd-sounds.md) | ExpressLRS Lua, Lua widgets, the radio's SD card (System › Files), importing scripts, downloading voice packs and Lua scripts (iNav, StickTime, ExpressLRS) |
+| 11 | [Flight logs](11-flight-logs.md) | Logging, automatic copy, the built-in log viewer (charts + GPS track), importing iNav and ArduPilot logs |
+| 12 | [Lua, Tools and Phone storage](12-lua-tools-sd-sounds.md) | ExpressLRS Lua, Lua widgets, the radio's SD card (System › Files), importing scripts, the UltraSim FPV simulator, downloading voice packs, UltraSim tracks and Lua scripts (iNav, StickTime, ExpressLRS) |
 | 13 | [Recipes: how do I…?](13-recipes.md) | Step-by-step for the common jobs (see the finder below) |
 | 14 | [Troubleshooting & FAQ](14-troubleshooting-faq.md) | "Can it do X?", fixes for the usual EdgeTX headaches |
 | 15 | [Safety & current limits](15-safety-and-limits.md) | What the app never does, what still needs the radio |
@@ -53,10 +54,13 @@ First time? The [step-by-step quick start](../QUICK-START.md) takes you from a s
 | Mix a **flying wing (elevons)**, **V-tail**, **flaperons** | [Setup Assistants](18-setup-assistants.md) · [Recipes: wings & tails](13-recipes.md#elevon-flying-wing--delta-mixing) |
 | Connect **without a cable** (Bluetooth) | [Wireless](16-wireless.md) |
 | Back up models and logs to **Google Drive** | [Cloud backup](17-cloud-backup-and-account.md) |
+| See trims in **µs**, reset trims, trims to subtrims | [Trims](05-model-setup.md#trims) · [Trims on Home](04-home-monitor-telemetry.md#trims-on-home) |
+| **Replay** a flight in 3D, find a lost model | [3D replay and Recovery assist](11-flight-logs.md#5-3d-replay-and-recovery-assist) |
 | Reverse a servo, set endpoints / subtrim | [Outputs](06-inputs-mixes-outputs.md#outputs) |
 | Get a **battery-voltage / RSSI warning** | [Recipe: telemetry alarms](13-recipes.md#low-battery--link-quality-warning) · [Telem › ⚠ Alarms](04-home-monitor-telemetry.md#telemetry) |
 | Make a **timer** that runs with the throttle | [Recipe: throttle timer](13-recipes.md#a-flight-timer-that-runs-with-the-throttle) |
 | Run the **ExpressLRS Lua** (power, packet rate, model match, WiFi) | [ExpressLRS](12-lua-tools-sd-sounds.md#expresslrs-and-other-tools) |
+| Practise flying a quad or a wing with your sticks (**UltraSim**) | [UltraSim](12-lua-tools-sd-sounds.md#ultrasim-fpv-simulator) |
 | Hear **voice call-outs** | [Recipe: call-outs](13-recipes.md#voice-call-outs-on-a-switch) |
 | Turn on **flight logging** and see the flight on a map | [Flight logs](11-flight-logs.md) |
 | Back up a model or **copy it to another radio** | [Models & backups](10-models-and-backups.md) |
@@ -83,4 +87,3 @@ Grey dots in the clips show where a finger touched.
 [![Firmware: GPL v2](https://img.shields.io/badge/firmware-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue)
 [![Protocol: MIT](https://img.shields.io/badge/protocol-MIT-yellow.svg)](https://github.com/50UR4V/ue-protocol)
 [![Manual: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
-
