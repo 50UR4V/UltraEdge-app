@@ -17,7 +17,7 @@ radio checks and saves every change itself.
 |---|---|
 | **Radio** | A radio with a module bay and UltraEdge firmware v1.2.2: RadioMaster **Pocket** or **Zorro** (nano bay), RadioMaster **TX16S** (JR bay). FrSky **QX7 / QX7S** (JR bay): only with the model's Internal RF Off (section 3). Other radios with a bay: later ([Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)) |
 | **Firmware** | One file per radio. It carries the bay link and AUX1, so nothing is chosen when you flash and you can add a module later. A QX7 whose Bluetooth module has been replaced by the C3 uses the `-auxmod` file (modified radios only) |
-| **Module** | An UltraEdge Baylink: an ESP32-C3 board in a printed shell that fits the bay ([2-in-1 or Pocket shell](https://github.com/50UR4V/ultraedge-mounts/tree/main/wireless-module), CC BY-SA 4.0). Do-it-yourself option, a **Baylink on AUX1**: the same kind of board wired to the radio's **AUX1** port, on radios that have one (TX16S, Pocket, Zorro); section 4 has the steps |
+| **Module** | An UltraEdge Baylink: an ESP32-C3 board in a printed shell that fits the bay ([2-in-1 or Pocket shell](https://github.com/50UR4V/ultraedge-mounts/tree/main/baylink), CC BY-SA 4.0). Do-it-yourself option, a **Baylink on AUX1**: the same kind of board wired to the radio's **AUX1** port, on radios that have one (TX16S, Pocket, Zorro); section 4 has the steps |
 | **Phone** | Android with Bluetooth LE. Android asks for **Nearby devices** (Android 12 and later) or **Location** (Android 11 and older, only to find the module) |
 
 ## 2. Get the module firmware

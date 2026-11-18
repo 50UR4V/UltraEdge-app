@@ -118,4 +118,4 @@ The wireless module is a separate device; nothing below is part of the app.
 - **Module case (3D-printable):** © 2026 Sourav Karmakar, under
   [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/): anyone may print, change and sell prints with
   attribution, and changes stay under the same licence. Files: https://github.com/50UR4V/ultraedge-mounts
-  (`wireless-module/`).
+  (`baylink/`).
