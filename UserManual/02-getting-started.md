@@ -13,7 +13,7 @@
 ## Supported radios
 
 UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.2 is ready for 56 EdgeTX radios and
-tested in flight on the four below. [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)
+tested in flight on the four below. [Supported radios](https://ultraedge.app/radios)
 shows each radio's build. For another language or build option, build your own file with the
 [firmware builder](https://github.com/50UR4V/ultraedge-firmware-builder) (a form on GitHub, nothing to install), or ask on
 [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).

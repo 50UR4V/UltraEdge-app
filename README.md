@@ -43,7 +43,7 @@ distributed only through Google Play; there are no APK downloads here, and the a
 **Production:** app 1.7.1 ([Google Play](https://play.google.com/store/apps/details?id=com.ultraedge.companion)) with
 firmware [v1.2.2](https://github.com/50UR4V/edgetx-ue/releases/latest) for 56 EdgeTX radios: companion builds on
 black-and-white radios, full builds on colour radios. Tested in flight on Pocket, Zorro, TX16S and QX7
-([Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)). **Beta:** app 1.7.1
+([Supported radios](https://ultraedge.app/radios)). **Beta:** app 1.7.1
 ([join open testing](https://play.google.com/apps/testing/com.ultraedge.companion)), the same app and firmware. Want
 the radio's own menus on Pocket, Zorro or QX7? Use the
 [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4) full builds. Details:
@@ -83,7 +83,7 @@ For the radio itself, copy them to its SD card with a card reader.
 ## Related projects
 - [EdgeTX-UE](https://github.com/50UR4V/edgetx-ue): the firmware (EdgeTX plus the companion overlay), GPL-2.0-only.
 - [UE Protocol](https://github.com/50UR4V/ue-protocol): the radio↔phone link (specification, reference codec, tests).
-- **UltraEdge Wireless (Baylink):** get a Baylink from us (how: [ultraedge.app](https://ultraedge.app)), or build your
+- **UltraEdge Wireless (Baylink):** get a Baylink from us ([ultraedge.app/wireless](https://ultraedge.app/wireless)), or build your
   own: flash it at [ultraedge.app/flash](https://ultraedge.app/flash), shells in
   [ultraedge-mounts/baylink](https://github.com/50UR4V/ultraedge-mounts/tree/main/baylink), setup in the
   [manual](UserManual/16-wireless.md). RF test: [Running a Bluetooth bridge beside ExpressLRS](docs/rf-tests/2026-11-11-tx16s-ble/README.md).

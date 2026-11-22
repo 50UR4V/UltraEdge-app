@@ -4,7 +4,7 @@ From a stock EdgeTX radio to editing models on your phone, in about 20 minutes. 
 [User Manual](UserManual/README.md) if you want more detail. Website: [ultraedge.app](https://ultraedge.app).
 
 **You need:**
-- An EdgeTX radio. Check yours is on the [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) list.
+- An EdgeTX radio. Check yours is on the [Supported radios](https://ultraedge.app/radios) list.
 - An Android phone, Android 7.0 or newer, with USB OTG (most phones made since about 2017).
 - A USB **data** cable from the phone to the radio. Many cables only charge; if nothing happens later, swap the cable first.
 - A computer with an SD card reader (for the backup and, if you like, the flash).
@@ -97,5 +97,5 @@ You're set up. Next: [Finding your way around](UserManual/03-finding-your-way.md
 **Going back:** flash your previous firmware (stock EdgeTX or an earlier UltraEdge release) the same way, and copy your
 SD card backup back if you need to.
 
-**Help:** [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues), or **System › Feedback › Report a bug** in
+**Help:** [ultraedge.app/help](https://ultraedge.app/help), [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues), or **System › Feedback › Report a bug** in
 the app.
