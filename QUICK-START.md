@@ -1,7 +1,7 @@
 # UltraEdge quick start: install and set up, step by step
 
 From a stock EdgeTX radio to editing models on your phone, in about 20 minutes. Every step links to the full
-[User Manual](UserManual/README.md) if you want more detail.
+[User Manual](UserManual/README.md) if you want more detail. Website: [ultraedge.app](https://ultraedge.app).
 
 **You need:**
 - An EdgeTX radio. Check yours is on the [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) list.

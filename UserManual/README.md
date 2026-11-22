@@ -78,10 +78,11 @@ Grey dots in the clips show where a finger touched.
 
 ## The UltraEdge ecosystem
 
+- **Website:** <https://ultraedge.app>
 - **UltraEdge app** (this manual, issues, changelog): <https://github.com/50UR4V/UltraEdge-app>
 - **EdgeTX-UE firmware** (download/flash for your radio): <https://github.com/50UR4V/edgetx-ue>
 - **UE Protocol** (the open radio↔phone protocol): <https://github.com/50UR4V/ue-protocol>
-- **3D-printable phone mounts**: [ultraedge-mounts](https://github.com/50UR4V/ultraedge-mounts) (RadioMaster Pocket, TX16S MKII, FrSky QX7)
+- **Phone mounts and Baylink shells** (3D-printable): <https://github.com/50UR4V/ultraedge-mounts>
 
 [![App: proprietary](https://img.shields.io/badge/app-proprietary-lightgrey.svg)](https://github.com/50UR4V/UltraEdge-app/blob/main/OPEN-SOURCE-NOTICES.md)
 [![Firmware: GPL v2](https://img.shields.io/badge/firmware-GPL%20v2-blue.svg)](https://github.com/50UR4V/edgetx-ue)

@@ -12,6 +12,8 @@
 
 <a href="https://play.google.com/store/apps/details?id=com.ultraedge.companion"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="220"></a>
 
+**Website:** [ultraedge.app](https://ultraedge.app): start here, the app, firmware for your radio, wireless, UltraSim and help.
+
 **iPhone:** in development. One basic test on a borrowed iPhone so far; [sponsor the testing](https://github.com/sponsors/50UR4V)
 to get it to the App Store (planned February 2027, tentative).
 
@@ -82,8 +84,10 @@ For the radio itself, copy them to its SD card with a card reader.
 ## Related projects
 - [EdgeTX-UE](https://github.com/50UR4V/edgetx-ue): the firmware (EdgeTX plus the companion overlay), GPL-2.0-only.
 - [UE Protocol](https://github.com/50UR4V/ue-protocol): the radio↔phone link (specification, reference codec, tests).
-- **UltraEdge Wireless:** module registration and firmware at [ultraedge.app](https://ultraedge.app). RF test: [Running a
-  Bluetooth bridge beside ExpressLRS](docs/rf-tests/2026-11-11-tx16s-ble/README.md).
+- **UltraEdge Wireless (Baylink):** flash a module at [ultraedge.app/flash](https://ultraedge.app/flash); shells in
+  [ultraedge-mounts/baylink](https://github.com/50UR4V/ultraedge-mounts/tree/main/baylink); setup in the
+  [manual](UserManual/16-wireless.md). RF test: [Running a Bluetooth bridge beside ExpressLRS](docs/rf-tests/2026-11-11-tx16s-ble/README.md).
+- [ultraedge-mounts](https://github.com/50UR4V/ultraedge-mounts): 3D-printable phone mounts and Baylink shells.
 
 **Where it's going:** the app is the first step toward a modular radio, where the gimbals, switches and case you like
 stay while the screen, processing and RF can be upgraded. Nothing beyond the app and firmware is available yet.
