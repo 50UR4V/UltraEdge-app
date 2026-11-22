@@ -12,10 +12,9 @@
 
 ## Supported radios
 
-UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.2 is hardware-verified on the four radios below
-(November 2026), and a tester reported the RadioMaster Boxer working; the other 51 are built, not hardware-tested yet.
-[Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) shows each radio's
-build and status. For another language or build option, build your own file with the
+UltraEdge is **made for any EdgeTX radio**. Firmware v1.2.2 is ready for 56 EdgeTX radios and
+tested in flight on the four below. [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md)
+shows each radio's build. For another language or build option, build your own file with the
 [firmware builder](https://github.com/50UR4V/ultraedge-firmware-builder) (a form on GitHub, nothing to install), or ask on
 [GitHub issues](https://github.com/50UR4V/UltraEdge-app/issues).
 

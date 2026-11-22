@@ -12,9 +12,9 @@ binding, ExpressLRS Lua, flight logs.
 
 | | App | Firmware | Status |
 |---|---|---|---|
-| **Production** | 1.7.1 (Google Play) | v1.2.2 (GitHub release, Latest): companion builds on black-and-white radios, full builds on colour radios; wireless (module bay and AUX1) in one file per radio on Pocket, Zorro, TX16S and QX7 | Hardware-verified on v1.2.2: Pocket, Zorro, TX16S and QX7 (November 2026). RadioMaster Boxer: reported working by a tester. The other 51 radios: built, not hardware-tested yet. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) |
+| **Production** | 1.7.1 (Google Play) | v1.2.2 (GitHub release, Latest): companion builds on black-and-white radios, full builds on colour radios; wireless (module bay and AUX1) in one file per radio on Pocket, Zorro, TX16S and QX7 | Ready for 56 EdgeTX radios; tested in flight on Pocket, Zorro, TX16S and QX7. See [Supported radios](https://github.com/50UR4V/edgetx-ue/blob/ultraedge/SUPPORTED-RADIOS.md) |
 | **Beta** | 1.7.1 (Google Play open testing), the same app as production | v1.2.2, the same files | Same as production |
-| **Previous firmware** | 1.7.1 works with it, without the v1.2.2 features (wireless, trim commands, saves that keep the flight) | [v1.2.1](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.1) | Hardware-verified on v1.2.1: TX16S 2026-11-07; Pocket, Zorro and QX7 2026-11-08 |
+| **Previous firmware** | 1.7.1 works with it, without the v1.2.2 features (wireless, trim commands, saves that keep the flight) | [v1.2.1](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.2.1) | Tested on TX16S, Pocket, Zorro and QX7 (November 2026) |
 | **Full-build fallback** | 1.7.1 | [v1.1.2.4](https://github.com/50UR4V/edgetx-ue/releases/tag/v1.1.2.4), full build on Pocket, Zorro, QX7 | For pilots who want to keep the radio's own menus |
 
 ## Contents
