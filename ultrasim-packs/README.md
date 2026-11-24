@@ -2,12 +2,21 @@
 
 UltraSim is the FPV quad and flying-wing simulator in the UltraEdge app (System › Tools › UltraSim, or its own tab in
 the left rail). The simulator is part of the app; its tracks and aircraft are packs you download in
-**System › Downloads › UltraSim tracks** and **UltraSim aircraft**. These folders hold the packs' files.
+**System › Downloads › UltraSim tracks**, **UltraSim challenge tracks** and **UltraSim aircraft**. These folders hold
+the packs' files.
 
 | Pack | Files |
 |---|---|
 | Tracks | `meadow-gp`, `sunset-eight`, `bando-run`, `canyon-run`, `downtown` (quads); `valley-pylons`, `island-circuit` (flying wings) |
+| Challenge tracks (`challenge/`) | `steelworks`, `five-peaks` (quads); `hawk-ridges`, `sea-stacks` (flying wings) |
 | Aircraft | `quad-5inch`; `swift-800`, `cruiser-1200` (flying wings) |
+
+The challenge tracks are harder: gates closer together and at sharper angles, bigger climbs and dives, scenery close to
+the line. **Steelworks** is a steel yard: a slalom between container stacks, a climb onto a 12 m tower and a split-S off
+it, a gate under a pipe rack, a hairpin round a chimney and a window in a wall. **Five Peaks** puts five hairpins on
+hilltops, with a dive into the valley after each. **Hawk Ridges** takes the wings over four ridge spurs with bends
+of about 26 m. **Sea Stacks** is a low pylon slalom round rock stacks, with bends of about 20 m and a climb over a
+headland; touching the water ends the flight. They install into the same `tracks/` folder.
 
 ## Where they go
 
