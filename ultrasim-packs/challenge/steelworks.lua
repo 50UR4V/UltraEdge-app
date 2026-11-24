@@ -14,6 +14,8 @@ return function(api)
       { -22, 4, 66, 0 },                             -- the window
       { -8, 0.5, 100, PI / 2 }, { 22, 0.5, 92, PI }, { 20, 0.5, 40, PI }, { 14, 0.5, 8, -PI / 2 },
     },
+    kinds = { [1] = "ad", [2] = "arch", [3] = "ring", [4] = "arch", [6] = "ad", [8] = "ring", [9] = "ring", [11] = "ad",
+      [12] = "arch", [13] = "ring", [14] = "ad" },                -- gate shapes (an app before them shows frames)
     vias = {
       [4] = { { 5, 4, 64 } }, [5] = { { 5, 13, 82 }, { 1, 9, 90 }, { -3, 4, 90 } },
       [8] = { { -17, 1.5, 40 }, { -21, 1.5, 40 } },

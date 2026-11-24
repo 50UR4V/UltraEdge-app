@@ -7,7 +7,8 @@ return function(api)
   local hills = { { 0, -128, 42, 18 }, { -26, -152, 26, 10 }, { 0, 0, 34, 20 }, { 0, 132, 18, 7 } }   -- headland, its shoulder, islet, the start's rock
   return {
     name = "Sea Stacks", order = 11, wing = true, water = true, env = "sea", seed = 6262, ng = 12, a0 = PI / 6,
-    curve = ring, raise = {}, centre = { 0, 0 }, orbit = 280, trees = { 30, 0 }, treeR = 60,
+    curve = ring, raise = {},
+    kinds = { [3] = "blimp", [9] = "blimp" }, lift = { [3] = 6, [9] = 6 },   -- two blimps' rings over the sea centre = { 0, 0 }, orbit = 280, trees = { 30, 0 }, treeR = 60,
     line = false, land = { -200, -200, 200, 170, 12 },
     hgt = function(x, z) return api.hills(hills, x, z, 3) end,
     col = function(h, steep) return h < 2.2 and 0xD8C690 or (steep > 0.22 and 0x8E877A or (h > 22 and 0x9A9488 or 0x5E9440)) end,

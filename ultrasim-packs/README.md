@@ -18,6 +18,10 @@ hilltops, with a dive into the valley after each. **Hawk Ridges** takes the wing
 of about 26 m. **Sea Stacks** is a low pylon slalom round rock stacks, with bends of about 20 m and a climb over a
 headland; touching the water ends the flight. They install into the same `tracks/` folder.
 
+A track may give gate shapes: `kinds = { [3] = "ring", [5] = "arch" }`, by gate number. For quads: `frame` (the
+default), `ad` (with an UltraEdge banner), `arch`, `ring`; for wings: `pylon` (the default), `blimp` (a ring under a
+blimp). `lift = { [3] = 6 }` raises a gate further. Apps from before gate shapes show frames and pylons instead.
+
 ## Where they go
 
 On the phone's UltraEdge SD folder: `SCRIPTS/TOOLS/UltraSim/tracks/<id>.lua` and `SCRIPTS/TOOLS/UltraSim/craft/<id>.lua`.

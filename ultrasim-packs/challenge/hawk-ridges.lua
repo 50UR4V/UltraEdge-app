@@ -15,18 +15,14 @@ return function(api)
   end
   return {
     name = "Hawk Ridges", order = 10, wing = true, env = "valley", seed = 5522, ng = 12, a0 = PI / 4, curve = weave,
-    raise = { [1] = 5, [4] = 5, [7] = 5, [10] = 5 }, centre = { 0, 0 }, orbit = 290, trees = { 120, 90 }, treeR = 420,
+    raise = { [1] = 5, [4] = 5, [7] = 5, [10] = 5 },
+    kinds = { [1] = "blimp", [4] = "blimp", [7] = "blimp", [10] = "blimp" },    -- a blimp's ring over every spur (an app
+                                                     -- before gate shapes shows pylons there) centre = { 0, 0 }, orbit = 290, trees = { 120, 90 }, treeR = 420,
     line = false, treeOk = false, land = { -340, -340, 340, 340, 18 },
     hgt = function(x, z) return api.hills(hills, x, z, 2) end,
     col = function(h, steep) return steep > 0.25 and 0x8A8478 or (h > 30 and 0x7FA35A or 0x5C8F3C) end,
     extras = function(M, C, L)
-      -- a cairn on every spur's top, a hut in one gully
-      for k = 0, 3 do
-        local a = PI / 4 + k * PI / 2
-        local x, z = 64 * sin(a), 64 * cos(a)
-        local h = api.hills(hills, x, z, 2)
-        api.box(M.stone, C, x, h + 2, z, 3, 4, 3, a, 0x8A8478, 0x9A9488)
-      end
+      -- a hut in one gully
       api.box(M.wood, C, 156, 2, 0, 7, 4, 5, 0.3, 0xB03A2E, 0x8A2B22)
     end,
   }

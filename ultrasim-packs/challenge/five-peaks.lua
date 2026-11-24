@@ -13,7 +13,9 @@ return function(api)
   local ROCK = { 0x8E7A66, 0x9C8670, 0x7F6D5C }
   return {
     name = "Five Peaks", order = 9, env = "canyon", seed = 4411, ng = 15, a0 = PI / 5, curve = lobes,
-    raise = { [1] = 1.5, [4] = 1.5, [7] = 1.5, [10] = 1.5, [13] = 1.5 }, centre = { 0, 0 }, orbit = 115, trees = { 0, 0 },
+    raise = { [1] = 1.5, [4] = 1.5, [7] = 1.5, [10] = 1.5, [13] = 1.5 },
+    kinds = { [1] = "ring", [2] = "arch", [3] = "ad", [4] = "ring", [5] = "ad", [6] = "arch", [7] = "ring", [8] = "arch",
+      [9] = "ad", [10] = "ring", [11] = "ad", [12] = "arch", [13] = "ring", [14] = "arch", [15] = "ad" },   -- rings on the summits centre = { 0, 0 }, orbit = 115, trees = { 0, 0 },
     line = false, land = { -100, -100, 100, 100, 4 },
     hgt = function(x, z) return api.hills(hills, x, z, 0.8) end,
     col = function(h, steep) return steep > 0.28 and ROCK[floor(h / 3) % 3 + 1] or (h > 12 and 0xB89868 or 0xAE7A4E) end,
