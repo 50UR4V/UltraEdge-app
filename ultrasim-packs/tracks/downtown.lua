@@ -4,6 +4,7 @@ return function(api)
   local floor, PI = math.floor, math.pi
   return {
     name = "Downtown", order = 5, env = "city", seed = 6060, centre = { 60, 20 }, orbit = 150,
+    look = { shine = 0.15 },                         -- the GPU picture (README.md): a little gloss on the streets
     gates = {                                        -- x, base height, z, heading (0 = +z)
       { 0, 0.6, -10, 0 }, { 0, 0.6, 50, 0 }, { 30, 0.6, 80, PI / 2 }, { 90, 0.6, 80, PI / 2 }, { 120, 8, 40, PI },
       { 120, 0.6, -15, PI }, { 85, 0.6, -40, -PI / 2 }, { 30, 0.6, -40, -PI / 2 },

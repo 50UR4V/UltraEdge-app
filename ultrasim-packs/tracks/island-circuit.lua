@@ -8,6 +8,7 @@ return function(api)
     name = "Island Circuit", order = 7, wing = true, water = true, env = "sea", seed = 5150, ng = 8, a0 = 0.45,
     curve = island, raise = {}, centre = { 0, 140 }, orbit = 330, trees = { 60, 0 }, treeR = 130, line = false,
     land = { -340, -100, 340, 440, 14 },
+    look = { water = true },                         -- the GPU picture (README.md): the sea glints and mirrors the sky
     hgt = function(x, z) return api.hills(hills, x, z, 3) end,
     col = function(h, steep) return h < 2.2 and 0xD8C690 or (steep > 0.22 and 0x8E877A or (h > 50 and 0x9A9488 or 0x5E9440)) end,
     treeOk = function(h) return h > 3 and h < 38 end,

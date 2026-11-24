@@ -10,6 +10,7 @@ return function(api)
     name = "Canyon Run", order = 4, env = "canyon", seed = 2203, ng = 10, a0 = 0.45, curve = canyon,
     raise = { [3] = 1.6, [4] = 0.6 }, centre = { 0, 85 }, orbit = 125, trees = { 0, 0 }, line = false,
     land = { -120, -70, 120, 240, 6 },
+    look = { glow = 0.7 },                           -- the GPU picture (README.md): less sun halo over the bright sand
     hgt = function(x, z)
       local d, i = api.curveDist(cpts, x, z)
       if d > 56 then return 0 end

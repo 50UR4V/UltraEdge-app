@@ -9,6 +9,7 @@ return function(api)
   }
   return {
     name = "Bando Run", order = 3, free = true, env = "bando", seed = 90210, centre = { 0, 30 }, orbit = 85,
+    look = { shine = 0.1 },                          -- the GPU picture (README.md): a little gloss on the concrete
     gates = GATES,
     vias = {                                         -- extra points of the racing line after gate i: the window, the door, round the tower, the decks
       [1] = { { 3.8, 2.6, 20 }, { 1.5, 2.3, 29 }, { 3, 1.9, 35 } }, [2] = { { 25.6, 2.2, 32 } },

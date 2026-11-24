@@ -7,4 +7,5 @@ return {
   name = "Swift 800 wing", order = 2, wing = true,
   m = 0.55, S = 0.14, thrust = 9.0, vpitch = 46, cd0 = 0.035, k = 0.09, cla = 4.2, astall = 0.26,
   roll = 7.0, pitch = 2.6, stab = 3.0, vane = 9, dih = 1.5, cy = 1.2, qref = 200, atrim = 0.045, a0 = 0.0,
+  look = { shine = 0.25 },                           -- its gloss in the GPU picture (README.md)
 }

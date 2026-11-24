@@ -5,6 +5,7 @@ return function(api)
   local PI = math.pi
   return {
     name = "Steelworks", order = 8, env = "bando", seed = 7117, start = 7, centre = { 0, 55 }, orbit = 95,
+    look = { shine = 0.1 },                          -- the GPU picture (README.md): a little gloss on the yard
     gates = {                                        -- x, base height, z, heading (0 = +z)
       { 0, 0.5, 10, 0 }, { 5, 0.5, 28, 0 }, { -5, 0.5, 42, 0 }, { 5, 0.5, 56, 0 },
       { 5, 12, 76, 0 },                              -- on top of the tower
